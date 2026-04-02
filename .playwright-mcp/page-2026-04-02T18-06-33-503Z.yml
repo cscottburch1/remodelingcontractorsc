@@ -1,0 +1,297 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - paragraph [ref=e7]: Upstate South Carolina remodeling specialists for garages, additions, decks, and outdoor living.
+      - link "(803) 555-0147" [ref=e8] [cursor=pointer]:
+        - /url: tel:+18035550147
+    - generic [ref=e9]:
+      - link "RC Remodeling Contractors SC Garages, additions, decks, enclosures, and granny pods" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e11]: RC
+        - generic [ref=e12]:
+          - strong [ref=e13]: Remodeling Contractors SC
+          - generic [ref=e14]: Garages, additions, decks, enclosures, and granny pods
+      - navigation [ref=e15]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+        - link "About" [ref=e17] [cursor=pointer]:
+          - /url: /about
+        - link "Services" [ref=e18] [cursor=pointer]:
+          - /url: /services
+        - link "Projects" [ref=e19] [cursor=pointer]:
+          - /url: /projects
+        - link "Locations" [ref=e20] [cursor=pointer]:
+          - /url: /locations
+        - link "Financing" [ref=e21] [cursor=pointer]:
+          - /url: /financing
+        - link "Contact" [ref=e22] [cursor=pointer]:
+          - /url: /contact
+        - link "Request Estimate" [ref=e23] [cursor=pointer]:
+          - /url: /request-estimate
+  - main [ref=e24]:
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - paragraph [ref=e28]: South Carolina Space Expansion Specialists
+        - heading "Garages, additions, decks, screened enclosures, and granny pods with a clean, lasting finish." [level=1] [ref=e29]
+        - paragraph [ref=e30]: We design and build residential expansion projects that feel considered from the first estimate through the final walkthrough, with disciplined planning, structural craftsmanship, and clear communication.
+        - generic [ref=e31]:
+          - link "Request Estimate" [ref=e32] [cursor=pointer]:
+            - /url: /request-estimate
+          - link "Explore Services" [ref=e33] [cursor=pointer]:
+            - /url: /services
+        - generic [ref=e34]:
+          - generic [ref=e35]: Project-led planning
+          - generic [ref=e36]: Exterior-focused craftsmanship
+          - generic [ref=e37]: Serving major Upstate SC markets
+      - img "Custom detached garage project with premium residential exterior finishes" [ref=e39]
+    - generic [ref=e41]:
+      - article [ref=e42]:
+        - strong [ref=e43]: "5"
+        - paragraph [ref=e44]: Specialized build categories
+      - article [ref=e45]:
+        - strong [ref=e46]: "8"
+        - paragraph [ref=e47]: Target Upstate SC markets
+      - article [ref=e48]:
+        - strong [ref=e49]: 100%
+        - paragraph [ref=e50]: Focused on space-creation projects
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - paragraph [ref=e54]: Services
+        - heading "Built around what South Carolina homeowners ask for most" [level=2] [ref=e55]
+        - paragraph [ref=e56]: We specialize in projects that create more space, improve curb appeal, and increase practical property value.
+      - generic [ref=e57]:
+        - article [ref=e58]:
+          - img "Custom detached garage with matching home exterior finishes" [ref=e59]
+          - generic [ref=e60]:
+            - heading "Garage Builders" [level=3] [ref=e61]
+            - paragraph [ref=e62]: Custom garages built for curb appeal, storage, workshops, and future flexibility.
+            - link "Explore Service" [ref=e63] [cursor=pointer]:
+              - /url: /services/garage-builders
+        - article [ref=e64]:
+          - img "Home addition with expanded living room and natural light" [ref=e65]
+          - generic [ref=e66]:
+            - heading "Room Additions" [level=3] [ref=e67]
+            - paragraph [ref=e68]: Designed and built additions that increase usable living space without sacrificing flow.
+            - link "Explore Service" [ref=e69] [cursor=pointer]:
+              - /url: /services/room-additions
+        - article [ref=e70]:
+          - img "Elevated backyard deck with modern railing and covered seating area" [ref=e71]
+          - generic [ref=e72]:
+            - heading "Deck Builders" [level=3] [ref=e73]
+            - paragraph [ref=e74]: Premium decks built for entertaining, durability, and better outdoor living.
+            - link "Explore Service" [ref=e75] [cursor=pointer]:
+              - /url: /services/deck-builders
+        - article [ref=e76]:
+          - img "Aluminum screened patio enclosure attached to back of home" [ref=e77]
+          - generic [ref=e78]:
+            - heading "Aluminum Screened Enclosures" [level=3] [ref=e79]
+            - paragraph [ref=e80]: Clean-lined aluminum framed enclosures for bug-free outdoor living with long-term durability.
+            - link "Explore Service" [ref=e81] [cursor=pointer]:
+              - /url: /services/aluminum-screened-enclosures
+        - article [ref=e82]:
+          - img "Detached modern backyard cottage with porch and landscaped entry" [ref=e83]
+          - generic [ref=e84]:
+            - heading "Granny Pods" [level=3] [ref=e85]
+            - paragraph [ref=e86]: Detached backyard structures designed for family use, flexibility, and independent living.
+            - link "Explore Service" [ref=e87] [cursor=pointer]:
+              - /url: /services/granny-pods
+    - generic [ref=e89]:
+      - generic [ref=e90]:
+        - paragraph [ref=e91]: Projects
+        - heading "Project-driven results across Upstate South Carolina" [level=2] [ref=e92]
+        - paragraph [ref=e93]: Recent garages, additions, decks, enclosures, and detached backyard structure work.
+      - generic [ref=e94]:
+        - article [ref=e95]:
+          - img "Detached three bay garage with decorative doors and gable roof" [ref=e96]
+          - generic [ref=e97]:
+            - paragraph [ref=e98]: Greenville, SC
+            - heading "Detached Three-Bay Garage Build" [level=3] [ref=e99]
+            - paragraph [ref=e100]: Custom detached garage with matching siding, carriage-style doors, and upper-level storage framing.
+            - link "View Project" [ref=e101] [cursor=pointer]:
+              - /url: /projects/detached-three-bay-garage-greenville
+        - article [ref=e102]:
+          - img "Large two story home addition with finished exterior" [ref=e103]
+          - generic [ref=e104]:
+            - paragraph [ref=e105]: Simpsonville, SC
+            - heading "Second Story Addition + Roofline Integration" [level=3] [ref=e106]
+            - paragraph [ref=e107]: Upper-level bedroom suite expansion with structural reinforcement and seamless exterior detailing.
+            - link "View Project" [ref=e108] [cursor=pointer]:
+              - /url: /projects/second-story-addition-simpsonville
+        - article [ref=e109]:
+          - img "Covered backyard deck with seating and modern railings" [ref=e110]
+          - generic [ref=e111]:
+            - paragraph [ref=e112]: Greer, SC
+            - heading "Covered Composite Deck With Lighting" [level=3] [ref=e113]
+            - paragraph [ref=e114]: Composite deck system with covered roof section, integrated stairs, and evening-ready lighting.
+            - link "View Project" [ref=e115] [cursor=pointer]:
+              - /url: /projects/covered-composite-deck-greer
+        - article [ref=e116]:
+          - img "Screened aluminum enclosure on rear patio" [ref=e117]
+          - generic [ref=e118]:
+            - paragraph [ref=e119]: Mauldin, SC
+            - heading "Aluminum Screened Patio Enclosure" [level=3] [ref=e120]
+            - paragraph [ref=e121]: Full patio enclosure with powder-coated aluminum framing, pet-safe screens, and clean drainage design.
+            - link "View Project" [ref=e122] [cursor=pointer]:
+              - /url: /projects/aluminum-screened-enclosure-mauldin
+        - article [ref=e123]:
+          - img "Small detached backyard granny pod structure with porch" [ref=e124]
+          - generic [ref=e125]:
+            - paragraph [ref=e126]: Anderson, SC
+            - heading "Backyard Granny Pod Build" [level=3] [ref=e127]
+            - paragraph [ref=e128]: Detached backyard pod with kitchenette rough-ins, covered entry, and independent utility planning.
+            - link "View Project" [ref=e129] [cursor=pointer]:
+              - /url: /projects/backyard-granny-pod-anderson
+    - generic [ref=e131]:
+      - generic [ref=e132]:
+        - paragraph [ref=e133]: Process
+        - heading "A clear build process from estimate through final walkthrough" [level=2] [ref=e134]
+        - paragraph [ref=e135]: We keep planning disciplined so structural decisions, permit requirements, and finish quality stay on track.
+      - generic [ref=e136]:
+        - article [ref=e137]:
+          - heading "1. Consultation + Scope" [level=3] [ref=e138]
+          - paragraph [ref=e139]: We define your goals, priorities, and structural requirements before design details move forward.
+        - article [ref=e140]:
+          - heading "2. Planning + Build Strategy" [level=3] [ref=e141]
+          - paragraph [ref=e142]: Selections, scheduling, and trade coordination are outlined in advance for smoother execution.
+        - article [ref=e143]:
+          - heading "3. Construction + Closeout" [level=3] [ref=e144]
+          - paragraph [ref=e145]: You get organized communication, quality control checkpoints, and a professional handoff.
+    - generic [ref=e147]:
+      - generic [ref=e148]:
+        - paragraph [ref=e149]: Service Areas
+        - heading "Serving major Upstate South Carolina markets" [level=2] [ref=e150]
+        - paragraph [ref=e151]: Focused local coverage so you get responsive communication and region-specific project knowledge.
+      - generic [ref=e152]:
+        - link "Greenville" [ref=e153] [cursor=pointer]:
+          - /url: /locations/greenville
+        - link "Simpsonville" [ref=e154] [cursor=pointer]:
+          - /url: /locations/simpsonville
+        - link "Fountain Inn" [ref=e155] [cursor=pointer]:
+          - /url: /locations/fountain-inn
+        - link "Greer" [ref=e156] [cursor=pointer]:
+          - /url: /locations/greer
+        - link "Mauldin" [ref=e157] [cursor=pointer]:
+          - /url: /locations/mauldin
+        - link "Laurens" [ref=e158] [cursor=pointer]:
+          - /url: /locations/laurens
+        - link "Anderson" [ref=e159] [cursor=pointer]:
+          - /url: /locations/anderson
+        - link "Spartanburg" [ref=e160] [cursor=pointer]:
+          - /url: /locations/spartanburg
+    - generic [ref=e162]:
+      - generic [ref=e163]:
+        - paragraph [ref=e164]: Testimonials
+        - heading "Trusted by homeowners across Upstate South Carolina" [level=2] [ref=e165]
+        - paragraph [ref=e166]: Real project feedback focused on communication, craftsmanship, and how the finished space lives day to day.
+      - generic [ref=e167]:
+        - article [ref=e168]:
+          - paragraph [ref=e169]: "\"Our detached garage feels like it was always part of the property. Planning was clear and the finish quality was outstanding.\""
+          - strong [ref=e170]: The Coleman Family
+          - text: Greenville
+        - article [ref=e171]:
+          - paragraph [ref=e172]: "\"The second-story addition changed how we live in the home. The team handled structural work with confidence and great communication.\""
+          - strong [ref=e173]: M. Ramirez
+          - text: Simpsonville
+        - article [ref=e174]:
+          - paragraph [ref=e175]: "\"We hired them for a granny pod project and were impressed with how they managed details, scheduling, and build quality end to end.\""
+          - strong [ref=e176]: S. Patel
+          - text: Anderson
+    - generic [ref=e178]:
+      - generic [ref=e179]:
+        - paragraph [ref=e180]: FAQ
+        - heading "Common remodeling questions" [level=2] [ref=e181]
+        - paragraph [ref=e182]: Clear answers on timeline, budget planning, design support, and what to expect during construction.
+      - generic [ref=e183]:
+        - group [ref=e184]:
+          - generic "How early should we start planning a garage or room addition?" [ref=e185] [cursor=pointer]
+        - group [ref=e186]:
+          - generic "Do you handle permits and structural coordination?" [ref=e187] [cursor=pointer]
+        - group [ref=e188]:
+          - generic "Are granny pods and detached guest-house builds allowed in every area?" [ref=e189] [cursor=pointer]
+        - group [ref=e190]:
+          - generic "What locations do you serve?" [ref=e191] [cursor=pointer]
+    - generic [ref=e193]:
+      - generic [ref=e194]:
+        - paragraph [ref=e195]: Request Estimate
+        - heading "Tell us what you want to build" [level=2] [ref=e196]
+        - paragraph [ref=e197]: Share project goals and we will follow up with realistic next steps for your home and lot.
+      - generic [ref=e199]:
+        - textbox
+        - generic [ref=e200]:
+          - text: Full Name
+          - textbox "Full Name" [ref=e201]:
+            - /placeholder: Your name
+        - generic [ref=e202]:
+          - text: Email
+          - textbox "Email" [ref=e203]:
+            - /placeholder: you@example.com
+        - generic [ref=e204]:
+          - text: Phone
+          - textbox "Phone" [ref=e205]:
+            - /placeholder: (803) 555-0147
+        - generic [ref=e206]:
+          - text: Project Type
+          - combobox "Project Type" [ref=e207]:
+            - option "Garage Builders" [selected]
+            - option "Room Additions"
+            - option "Deck Builders"
+            - option "Aluminum Screened Enclosures"
+            - option "Granny Pods"
+            - option "Detached Garages"
+            - option "Attached Garages"
+            - option "Garage With Apartment / Storage Above"
+            - option "Second Story Additions"
+            - option "Bump-Out Additions"
+            - option "Covered Decks"
+            - option "Composite Decks"
+            - option "Screened Patio Enclosures"
+            - option "Screen Rooms"
+            - option "Backyard Granny Pods"
+            - option "Detached Guest Houses / ADU-Style Options"
+        - generic [ref=e208]:
+          - text: Project Details
+          - textbox "Project Details" [ref=e209]:
+            - /placeholder: Tell us about your goals, style, and timing.
+        - button "Request Estimate" [ref=e210]
+    - generic [ref=e212]:
+      - generic [ref=e213]:
+        - heading "Need more living space, storage, or outdoor comfort?" [level=2] [ref=e214]
+        - paragraph [ref=e215]: We can map the right garage, addition, deck, enclosure, or granny pod scope for your property.
+      - generic [ref=e216]:
+        - link "Request Estimate" [ref=e217] [cursor=pointer]:
+          - /url: /request-estimate
+        - link "Speak With Our Team" [ref=e218] [cursor=pointer]:
+          - /url: /contact
+  - contentinfo [ref=e219]:
+    - generic [ref=e220]:
+      - generic [ref=e221]:
+        - heading "Remodeling Contractors SC" [level=3] [ref=e222]
+        - paragraph [ref=e223]: South Carolina specialist for custom garages, room additions, deck construction, aluminum screened enclosures, and granny pod projects.
+      - generic [ref=e224]:
+        - heading "Quick Links" [level=4] [ref=e225]
+        - list [ref=e226]:
+          - listitem [ref=e227]:
+            - link "Services" [ref=e228] [cursor=pointer]:
+              - /url: /services
+          - listitem [ref=e229]:
+            - link "Projects" [ref=e230] [cursor=pointer]:
+              - /url: /projects
+          - listitem [ref=e231]:
+            - link "Locations" [ref=e232] [cursor=pointer]:
+              - /url: /locations
+          - listitem [ref=e233]:
+            - link "Financing" [ref=e234] [cursor=pointer]:
+              - /url: /financing
+          - listitem [ref=e235]:
+            - link "Contact" [ref=e236] [cursor=pointer]:
+              - /url: /contact
+      - generic [ref=e237]:
+        - heading "Contact" [level=4] [ref=e238]
+        - list [ref=e239]:
+          - listitem [ref=e240]:
+            - link "(803) 555-0147" [ref=e241] [cursor=pointer]:
+              - /url: tel:+18035550147
+          - listitem [ref=e242]:
+            - link "estimates@remodelingcontractorsc.com" [ref=e243] [cursor=pointer]:
+              - /url: mailto:estimates@remodelingcontractorsc.com
+          - listitem [ref=e244]: Serving major Upstate SC markets

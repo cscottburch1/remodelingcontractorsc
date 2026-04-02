@@ -1,0 +1,24 @@
+{
+  "servers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "playwright-mcp"
+      ]
+    },
+    "playwright-secure": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "playwright-mcp",
+        "--isolated",
+        "--allowed-hosts",
+        "127.0.0.1",
+        "localhost",
+        "--output-mode",
+        "stdout"
+      ]
+    }
+  }
+}

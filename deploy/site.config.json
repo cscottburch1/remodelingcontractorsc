@@ -1,0 +1,15 @@
+{
+  "Domain": "remodelingcontractorsc.com",
+  "WwwDomain": "www.remodelingcontractorsc.com",
+  "AppSlug": "remodelingcontractorsc",
+  "AppUser": "siteapp",
+  "AppPort": 3002,
+  "AppPath": "/var/www/remodelingcontractorsc",
+  "PM2Process": "remodelingcontractorsc",
+  "RepoUrl": "git@github.com:cscottburch1/remodelingcontractorsc.git",
+  "AllowedGitRepo": "git@github.com:cscottburch1/remodelingcontractorsc.git",
+  "BlockedPatterns": [
+    "burchcontracting",
+    "burchcontracting.com"
+  ]
+}
