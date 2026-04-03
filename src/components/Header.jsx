@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import burchLogo from '../assets/images/Burch Contracting Logo.png';
 
 const navItems = [
   { label: 'Home', to: '/' },
@@ -25,7 +26,7 @@ export default function Header() {
 
       <div className="container header">
         <Link to="/" className="brand" onClick={() => setOpen(false)}>
-          <span className="brand-mark">RC</span>
+          <img className="brand-logo" src={burchLogo} alt="Remodeling Contractors SC logo" />
           <span className="brand-copy">
             <strong className="brand-title">Remodeling Contractors SC</strong>
             <small className="brand-subtitle">Garages, additions, decks, and screened porches</small>

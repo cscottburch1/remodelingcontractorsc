@@ -122,6 +122,12 @@ main > section:nth-of-type(even) {
   gap: 8px;
 }
 
+.brand-logo {
+  width: clamp(106px, 13vw, 156px);
+  height: auto;
+  object-fit: contain;
+}
+
 .brand-mark {
   width: 2.6rem;
   height: 2.6rem;
