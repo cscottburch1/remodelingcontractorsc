@@ -3,25 +3,55 @@ import path from 'node:path';
 import process from 'node:process';
 
 const repoRoot = process.cwd();
-const configPath = path.join(repoRoot, 'deploy', 'site.config.json');
+const envArg = process.argv.find((arg) => arg.startsWith('--env='));
+const deployEnv = (envArg ? envArg.split('=')[1] : 'production').toLowerCase();
+
+const profiles = {
+  production: {
+    configFile: 'site.config.json',
+    required: {
+      Domain: 'remodelingcontractorsc.com',
+      WwwDomain: 'www.remodelingcontractorsc.com',
+      AppSlug: 'remodelingcontractorsc',
+      AppUser: 'siteapp',
+      AppPort: 3002,
+      AppPath: '/var/www/remodelingcontractorsc',
+      PM2Process: 'remodelingcontractorsc',
+      RepoUrl: 'git@github.com:cscottburch1/remodelingcontractorsc.git',
+      AllowedGitRepo: 'git@github.com:cscottburch1/remodelingcontractorsc.git'
+    }
+  },
+  staging: {
+    configFile: 'site.staging.config.json',
+    required: {
+      Domain: 'staging.remodelingcontractorsc.com',
+      WwwDomain: 'www.staging.remodelingcontractorsc.com',
+      AppSlug: 'remodelingcontractorsc-staging',
+      AppUser: 'siteapp',
+      AppPort: 3012,
+      AppPath: '/var/www/remodelingcontractorsc-staging',
+      PM2Process: 'remodelingcontractorsc-staging',
+      RepoUrl: 'git@github.com:cscottburch1/remodelingcontractorsc.git',
+      AllowedGitRepo: 'git@github.com:cscottburch1/remodelingcontractorsc.git'
+    }
+  }
+};
+
+if (!profiles[deployEnv]) {
+  console.error(`Invalid deploy environment "${deployEnv}". Use production or staging.`);
+  process.exit(1);
+}
+
+const profile = profiles[deployEnv];
+const configPath = path.join(repoRoot, 'deploy', profile.configFile);
 
 if (!fs.existsSync(configPath)) {
-  console.error('Missing deploy/site.config.json');
+  console.error(`Missing deploy/${profile.configFile}`);
   process.exit(1);
 }
 
 const config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
-const required = {
-  Domain: 'remodelingcontractorsc.com',
-  WwwDomain: 'www.remodelingcontractorsc.com',
-  AppSlug: 'remodelingcontractorsc',
-  AppUser: 'siteapp',
-  AppPort: 3002,
-  AppPath: '/var/www/remodelingcontractorsc',
-  PM2Process: 'remodelingcontractorsc',
-  RepoUrl: 'git@github.com:cscottburch1/remodelingcontractorsc.git',
-  AllowedGitRepo: 'git@github.com:cscottburch1/remodelingcontractorsc.git'
-};
+const required = profile.required;
 
 const blockedPatterns = config.BlockedPatterns || ['burchcontracting', 'burchcontracting.com'];
 const blockedRegex = new RegExp(blockedPatterns.map((pattern) => pattern.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'i');
@@ -58,4 +88,4 @@ if (config.RepoUrl !== required.RepoUrl) {
   process.exit(1);
 }
 
-console.log('Deployment guard passed for remodelingcontractorsc.');
+console.log(`Deployment guard passed for remodelingcontractorsc (${deployEnv}).`);

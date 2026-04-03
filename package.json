@@ -8,6 +8,8 @@
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0 --port 3002",
     "start": "node server/index.mjs",
+    "deploy:guard": "node scripts/deploy/guard-site.mjs --env=production",
+    "deploy:guard:staging": "node scripts/deploy/guard-site.mjs --env=staging",
     "mcp:playwright": "playwright-mcp",
     "mcp:playwright:help": "playwright-mcp --help",
     "mcp:playwright:secure": "playwright-mcp --isolated --allowed-hosts 127.0.0.1 localhost --output-mode stdout"

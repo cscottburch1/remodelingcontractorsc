@@ -1,7 +1,9 @@
 const fs = require('node:fs');
 const path = require('node:path');
 
-const configPath = path.join(__dirname, 'deploy', 'site.config.json');
+const deployEnv = (process.env.DEPLOY_ENV || 'production').toLowerCase();
+const configFile = deployEnv === 'staging' ? 'site.staging.config.json' : 'site.config.json';
+const configPath = path.join(__dirname, 'deploy', configFile);
 const cfg = JSON.parse(fs.readFileSync(configPath, 'utf8'));
 
 module.exports = {
