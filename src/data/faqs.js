@@ -13,6 +13,6 @@ export const faqs = [
   },
   {
     question: 'What locations do you serve?',
-    answer: 'We serve Greenville, Simpsonville, Fountain Inn, Greer, Mauldin, Laurens, Anderson, and Spartanburg, plus nearby Upstate communities.'
+    answer: 'We serve Mauldin, Simpsonville, Fountain Inn, Gray Court, Owings, Enoree, Woodruff, Laurens, Clinton, and Joanna, plus nearby Upstate communities.'
   }
 ];

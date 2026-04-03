@@ -1,8 +1,9 @@
 import { Helmet } from 'react-helmet-async';
+import heroImage from '../assets/images/screen-porch-hero.png';
 
 export default function Seo({ title, description, path = '/', image, schema, noindex = false }) {
   const url = `https://remodelingcontractorsc.com${path}`;
-  const ogImage = image || 'https://images.unsplash.com/photo-1556912998-c57cc6b63cd7?auto=format&fit=crop&w=1200&q=80';
+  const ogImage = image || heroImage;
   const schemaList = Array.isArray(schema) ? schema : schema ? [schema] : [];
 
   return (

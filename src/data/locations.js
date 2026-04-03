@@ -18,6 +18,30 @@ export const locations = [
     summary: 'Fountain Inn projects are built around long-term value, curb appeal, and reliable structural execution.'
   },
   {
+    name: 'Gray Court',
+    slug: 'gray-court',
+    seo: 'Gray Court contractor for garages, additions, decks, screened porches, and detached family living structures.',
+    summary: 'Gray Court projects are scoped for practical rural lot fit, dependable structure, and long-term daily function.'
+  },
+  {
+    name: 'Owings',
+    slug: 'owings',
+    seo: 'Owings contractor for custom garages, room additions, decks, screened enclosures, and granny pod-style builds.',
+    summary: 'Owings homeowners choose us for clean, durable construction and disciplined scope planning from estimate to closeout.'
+  },
+  {
+    name: 'Enoree',
+    slug: 'enoree',
+    seo: 'Enoree contractor for detached garages, addition projects, deck construction, and accessory backyard structures.',
+    summary: 'Enoree projects focus on practical expansion and long-term value for family living and outdoor comfort.'
+  },
+  {
+    name: 'Woodruff',
+    slug: 'woodruff',
+    seo: 'Woodruff builder for garages, additions, decks, screened porch upgrades, and detached family-use structures.',
+    summary: 'Woodruff homeowners rely on us for space-creation projects built with local fit, clean finish quality, and reliable communication.'
+  },
+  {
     name: 'Greer',
     slug: 'greer',
     seo: 'Greer home expansion contractor for garages, room additions, decks, screened enclosures, and granny pods.',
@@ -36,15 +60,15 @@ export const locations = [
     summary: 'In Laurens, we help homeowners expand livable space while maintaining neighborhood-appropriate style.'
   },
   {
-    name: 'Anderson',
-    slug: 'anderson',
-    seo: 'Anderson contractor for granny pods, garages, additions, and deck construction services.',
-    summary: 'Anderson homeowners rely on us for thoughtful detached structures and high-value expansion work.'
+    name: 'Clinton',
+    slug: 'clinton',
+    seo: 'Clinton contractor for garages, additions, deck builds, screened enclosures, and detached family living spaces.',
+    summary: 'Clinton projects are planned around practical lot use, strong structure, and durable finishes for daily life.'
   },
   {
-    name: 'Spartanburg',
-    slug: 'spartanburg',
-    seo: 'Spartanburg builder for garages, room additions, decks, aluminum screened enclosures, and granny pods.',
-    summary: 'Spartanburg projects emphasize structural precision, clean curb appeal, and practical new living space.'
+    name: 'Joanna',
+    slug: 'joanna',
+    seo: 'Joanna contractor for detached garages, room additions, decks, screened porches, and granny pod-style structures.',
+    summary: 'Joanna homeowners work with us for disciplined planning, straightforward communication, and long-term space value.'
   }
 ];

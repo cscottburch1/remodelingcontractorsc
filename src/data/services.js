@@ -1,3 +1,5 @@
+import screenedPorch from '../assets/images/custom-screened-porch-aluminum-frame.png';
+
 export const services = [
   {
     name: 'Garage Builders',
@@ -79,7 +81,7 @@ export const services = [
     slug: 'aluminum-screened-enclosures',
     summary: 'Clean-lined aluminum framed enclosures for bug-free outdoor living with long-term durability.',
     seo: 'Aluminum screened enclosure builder in South Carolina for patios, lanais, and outdoor living upgrades.',
-    image: 'https://images.unsplash.com/photo-1616048056617-93b94a339009?auto=format&fit=crop&w=1400&q=80',
+    image: screenedPorch,
     imageAlt: 'Aluminum screened patio enclosure attached to back of home',
     highlights: ['Corrosion-resistant framing', 'Code-aware enclosure builds', 'Outdoor lifestyle design'],
     subpages: [

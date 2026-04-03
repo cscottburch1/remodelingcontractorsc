@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import CtaSection from '../components/CtaSection';
 import Seo from '../components/Seo';
 import SectionIntro from '../components/SectionIntro';
-import { locations } from '../data/locations';
+import { cityPages } from '../data/marketingPages';
 import { createBreadcrumbSchema } from '../lib/schema';
 
 export default function LocationsPage() {
@@ -21,15 +21,15 @@ export default function LocationsPage() {
         <div className="container">
           <SectionIntro
             eyebrow="Locations"
-            title="Serving major South Carolina Upstate markets"
-            text="Choose your city page for local service details, project types, and estimate options."
+            title="Local market pages for the Upstate cities we are prioritizing first"
+            text="Choose a city page to view local intent content, related services, FAQs, and next-step estimate links."
           />
           <div className="grid-3">
-            {locations.map((location) => (
+            {cityPages.map((location) => (
               <article key={location.slug} className="card city-card">
-                <h3>{location.name}</h3>
-                <p>{location.summary}</p>
-                <Link to={`/locations/${location.slug}`} className="text-link">View {location.name} Page</Link>
+                <h3>{location.city}</h3>
+                <p>{location.intro}</p>
+                <Link to={location.path} className="text-link">View {location.city} Page</Link>
               </article>
             ))}
           </div>

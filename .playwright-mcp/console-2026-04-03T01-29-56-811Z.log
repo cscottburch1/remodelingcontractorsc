@@ -1,0 +1,125 @@
+[   30961ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:4173/node_modules/.vite/deps/chunk-4JV6IK6A.js?v=3dc4a13f:21548
+[   31075ms] [ERROR] Warning: React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element.%s fetchPriority fetchpriority 
+    at img
+    at picture
+    at div
+    at div
+    at section
+    at Hero
+    at HomePage
+    at RenderedRoute (http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4129:5)
+    at Outlet (http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4535:26)
+    at main
+    at div
+    at SiteLayout
+    at RenderedRoute (http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4129:5)
+    at Routes (http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4599:5)
+    at App
+    at Router (http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4542:15)
+    at BrowserRouter (http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:5288:5)
+    at _a (http://127.0.0.1:4173/node_modules/.vite/deps/react-helmet-async.js?v=e79abfa5:622:5) @ http://127.0.0.1:4173/node_modules/.vite/deps/chunk-4JV6IK6A.js?v=3dc4a13f:518
+[   31311ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4433
+[   31312ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4433
+[   42593ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:4173/node_modules/.vite/deps/chunk-4JV6IK6A.js?v=3dc4a13f:21548
+[   42643ms] [ERROR] Warning: React does not recognize the `%s` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `%s` instead. If you accidentally passed it from a parent component, remove it from the DOM element.%s fetchPriority fetchpriority 
+    at img
+    at picture
+    at div
+    at div
+    at section
+    at Hero
+    at HomePage
+    at RenderedRoute (http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4129:5)
+    at Outlet (http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4535:26)
+    at main
+    at div
+    at SiteLayout
+    at RenderedRoute (http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4129:5)
+    at Routes (http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4599:5)
+    at App
+    at Router (http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4542:15)
+    at BrowserRouter (http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:5288:5)
+    at _a (http://127.0.0.1:4173/node_modules/.vite/deps/react-helmet-async.js?v=e79abfa5:622:5) @ http://127.0.0.1:4173/node_modules/.vite/deps/chunk-4JV6IK6A.js?v=3dc4a13f:518
+[   42765ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4433
+[   42765ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4433
+[   69694ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:4173/node_modules/.vite/deps/chunk-4JV6IK6A.js?v=3dc4a13f:21548
+[   69830ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4433
+[   69831ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4433
+[   77985ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:4173/node_modules/.vite/deps/chunk-4JV6IK6A.js?v=3dc4a13f:21548
+[   78108ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4433
+[   78108ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4433
+[   89064ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:4173/node_modules/.vite/deps/chunk-4JV6IK6A.js?v=3dc4a13f:21548
+[   89175ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4433
+[   89175ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4433
+[  135427ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:4173/node_modules/.vite/deps/chunk-4JV6IK6A.js?v=3dc4a13f:21548
+[  135529ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4433
+[  135529ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=49f7fdc6:4433
+[  156553ms] [LOG] [vite] server connection lost. Polling for restart... @ http://127.0.0.1:4173/@vite/client:559
+[  158587ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  161646ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  164687ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  167749ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  170809ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  173839ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  176898ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  179952ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  182997ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  186040ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  189089ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  192130ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  195159ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  198211ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  201244ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  221886ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:4173/node_modules/.vite/deps/chunk-4JV6IK6A.js?v=01f477be:21548
+[  222327ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=01f477be:4433
+[  222328ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=01f477be:4433
+[  230073ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://127.0.0.1:4173/node_modules/.vite/deps/chunk-4JV6IK6A.js?v=01f477be:21548
+[  230220ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=01f477be:4433
+[  230220ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://127.0.0.1:4173/node_modules/.vite/deps/react-router-dom.js?v=01f477be:4433
+[  237086ms] [LOG] [vite] server connection lost. Polling for restart... @ http://127.0.0.1:4173/@vite/client:559
+[  239124ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  242160ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  245212ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  248256ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  251293ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  254340ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  257380ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  260421ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  263468ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  266518ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  269579ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  272635ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  275673ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  278720ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  281736ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  284787ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  287846ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  290906ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  293946ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  296971ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  300016ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  303064ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  306127ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  309188ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  312218ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  315276ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  318307ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  321342ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  324390ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  327423ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  330467ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  333518ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  336562ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  339630ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  342675ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  345732ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  348770ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  351812ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  354864ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  357904ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  360945ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  364000ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  367050ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  370094ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  373138ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0
+[  376174ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://127.0.0.1:4173/:0

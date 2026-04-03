@@ -3,15 +3,15 @@ import CtaSection from '../components/CtaSection';
 import EstimateForm from '../components/EstimateForm';
 import Faq from '../components/Faq';
 import Hero from '../components/Hero';
+import HomeServiceCard from '../components/HomeServiceCard';
 import ProjectCard from '../components/ProjectCard';
 import Seo from '../components/Seo';
 import SectionIntro from '../components/SectionIntro';
-import ServiceCard from '../components/ServiceCard';
 import Testimonials from '../components/Testimonials';
 import { faqs } from '../data/faqs';
+import { homeServices } from '../data/homeServices';
 import { locations } from '../data/locations';
 import { projects } from '../data/projects';
-import { services } from '../data/services';
 import { createBreadcrumbSchema, createFaqSchema, createLocalBusinessSchema } from '../lib/schema';
 
 export default function HomePage() {
@@ -25,10 +25,30 @@ export default function HomePage() {
     <>
       <Seo
         title="Remodeling Contractors SC | Garages, Additions, Decks, Enclosures, Granny Pods"
-        description="South Carolina specialists for custom garages, room additions, deck construction, aluminum screened enclosures, and granny pods."
+        description="Upstate South Carolina contractor for custom garages, room additions, decks, aluminum screened enclosures, and granny pods built for long-term value."
         schema={schema}
       />
       <Hero />
+
+      <section className="home-services section-pad">
+        <div className="container services-showcase">
+          <SectionIntro
+            eyebrow="Core Services"
+            title="Contractor-focused services for more space, better utility, and outdoor comfort"
+            text="Explore the five service categories homeowners across Greenville, Simpsonville, Fountain Inn, and the wider Upstate rely on most for daily function, long-term value, and clean project execution."
+          />
+          <div className="home-services-grid">
+            {homeServices.map((service) => (
+              <HomeServiceCard key={service.slug} service={service} />
+            ))}
+          </div>
+
+          <div className="services-showcase-actions action-row">
+            <Link to="/services" className="btn btn-soft">View All Services</Link>
+            <Link to="/request-estimate" className="btn btn-primary">Request Estimate</Link>
+          </div>
+        </div>
+      </section>
 
       <section className="section-pad">
         <div className="container stat-strip">
@@ -44,21 +64,6 @@ export default function HomePage() {
             <strong>100%</strong>
             <p>Focused on space-creation projects</p>
           </article>
-        </div>
-      </section>
-
-      <section className="section-pad">
-        <div className="container">
-          <SectionIntro
-            eyebrow="Services"
-            title="Built around what South Carolina homeowners ask for most"
-            text="We specialize in projects that create more space, improve curb appeal, and increase practical property value."
-          />
-          <div className="grid-3">
-            {services.map((service) => (
-              <ServiceCard key={service.slug} service={service} />
-            ))}
-          </div>
         </div>
       </section>
 

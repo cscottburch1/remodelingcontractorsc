@@ -31,7 +31,7 @@ const allowedProjectTypes = new Set([
   'Screened Patio Enclosures',
   'Screen Rooms',
   'Backyard Granny Pods',
-  'Detached Guest Houses / ADU-Style Options'
+  'Detached Guest Houses / ADU-Style Options / In-Law Suites'
 ]);
 
 app.set('trust proxy', 1);

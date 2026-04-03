@@ -7,26 +7,39 @@ export default function Footer() {
         <div>
           <h3>Remodeling Contractors SC</h3>
           <p>
-            South Carolina specialist for custom garages, room additions, deck construction, aluminum screened
-            enclosures, and granny pod projects.
+            Upstate South Carolina contractor focused on ADUs, in-law suite additions, master suite additions,
+            granny pods, and practical space-creation projects.
           </p>
         </div>
         <div>
-          <h4>Quick Links</h4>
+          <h4>Services</h4>
           <ul>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/locations">Locations</Link></li>
-            <li><Link to="/financing">Financing</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/adu-builders">ADU Builders</Link></li>
+            <li><Link to="/in-law-suite-additions">In-Law Suite Additions</Link></li>
+            <li><Link to="/master-suite-additions">Master Suite Additions</Link></li>
+            <li><Link to="/granny-pods">Granny Pods</Link></li>
           </ul>
         </div>
         <div>
-          <h4>Contact</h4>
+          <h4>Locations</h4>
           <ul>
-            <li><a href="tel:+18035550147">(803) 555-0147</a></li>
+            <li><Link to="/greenville-sc">Greenville, SC</Link></li>
+            <li><Link to="/simpsonville-sc">Simpsonville, SC</Link></li>
+            <li><Link to="/fountain-inn-sc">Fountain Inn, SC</Link></li>
+            <li><Link to="/greer-sc">Greer, SC</Link></li>
+            <li><Link to="/mauldin-sc">Mauldin, SC</Link></li>
+            <li><Link to="/laurens-sc">Laurens, SC</Link></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/financing">Financing</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+            <li><a href="tel:+18647244600">(864) 724-4600</a></li>
             <li><a href="mailto:estimates@remodelingcontractorsc.com">estimates@remodelingcontractorsc.com</a></li>
-            <li>Serving major Upstate SC markets</li>
           </ul>
         </div>
       </div>
