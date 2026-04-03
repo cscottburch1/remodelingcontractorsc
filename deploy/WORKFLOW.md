@@ -36,3 +36,19 @@ DEPLOY_ENV=staging pm2 start ecosystem.config.cjs
 ```
 
 The `DEPLOY_ENV=staging` variable selects `deploy/site.staging.config.json` and keeps production values isolated.
+
+## Pre-push automation
+
+Enable local hook automation once per clone:
+
+```bash
+npm run hooks:install
+```
+
+After that, every `git push` runs:
+
+```bash
+npm run verify:push
+```
+
+This blocks push when deployment guards or build fail.

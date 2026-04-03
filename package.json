@@ -10,6 +10,8 @@
     "start": "node server/index.mjs",
     "deploy:guard": "node scripts/deploy/guard-site.mjs --env=production",
     "deploy:guard:staging": "node scripts/deploy/guard-site.mjs --env=staging",
+    "verify:push": "node scripts/git/verify-push.mjs",
+    "hooks:install": "node scripts/git/install-hooks.mjs",
     "mcp:playwright": "playwright-mcp",
     "mcp:playwright:help": "playwright-mcp --help",
     "mcp:playwright:secure": "playwright-mcp --isolated --allowed-hosts 127.0.0.1 localhost --output-mode stdout"
