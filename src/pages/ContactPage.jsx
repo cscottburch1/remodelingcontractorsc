@@ -9,7 +9,7 @@ export default function ContactPage() {
     <>
       <Seo
         title="Contact | Request Estimate | Remodeling Contractors SC"
-        description="Request an estimate for garages, room additions, decks, aluminum screened enclosures, and granny pods in South Carolina."
+        description="Request an estimate for garages, room additions, decks, aluminum screened enclosures, and ADUs in South Carolina."
         path="/contact"
         schema={createBreadcrumbSchema([
           { name: 'Home', path: '/' },

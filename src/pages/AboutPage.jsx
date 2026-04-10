@@ -8,7 +8,7 @@ export default function AboutPage() {
     <>
       <Seo
         title="About | Remodeling Contractors SC"
-        description="Learn how Remodeling Contractors SC plans and builds garages, additions, decks, screened enclosures, and granny pods in South Carolina."
+        description="Learn how Remodeling Contractors SC plans and builds garages, additions, decks, screened enclosures, and ADUs in South Carolina."
         path="/about"
         schema={createBreadcrumbSchema([
           { name: 'Home', path: '/' },
@@ -25,7 +25,7 @@ export default function AboutPage() {
           <div className="card prose-card">
             <p>
               Remodeling Contractors SC was built around five categories homeowners request most when they need more
-              usable space: garages, room additions, decks, aluminum screened enclosures, and granny pod structures.
+              usable space: garages, room additions, decks, aluminum screened enclosures, and ADU structures.
             </p>
             <p>
               Our process emphasizes planning, structural expertise, and construction discipline. From design direction

@@ -2,13 +2,13 @@ export const locations = [
   {
     name: 'Greenville',
     slug: 'greenville',
-    seo: 'Greenville contractor for garages, room additions, decks, aluminum screened enclosures, and granny pods.',
+    seo: 'Greenville contractor for garages, room additions, decks, aluminum screened enclosures, and ADUs.',
     summary: 'Greenville homeowners call us for high-quality garage builds, additions, and outdoor living projects with premium finish standards.'
   },
   {
     name: 'Simpsonville',
     slug: 'simpsonville',
-    seo: 'Simpsonville specialist builder for detached garages, additions, decks, enclosures, and granny pod structures.',
+    seo: 'Simpsonville specialist builder for detached garages, additions, decks, enclosures, and ADU structures.',
     summary: 'In Simpsonville we focus on practical planning and strong project communication from first consultation through closeout.'
   },
   {
@@ -26,7 +26,7 @@ export const locations = [
   {
     name: 'Owings',
     slug: 'owings',
-    seo: 'Owings contractor for custom garages, room additions, decks, screened enclosures, and granny pod-style builds.',
+    seo: 'Owings contractor for custom garages, room additions, decks, screened enclosures, and ADU-style builds.',
     summary: 'Owings homeowners choose us for clean, durable construction and disciplined scope planning from estimate to closeout.'
   },
   {
@@ -44,7 +44,7 @@ export const locations = [
   {
     name: 'Greer',
     slug: 'greer',
-    seo: 'Greer home expansion contractor for garages, room additions, decks, screened enclosures, and granny pods.',
+    seo: 'Greer home expansion contractor for garages, room additions, decks, screened enclosures, and ADUs.',
     summary: 'Greer homeowners choose us when they need space-focused projects delivered with premium craftsmanship.'
   },
   {
@@ -68,7 +68,7 @@ export const locations = [
   {
     name: 'Joanna',
     slug: 'joanna',
-    seo: 'Joanna contractor for detached garages, room additions, decks, screened porches, and granny pod-style structures.',
+    seo: 'Joanna contractor for detached garages, room additions, decks, screened porches, and ADU-style structures.',
     summary: 'Joanna homeowners work with us for disciplined planning, straightforward communication, and long-term space value.'
   }
 ];

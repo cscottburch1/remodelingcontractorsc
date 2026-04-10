@@ -12,6 +12,6 @@ export const testimonials = [
   {
     name: 'S. Patel',
     location: 'Anderson',
-    quote: 'We hired them for a granny pod project and were impressed with how they managed details, scheduling, and build quality end to end.'
+    quote: 'We hired them for an ADU project and were impressed with how they managed details, scheduling, and build quality end to end.'
   }
 ];

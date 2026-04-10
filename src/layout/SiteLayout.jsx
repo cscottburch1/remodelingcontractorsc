@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import SitewideSchema from '../components/SitewideSchema';
 import StickyEstimateBar from '../components/StickyEstimateBar';
+import BackToTop from '../components/BackToTop';
 
 export default function SiteLayout() {
   return (
@@ -14,6 +15,7 @@ export default function SiteLayout() {
       </main>
       <StickyEstimateBar />
       <Footer />
+      <BackToTop />
     </div>
   );
 }

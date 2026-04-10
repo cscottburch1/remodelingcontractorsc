@@ -1,0 +1,346 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - paragraph [ref=e7]: Serving Greenville, Simpsonville, Fountain Inn & Upstate SC
+      - link "(864) 724-4600" [ref=e8] [cursor=pointer]:
+        - /url: tel:+18647244600
+    - generic [ref=e9]:
+      - link "Remodeling Contractors SC logo Remodeling Contractors SC Garages, additions, decks, and screened porches" [ref=e10] [cursor=pointer]:
+        - /url: /
+        - img "Remodeling Contractors SC logo" [ref=e11]
+        - generic [ref=e12]:
+          - strong [ref=e13]: Remodeling Contractors SC
+          - generic [ref=e14]: Garages, additions, decks, and screened porches
+      - navigation [ref=e15]:
+        - link "Home" [ref=e16] [cursor=pointer]:
+          - /url: /
+        - link "Services" [ref=e17] [cursor=pointer]:
+          - /url: /services
+        - link "Service Areas" [ref=e18] [cursor=pointer]:
+          - /url: /service-areas
+        - link "Projects" [ref=e19] [cursor=pointer]:
+          - /url: /projects
+        - link "Financing" [ref=e20] [cursor=pointer]:
+          - /url: /financing
+        - link "About" [ref=e21] [cursor=pointer]:
+          - /url: /about
+        - link "Contact" [ref=e22] [cursor=pointer]:
+          - /url: /contact
+        - link "Request Estimate" [ref=e23] [cursor=pointer]:
+          - /url: /request-estimate
+  - main [ref=e24]:
+    - generic [ref=e29]:
+      - paragraph [ref=e30]: Upstate South Carolina Remodeling Contractor
+      - heading "Custom Garages, Additions & Outdoor Living" [level=1] [ref=e31]:
+        - text: Custom Garages,
+        - text: Additions &
+        - text: Outdoor Living
+      - paragraph [ref=e32]: Garages, room additions, decks, screened enclosures, and ADUs built for long-term value across Upstate South Carolina.
+      - generic [ref=e33]:
+        - link "Request Estimate" [ref=e34] [cursor=pointer]:
+          - /url: /request-estimate
+        - link "Explore Services" [ref=e35] [cursor=pointer]:
+          - /url: /services
+      - generic [ref=e36]:
+        - generic [ref=e37]: ✓ Garage & addition specialists
+        - generic [ref=e38]: ✓ Exterior-focused build quality
+        - generic [ref=e39]: ✓ Serving Upstate SC
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - paragraph [ref=e43]: Core Services
+        - heading "Five specialized services for space creation and outdoor living" [level=2] [ref=e44]
+        - paragraph [ref=e45]: We focus on garages, additions, decks, screened porches, and ADUs — projects that expand your home's functionality while preserving neighborhood character and long-term value.
+      - generic [ref=e46]:
+        - article [ref=e47]:
+          - img "Custom detached two-car garage with matching siding and architectural details" [ref=e49]
+          - generic [ref=e50]:
+            - heading "Garages" [level=3] [ref=e51]
+            - paragraph [ref=e52]: Custom garages built for storage, workshops, vehicle protection, and property value.
+            - link "Explore Garages" [ref=e53] [cursor=pointer]:
+              - /url: /garages
+        - article [ref=e54]:
+          - img "Seamless home addition with integrated roofline and matching exterior finishes" [ref=e56]
+          - generic [ref=e57]:
+            - heading "Additions" [level=3] [ref=e58]
+            - paragraph [ref=e59]: Room additions that expand living space while maintaining flow, style, and home value.
+            - link "Explore Additions" [ref=e60] [cursor=pointer]:
+              - /url: /additions
+        - article [ref=e61]:
+          - img "Covered screened porch with aluminum frame system and ceiling fan" [ref=e63]
+          - generic [ref=e64]:
+            - heading "Screened Porches" [level=3] [ref=e65]
+            - paragraph [ref=e66]: Aluminum-framed screened porches for bug-free outdoor living and year-round comfort.
+            - link "Explore Screened Porches" [ref=e67] [cursor=pointer]:
+              - /url: /screened-porches
+        - article [ref=e68]:
+          - img "Elevated composite deck with modern aluminum railing and covered seating area" [ref=e70]
+          - generic [ref=e71]:
+            - heading "Decks" [level=3] [ref=e72]
+            - paragraph [ref=e73]: Premium decks built for entertaining, durability, and enhanced outdoor living.
+            - link "Explore Decks" [ref=e74] [cursor=pointer]:
+              - /url: /decks
+        - article [ref=e75]:
+          - img "Custom guest house ADU with screened porch living area and modern gray siding" [ref=e77]
+          - generic [ref=e78]:
+            - heading "ADUs" [level=3] [ref=e79]
+            - paragraph [ref=e80]: Accessory dwelling units for family living, rental income, and flexible property use.
+            - link "Explore ADUs" [ref=e81] [cursor=pointer]:
+              - /url: /adus
+      - generic [ref=e82]:
+        - link "View All Services" [ref=e83] [cursor=pointer]:
+          - /url: /services
+        - link "Request Estimate" [ref=e84] [cursor=pointer]:
+          - /url: /request-estimate
+    - generic [ref=e86]:
+      - article [ref=e87]:
+        - strong [ref=e88]: "5"
+        - paragraph [ref=e89]: Specialized core services
+      - article [ref=e90]:
+        - strong [ref=e91]: "9"
+        - paragraph [ref=e92]: Primary Upstate SC communities
+      - article [ref=e93]:
+        - strong [ref=e94]: 100%
+        - paragraph [ref=e95]: Focused on quality space creation
+    - generic [ref=e97]:
+      - generic [ref=e98]:
+        - paragraph [ref=e99]: Projects
+        - heading "Recent work across Upstate South Carolina" [level=2] [ref=e100]
+        - paragraph [ref=e101]: Featured garages, additions, decks, screened porches, and outdoor living projects.
+      - generic [ref=e102]:
+        - article [ref=e103]:
+          - img "Detached three bay garage with decorative doors and gable roof" [ref=e104]
+          - generic [ref=e105]:
+            - paragraph [ref=e106]: Simpsonville, SC
+            - heading "Detached Three-Bay Garage Build" [level=3] [ref=e107]
+            - paragraph [ref=e108]: Custom detached garage with matching siding, carriage-style doors, and upper-level storage framing.
+            - link "View Project" [ref=e109] [cursor=pointer]:
+              - /url: /projects/detached-three-bay-garage-greenville
+        - article [ref=e110]:
+          - img "Large two story home addition with finished exterior" [ref=e111]
+          - generic [ref=e112]:
+            - paragraph [ref=e113]: Simpsonville, SC
+            - heading "Second Story Addition + Roofline Integration" [level=3] [ref=e114]
+            - paragraph [ref=e115]: Upper-level bedroom suite expansion with structural reinforcement and seamless exterior detailing.
+            - link "View Project" [ref=e116] [cursor=pointer]:
+              - /url: /projects/second-story-addition-simpsonville
+        - article [ref=e117]:
+          - img "Covered backyard deck with seating and modern railings" [ref=e118]
+          - generic [ref=e119]:
+            - paragraph [ref=e120]: Mauldin, SC
+            - heading "Covered Composite Deck With Lighting" [level=3] [ref=e121]
+            - paragraph [ref=e122]: Composite deck system with covered roof section, integrated stairs, and evening-ready lighting.
+            - link "View Project" [ref=e123] [cursor=pointer]:
+              - /url: /projects/covered-composite-deck-greer
+        - article [ref=e124]:
+          - img "Screened aluminum enclosure on rear patio" [ref=e125]
+          - generic [ref=e126]:
+            - paragraph [ref=e127]: Fountain Inn, SC
+            - heading "Aluminum Screened Patio Enclosure" [level=3] [ref=e128]
+            - paragraph [ref=e129]: Full patio enclosure with powder-coated aluminum framing, pet-safe screens, and clean drainage design.
+            - link "View Project" [ref=e130] [cursor=pointer]:
+              - /url: /projects/aluminum-screened-enclosure-mauldin
+        - article [ref=e131]:
+          - img "Small detached backyard ADU structure with porch" [ref=e132]
+          - generic [ref=e133]:
+            - paragraph [ref=e134]: Laurens, SC
+            - heading "Backyard ADU Build" [level=3] [ref=e135]
+            - paragraph [ref=e136]: Detached backyard pod with kitchenette rough-ins, covered entry, and independent utility planning.
+            - link "View Project" [ref=e137] [cursor=pointer]:
+              - /url: /projects/backyard-granny-pod-anderson
+    - generic [ref=e139]:
+      - generic [ref=e140]:
+        - paragraph [ref=e141]: Process
+        - heading "Clear process from consultation through final walkthrough" [level=2] [ref=e142]
+        - paragraph [ref=e143]: We keep planning disciplined so structural decisions, permit requirements, and finish quality stay on track.
+      - generic [ref=e144]:
+        - article [ref=e145]:
+          - heading "1. Consultation & Site Evaluation" [level=3] [ref=e146]
+          - paragraph [ref=e147]: We visit your property to understand your needs, assess site conditions, and discuss practical project options.
+        - article [ref=e148]:
+          - heading "2. Design & Planning" [level=3] [ref=e149]
+          - paragraph [ref=e150]: Layout development, material selections, and permit coordination happen before construction begins.
+        - article [ref=e151]:
+          - heading "3. Construction & Closeout" [level=3] [ref=e152]
+          - paragraph [ref=e153]: Quality execution, regular communication, and professional project handoff with all final inspections complete.
+    - generic [ref=e155]:
+      - generic [ref=e156]:
+        - paragraph [ref=e157]: Service Areas
+        - heading "Serving nine communities across Upstate SC" [level=2] [ref=e158]
+        - paragraph [ref=e159]: Focused local coverage in Greenville, Laurens, and Spartanburg counties for responsive service and regional expertise.
+      - generic [ref=e160]:
+        - link "Mauldin" [ref=e161] [cursor=pointer]:
+          - /url: /mauldin-sc
+        - link "Simpsonville" [ref=e162] [cursor=pointer]:
+          - /url: /simpsonville-sc
+        - link "Fountain Inn" [ref=e163] [cursor=pointer]:
+          - /url: /fountain-inn-sc
+        - link "Gray Court" [ref=e164] [cursor=pointer]:
+          - /url: /gray-court-sc
+        - link "Laurens" [ref=e165] [cursor=pointer]:
+          - /url: /laurens-sc
+        - link "Woodruff" [ref=e166] [cursor=pointer]:
+          - /url: /woodruff-sc
+        - link "Clinton" [ref=e167] [cursor=pointer]:
+          - /url: /clinton-sc
+        - link "Ora" [ref=e168] [cursor=pointer]:
+          - /url: /ora-sc
+        - link "Joanna" [ref=e169] [cursor=pointer]:
+          - /url: /joanna-sc
+    - generic [ref=e171]:
+      - generic [ref=e172]:
+        - paragraph [ref=e173]: Testimonials
+        - heading "Trusted by homeowners across Upstate South Carolina" [level=2] [ref=e174]
+        - paragraph [ref=e175]: Real project feedback focused on communication, craftsmanship, and how the finished space lives day to day.
+      - generic [ref=e176]:
+        - article [ref=e177]:
+          - paragraph [ref=e178]: "\"Our detached garage feels like it was always part of the property. Planning was clear and the finish quality was outstanding.\""
+          - strong [ref=e179]: The Coleman Family
+          - text: Greenville
+        - article [ref=e180]:
+          - paragraph [ref=e181]: "\"The second-story addition changed how we live in the home. The team handled structural work with confidence and great communication.\""
+          - strong [ref=e182]: M. Ramirez
+          - text: Simpsonville
+        - article [ref=e183]:
+          - paragraph [ref=e184]: "\"We hired them for an ADU project and were impressed with how they managed details, scheduling, and build quality end to end.\""
+          - strong [ref=e185]: S. Patel
+          - text: Anderson
+    - generic [ref=e187]:
+      - generic [ref=e188]:
+        - paragraph [ref=e189]: FAQ
+        - heading "Common remodeling questions" [level=2] [ref=e190]
+        - paragraph [ref=e191]: Clear answers on timeline, budget planning, design support, and what to expect during construction.
+      - generic [ref=e192]:
+        - group [ref=e193]:
+          - generic "How early should we start planning a garage or room addition?" [ref=e194] [cursor=pointer]
+        - group [ref=e195]:
+          - generic "Do you handle permits and structural coordination?" [ref=e196] [cursor=pointer]
+        - group [ref=e197]:
+          - generic "Are ADUs and detached guest-house builds allowed in every area?" [ref=e198] [cursor=pointer]
+        - group [ref=e199]:
+          - generic "What locations do you serve?" [ref=e200] [cursor=pointer]
+    - generic [ref=e202]:
+      - generic [ref=e203]:
+        - paragraph [ref=e204]: Request Estimate
+        - heading "Tell us what you want to build" [level=2] [ref=e205]
+        - paragraph [ref=e206]: Share project goals and we'll follow up with realistic options for your property.
+      - generic [ref=e208]:
+        - textbox
+        - generic [ref=e209]:
+          - text: Full Name
+          - textbox "Full Name" [ref=e210]:
+            - /placeholder: Your name
+        - generic [ref=e211]:
+          - text: Email
+          - textbox "Email" [ref=e212]:
+            - /placeholder: you@example.com
+        - generic [ref=e213]:
+          - text: Phone
+          - textbox "Phone" [ref=e214]:
+            - /placeholder: (803) 555-0147
+        - generic [ref=e215]:
+          - text: Project Type
+          - combobox "Project Type" [ref=e216]:
+            - option "Garage Builders" [selected]
+            - option "Room Additions"
+            - option "Deck Builders"
+            - option "Aluminum Screened Enclosures"
+            - option "Detached ADUs"
+            - option "Detached Garages"
+            - option "Attached Garages"
+            - option "Garage With Apartment / Storage Above"
+            - option "Second Story Additions"
+            - option "Bump-Out Additions"
+            - option "Covered Decks"
+            - option "Composite Decks"
+            - option "Screened Patio Enclosures"
+            - option "Screen Rooms"
+            - option "Backyard ADUs"
+            - option "Detached Guest Houses / ADU-Style Options"
+        - generic [ref=e217]:
+          - text: Project Details
+          - textbox "Project Details" [ref=e218]:
+            - /placeholder: Tell us about your goals, style, and timing.
+        - button "Request Estimate" [ref=e219]
+    - generic [ref=e221]:
+      - generic [ref=e222]:
+        - heading "Ready to expand your home's potential?" [level=2] [ref=e223]
+        - paragraph [ref=e224]: We'll help you plan the right garage, addition, deck, screened porch, or ADU for your property and budget.
+      - generic [ref=e225]:
+        - link "Request Estimate" [ref=e226] [cursor=pointer]:
+          - /url: /request-estimate
+        - link "Speak With Our Team" [ref=e227] [cursor=pointer]:
+          - /url: /contact
+  - contentinfo [ref=e228]:
+    - generic [ref=e229]:
+      - generic [ref=e230]:
+        - heading "Remodeling Contractors SC" [level=3] [ref=e231]
+        - paragraph [ref=e232]: Upstate South Carolina contractor specializing in garages, home additions, decks, screened porches, and ADUs. Quality construction focused on expanding your home's functionality and value.
+      - generic [ref=e233]:
+        - heading "Services" [level=4] [ref=e234]
+        - list [ref=e235]:
+          - listitem [ref=e236]:
+            - link "Garages" [ref=e237] [cursor=pointer]:
+              - /url: /garages
+          - listitem [ref=e238]:
+            - link "Additions" [ref=e239] [cursor=pointer]:
+              - /url: /additions
+          - listitem [ref=e240]:
+            - link "Screened Porches" [ref=e241] [cursor=pointer]:
+              - /url: /screened-porches
+          - listitem [ref=e242]:
+            - link "Decks" [ref=e243] [cursor=pointer]:
+              - /url: /decks
+          - listitem [ref=e244]:
+            - link "ADUs" [ref=e245] [cursor=pointer]:
+              - /url: /adus
+      - generic [ref=e246]:
+        - heading "Service Areas" [level=4] [ref=e247]
+        - list [ref=e248]:
+          - listitem [ref=e249]:
+            - link "Mauldin, SC" [ref=e250] [cursor=pointer]:
+              - /url: /mauldin-sc
+          - listitem [ref=e251]:
+            - link "Simpsonville, SC" [ref=e252] [cursor=pointer]:
+              - /url: /simpsonville-sc
+          - listitem [ref=e253]:
+            - link "Fountain Inn, SC" [ref=e254] [cursor=pointer]:
+              - /url: /fountain-inn-sc
+          - listitem [ref=e255]:
+            - link "Gray Court, SC" [ref=e256] [cursor=pointer]:
+              - /url: /gray-court-sc
+          - listitem [ref=e257]:
+            - link "Laurens, SC" [ref=e258] [cursor=pointer]:
+              - /url: /laurens-sc
+          - listitem [ref=e259]:
+            - link "Woodruff, SC" [ref=e260] [cursor=pointer]:
+              - /url: /woodruff-sc
+          - listitem [ref=e261]:
+            - link "Clinton, SC" [ref=e262] [cursor=pointer]:
+              - /url: /clinton-sc
+          - listitem [ref=e263]:
+            - link "Ora, SC" [ref=e264] [cursor=pointer]:
+              - /url: /ora-sc
+          - listitem [ref=e265]:
+            - link "Joanna, SC" [ref=e266] [cursor=pointer]:
+              - /url: /joanna-sc
+      - generic [ref=e267]:
+        - heading "Company" [level=4] [ref=e268]
+        - list [ref=e269]:
+          - listitem [ref=e270]:
+            - link "About" [ref=e271] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e272]:
+            - link "Projects" [ref=e273] [cursor=pointer]:
+              - /url: /projects
+          - listitem [ref=e274]:
+            - link "Financing" [ref=e275] [cursor=pointer]:
+              - /url: /financing
+          - listitem [ref=e276]:
+            - link "Contact" [ref=e277] [cursor=pointer]:
+              - /url: /contact
+          - listitem [ref=e278]:
+            - link "(864) 724-4600" [ref=e279] [cursor=pointer]:
+              - /url: tel:+18647244600
+          - listitem [ref=e280]:
+            - link "estimates@remodelingcontractorsc.com" [ref=e281] [cursor=pointer]:
+              - /url: mailto:estimates@remodelingcontractorsc.com

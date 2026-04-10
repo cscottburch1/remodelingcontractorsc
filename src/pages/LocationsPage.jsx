@@ -10,7 +10,7 @@ export default function LocationsPage() {
     <>
       <Seo
         title="Locations | Remodeling Contractors SC"
-        description="Local garage, addition, deck, screened enclosure, and granny pod builders in major South Carolina Upstate markets."
+        description="Local garage, addition, deck, screened enclosure, and ADU builders in major South Carolina Upstate markets."
         path="/locations"
         schema={createBreadcrumbSchema([
           { name: 'Home', path: '/' },

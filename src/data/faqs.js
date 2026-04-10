@@ -8,7 +8,7 @@ export const faqs = [
     answer: 'Yes. We guide permit pathways, structural requirements, and construction sequencing to keep projects organized and code-aware.'
   },
   {
-    question: 'Are granny pods and detached guest-house builds allowed in every area?',
+    question: 'Are ADUs and detached guest-house builds allowed in every area?',
     answer: 'Regulations vary by city and county. We review zoning and local code direction first, then recommend appropriate detached-structure options.'
   },
   {

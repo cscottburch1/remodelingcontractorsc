@@ -1,22 +1,40 @@
 import { Link } from 'react-router-dom';
-import heroImagePng from '../assets/images/screen-porch-hero.png';
-import heroImageWebp from '../assets/images/screen-porch-hero.webp';
+import heroImageWebp from '../assets/images/screened porch simpsonville sc_enhanced.png';
 
 export default function Hero() {
   return (
-    <section className="hero section-pad">
-      <div className="container hero-grid">
+    <section className="hero hero-split">
+      <div className="hero-media" aria-hidden="true">
+        <picture>
+          <source srcSet={heroImageWebp} type="image/webp" />
+          <img
+            src={heroImageWebp}
+            alt=""
+            className="hero-bg-img"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            width="1600"
+            height="1000"
+          />
+        </picture>
+        <div className="hero-media-overlay" />
+      </div>
+
+      <div className="container hero-shell">
         <div className="hero-copy">
           <p className="eyebrow">Upstate South Carolina Remodeling Contractor</p>
 
           <h1 className="hero-title">
-            Custom Garages, Additions
+            Custom Garages,
             <br />
-            & Outdoor Living
+            Additions &amp;
+            <br />
+            Outdoor Living
           </h1>
 
           <p className="hero-lead">
-            Garages, room additions, decks, screened enclosures, and granny pods built for long-term value across Upstate South Carolina.
+            Garages, room additions, decks, screened enclosures, and ADUs built for long-term value across Upstate South Carolina.
           </p>
 
           <div className="action-row hero-actions">
@@ -30,23 +48,9 @@ export default function Hero() {
             <span>✓ Serving Upstate SC</span>
           </div>
         </div>
-
-        <div className="hero-photo">
-          <picture>
-            <source srcSet={heroImageWebp} type="image/webp" />
-            <img
-              src={heroImagePng}
-              alt="Aluminum screened porch enclosure with roof and outdoor seating"
-              className="hero-img"
-              loading="eager"
-              fetchpriority="high"
-              decoding="async"
-              width="768"
-              height="830"
-            />
-          </picture>
-        </div>
       </div>
+
+      <div className="hero-bottom-fade" aria-hidden="true" />
     </section>
   );
 }

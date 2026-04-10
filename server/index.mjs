@@ -20,7 +20,8 @@ const allowedProjectTypes = new Set([
   'Room Additions',
   'Deck Builders',
   'Aluminum Screened Enclosures',
-  'Granny Pods',
+  'ADUs',
+  'Detached ADUs',
   'Detached Garages',
   'Attached Garages',
   'Garage With Apartment / Storage Above',
@@ -30,7 +31,7 @@ const allowedProjectTypes = new Set([
   'Composite Decks',
   'Screened Patio Enclosures',
   'Screen Rooms',
-  'Backyard Granny Pods',
+  'Backyard ADUs',
   'Detached Guest Houses / ADU-Style Options / In-Law Suites'
 ]);
 

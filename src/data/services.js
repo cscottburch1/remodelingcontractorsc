@@ -100,19 +100,19 @@ export const services = [
     ]
   },
   {
-    name: 'Granny Pods',
+    name: 'Detached ADUs',
     slug: 'granny-pods',
-    summary: 'Detached backyard structures designed for family use, flexibility, and independent living.',
-    seo: 'Granny pod builder in South Carolina for detached backyard structures and guest-oriented living spaces.',
+    summary: 'Detached backyard living spaces designed for privacy, flexibility, and independent daily use.',
+    seo: 'Detached ADU builder in South Carolina for backyard living spaces, guest suites, and multi-generational use.',
     image: 'https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=crop&w=1400&q=80',
     imageAlt: 'Detached modern backyard cottage with porch and landscaped entry',
     highlights: ['Utility-ready planning', 'Privacy and access layout', 'Permit-aware approach'],
     subpages: [
       {
-        name: 'Backyard Granny Pods',
+        name: 'Backyard ADUs',
         slug: 'backyard-granny-pods',
         summary: 'Compact detached living structures designed for comfort, privacy, and easy access to the main home.',
-        seo: 'Backyard granny pod contractor in South Carolina for practical detached family living structures.'
+        seo: 'Backyard ADU contractor in South Carolina for practical detached family living structures.'
       },
       {
         name: 'Detached Guest Houses / ADU-Style Options',

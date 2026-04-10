@@ -1,4 +1,8 @@
-export default function PageFaq({ title = 'Frequently asked questions', text, items }) {
+export default function PageFaq({ title = 'Frequently asked questions', text, items = [] }) {
+  if (!items || items.length === 0) {
+    return null;
+  }
+
   return (
     <section className="page-section">
       <div className="section-intro compact-section-intro">

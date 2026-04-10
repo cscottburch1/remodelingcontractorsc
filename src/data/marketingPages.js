@@ -56,8 +56,8 @@ export const priorityServicePages = [
     permittingNote: 'ADU and accessory dwelling unit rules vary across Upstate jurisdictions. We review setbacks, parking expectations, utility service, occupancy limitations, and lot constraints early so scope decisions stay grounded in what is actually feasible.',
     faqs: [
       {
-        question: 'What is the difference between an ADU and a granny pod?',
-        answer: 'A granny pod usually describes a detached family-oriented backyard suite, while ADU is the broader planning and zoning term for accessory dwelling units. The right label often depends on intended use and local code language.'
+        question: 'What types of ADUs do you build?',
+        answer: 'We help homeowners evaluate detached backyard ADUs, garage apartment additions, and attached family suite options based on lot fit, privacy goals, and local zoning.'
       },
       {
         question: 'Can an ADU be built above a garage?',
@@ -105,7 +105,7 @@ export const priorityServicePages = [
       },
       {
         title: 'Detached family suite alternatives',
-        body: 'If a more independent structure is needed, a granny pod or ADU-style layout may provide better privacy and flexibility than an attached addition.'
+        body: 'If a more independent structure is needed, a detached ADU layout may provide better privacy and flexibility than an attached addition.'
       }
     ],
     process: [
@@ -208,26 +208,26 @@ export const priorityServicePages = [
     slug: 'granny-pods',
     path: '/granny-pods',
     eyebrow: 'Priority Service',
-    name: 'Granny Pods',
-    title: 'Granny pod builders for detached family suites, backyard privacy, and flexible multi-generational living',
-    metaTitle: 'Granny Pod Builders in Upstate SC | Remodeling Contractors SC',
-    metaDescription: 'Granny pod builder in Upstate South Carolina for detached family suites, backyard granny pods, and private living space planned around local zoning and lot fit.',
-    intro: 'We build detached granny pods for families who need a compact backyard living space with privacy, utility planning, and a clean relationship to the main house.',
+    name: 'Detached ADUs',
+    title: 'Detached ADU builders for backyard privacy, flexible family living, and independent daily use',
+    metaTitle: 'Detached ADU Builders in Upstate SC | Remodeling Contractors SC',
+    metaDescription: 'Detached ADU builder in Upstate South Carolina for backyard living spaces, private family suites, and lot-fit planning around local zoning and utilities.',
+    intro: 'We build detached ADUs for families who need a compact backyard living space with privacy, utility planning, and a clean relationship to the main house.',
     highlights: ['Detached family suite planning', 'Backyard privacy and access', 'Lot-fit and utility coordination'],
-    serviceType: 'Granny Pod Builder',
+    serviceType: 'Detached ADU Builder',
     image: grannyPodImage,
-    imageAlt: 'Illustration of a backyard granny pod with porch and simple detached living layout',
-    whatItIs: 'A granny pod is a detached backyard living structure planned for family use, privacy, and flexible occupancy. It is often the best fit when families want independent space on the same property without fully expanding the main house.',
+    imageAlt: 'Illustration of a detached backyard ADU with porch and simple living layout',
+    whatItIs: 'An ADU is a detached or semi-independent backyard living structure planned for privacy, flexibility, and comfortable daily use on the same property as the main home.',
     whoItIsFor: [
       'Families planning space for parents, adult children, or long-term guests',
       'Homeowners who need detached privacy but still want close proximity to the main house',
-      'Owners comparing backyard granny pods with larger ADU or in-law suite options'
+      'Owners comparing detached ADUs with in-law suite or garage apartment options'
     ],
     optionsTitle: 'Detached family suite options',
     options: [
       {
-        title: 'Backyard granny pods',
-        body: 'Backyard pods are compact and efficient, with layouts planned around privacy, easy access, and comfortable daily use.'
+        title: 'Backyard ADUs',
+        body: 'Backyard ADUs are compact and efficient, with layouts planned around privacy, easy access, and comfortable daily use.'
       },
       {
         title: 'Detached family suites',
@@ -235,7 +235,7 @@ export const priorityServicePages = [
       },
       {
         title: 'ADU-style detached structures',
-        body: 'Some granny pod projects overlap with detached ADU planning, especially when owners need more independent living capability or future rental flexibility.'
+        body: 'Some detached ADU projects prioritize stronger independence, rental flexibility, or future guest use depending on the property and jurisdiction.'
       }
     ],
     process: [
@@ -248,25 +248,25 @@ export const priorityServicePages = [
       'Bathroom, kitchenette, insulation, and HVAC needs',
       'Footprint size, porch features, and finish level'
     ],
-    permittingNote: 'Backyard granny pods require early review of zoning, setbacks, lot coverage, utility tie-ins, and how the space is defined by local code. That planning work matters just as much as the building design itself.',
+    permittingNote: 'Detached ADUs require early review of zoning, setbacks, lot coverage, utility tie-ins, and local code definitions. That planning work matters just as much as the building design itself.',
     faqs: [
       {
-        question: 'Are granny pods the same as detached family suites?',
-        answer: 'In many homeowner conversations, yes. Granny pod is the common label, while detached family suite may better describe the planning or use case in a more formal project discussion.'
+        question: 'Are detached ADUs the same as backyard family suites?',
+        answer: 'Often yes. Many homeowners use those terms interchangeably when they want private living space on the same property for family, guests, or long-term flexibility.'
       },
       {
-        question: 'Can a backyard granny pod include a small kitchen?',
+        question: 'Can a backyard ADU include a small kitchen?',
         answer: 'It can, but whether full cooking features are appropriate depends on the jurisdiction, intended use, and how the structure is classified during permitting.'
       },
       {
-        question: 'How much yard space is needed for a granny pod?',
+        question: 'How much yard space is needed for an ADU?',
         answer: 'That depends on the footprint, setbacks, access, and utility strategy. We evaluate those constraints before recommending a detached family suite layout.'
       }
     ],
     relatedPaths: ['/backyard-granny-pods', '/adu-builders', '/greenville-sc', '/granny-pod-builder-greenville-sc'],
     projectSlugs: ['backyard-granny-pod-anderson'],
     actions: sharedActions,
-    ctaTitle: 'Need a granny pod builder for a backyard family suite?',
+    ctaTitle: 'Need an ADU builder for a backyard family suite?',
     ctaText: 'Request an estimate and we will review detached layout options, local fit, and permitting considerations for your property.'
   }
 ];
@@ -379,16 +379,16 @@ export const supportingServicePages = [
     path: '/backyard-granny-pods',
     parentSlug: 'granny-pods',
     eyebrow: 'Supporting Page',
-    name: 'Backyard Granny Pods',
-    title: 'Backyard granny pods planned around detached privacy, utility coordination, and practical daily use',
-    metaTitle: 'Backyard Granny Pods in Upstate SC | Remodeling Contractors SC',
-    metaDescription: 'Backyard granny pod builder in Upstate South Carolina for detached family suites with lot-fit, utility planning, and local zoning awareness.',
-    intro: 'Backyard granny pods are a strong option when families need a detached living space close to the house but separate enough for daily privacy.',
+    name: 'Backyard ADUs',
+    title: 'Backyard ADUs planned around detached privacy, utility coordination, and practical daily use',
+    metaTitle: 'Backyard ADUs in Upstate SC | Remodeling Contractors SC',
+    metaDescription: 'Backyard ADU builder in Upstate South Carolina for detached family suites with lot-fit, utility planning, and local zoning awareness.',
+    intro: 'Backyard ADUs are a strong option when families need a detached living space close to the house but separate enough for daily privacy.',
     highlights: ['Detached backyard placement', 'Family privacy', 'Utility-aware planning'],
-    serviceType: 'Backyard Granny Pod Builder',
+    serviceType: 'Backyard ADU Builder',
     image: grannyPodImage,
-    imageAlt: 'Illustration of a backyard granny pod with separate entry',
-    whatItIs: 'A backyard granny pod is a detached family-oriented living structure placed behind or beside the main home.',
+    imageAlt: 'Illustration of a backyard ADU with separate entry',
+    whatItIs: 'A backyard ADU is a detached living structure placed behind or beside the main home to create private, flexible living space.',
     whoItIsFor: ['Families needing nearby but separate living space', 'Homeowners planning flexible family accommodations', 'Lots that can support detached placement'],
     optionsTitle: 'Backyard planning priorities',
     options: [
@@ -399,13 +399,13 @@ export const supportingServicePages = [
     costFactors: ['Detached utilities', 'Site prep', 'Bath and kitchenette scope'],
     permittingNote: 'Detached backyard living structures require zoning and setback review before detailed design decisions are finalized.',
     faqs: [
-      { question: 'How is a backyard granny pod different from an ADU?', answer: 'They often overlap, but granny pod is the more homeowner-friendly label while ADU is the broader planning term.' },
-      { question: 'Can a backyard granny pod be used for guests later?', answer: 'Yes. Many owners build them for family now and retain flexibility for guest or office use later.' }
+      { question: 'What type of backyard ADU works best for most lots?', answer: 'That depends on setbacks, access, utilities, and how independently the space needs to function day to day.' },
+      { question: 'Can a backyard ADU be used for guests later?', answer: 'Yes. Many owners build them for family now and retain flexibility for guest or office use later.' }
     ],
     relatedPaths: ['/granny-pods', '/adu-builders', '/granny-pod-builder-greenville-sc'],
     projectSlugs: ['backyard-granny-pod-anderson'],
     actions: sharedActions,
-    ctaTitle: 'Need a backyard granny pod planned around your lot and family needs?',
+    ctaTitle: 'Need a backyard ADU planned around your lot and family needs?',
     ctaText: 'Request an estimate and we will review detached placement, utilities, and use goals.'
   },
   {
@@ -483,16 +483,16 @@ export const cityPages = [
     slug: 'greenville-sc',
     path: '/greenville-sc',
     city: 'Greenville',
-    title: 'Greenville, SC builders for ADUs, in-law suite additions, master suite additions, and granny pods',
-    metaTitle: 'Greenville SC ADU, In-Law Suite & Granny Pod Builder | Remodeling Contractors SC',
-    metaDescription: 'Greenville, SC contractor for ADU builders, in-law suite additions, master suite additions, and granny pods with local permitting awareness and project-led planning.',
+    title: 'Greenville, SC builders for ADUs, in-law suite additions, master suite additions, and ADUs',
+    metaTitle: 'Greenville SC ADU, In-Law Suite & ADU Builder | Remodeling Contractors SC',
+    metaDescription: 'Greenville, SC contractor for ADU builders, in-law suite additions, master suite additions, and ADUs with local permitting awareness and project-led planning.',
     intro: 'Greenville homeowners are often looking for more livable square footage without leaving the neighborhoods they already value. Our work in this market is built around family-use additions, detached backyard space, and practical layout-driven expansion.',
     marketNote: 'Greenville projects usually depend on lot fit, neighborhood context, parking, and how the new square footage integrates with the existing home. We keep those constraints visible early so scope stays realistic.',
     servicePaths: ['/adu-builders', '/in-law-suite-additions', '/master-suite-additions', '/granny-pods'],
     localServicePaths: ['/adu-builder-greenville-sc', '/in-law-suite-addition-greenville-sc', '/master-suite-addition-greenville-sc', '/granny-pod-builder-greenville-sc'],
     projectSlugs: ['detached-three-bay-garage-greenville'],
     faqs: [
-      { question: 'Do you build detached ADUs in Greenville, SC?', answer: 'We help homeowners evaluate detached ADUs, garage apartment additions, and granny pod-style structures based on lot fit and local feasibility.' },
+      { question: 'Do you build detached ADUs in Greenville, SC?', answer: 'We help homeowners evaluate detached ADUs, garage apartment additions, and ADU-style structures based on lot fit and local feasibility.' },
       { question: 'What types of additions are most common in Greenville?', answer: 'In-law suite additions, primary suite additions, and backyard family living structures are common because they add long-term flexibility without forcing a move.' }
     ],
     ctaTitle: 'Planning a project in Greenville, SC?',
@@ -502,9 +502,9 @@ export const cityPages = [
     slug: 'simpsonville-sc',
     path: '/simpsonville-sc',
     city: 'Simpsonville',
-    title: 'Simpsonville, SC builders for ADUs, in-law suite additions, master suite additions, and granny pods',
+    title: 'Simpsonville, SC builders for ADUs, in-law suite additions, master suite additions, and ADUs',
     metaTitle: 'Simpsonville SC ADU & Suite Addition Builder | Remodeling Contractors SC',
-    metaDescription: 'Simpsonville, SC contractor for ADU builders, in-law suite additions, master suite additions, and granny pods with clean planning and local market knowledge.',
+    metaDescription: 'Simpsonville, SC contractor for ADU builders, in-law suite additions, master suite additions, and ADUs with clean planning and local market knowledge.',
     intro: 'Simpsonville homeowners often choose additions and detached family space to stay in established neighborhoods while improving day-to-day comfort and long-term flexibility.',
     marketNote: 'In Simpsonville, the right scope usually depends on lot layout, neighborhood scale, and how cleanly the addition or detached structure integrates with the existing home.',
     servicePaths: ['/adu-builders', '/in-law-suite-additions', '/master-suite-additions', '/granny-pods'],
@@ -522,8 +522,8 @@ export const cityPages = [
     path: '/fountain-inn-sc',
     city: 'Fountain Inn',
     title: 'Fountain Inn, SC builders for ADUs, family suite additions, and detached backyard living spaces',
-    metaTitle: 'Fountain Inn SC ADU & Granny Pod Builder | Remodeling Contractors SC',
-    metaDescription: 'Fountain Inn, SC contractor for ADUs, in-law suite additions, master suite additions, and granny pods with practical local planning and disciplined construction.',
+    metaTitle: 'Fountain Inn SC ADU & ADU Builder | Remodeling Contractors SC',
+    metaDescription: 'Fountain Inn, SC contractor for ADUs, in-law suite additions, master suite additions, and ADUs with practical local planning and disciplined construction.',
     intro: 'Fountain Inn properties often offer strong opportunities for family-oriented additions and detached space when scope is matched carefully to lot size and long-term use.',
     marketNote: 'This market rewards practical planning. The best projects balance square footage, lot use, curb appeal, and future flexibility rather than overbuilding.',
     servicePaths: ['/adu-builders', '/in-law-suite-additions', '/master-suite-additions', '/granny-pods'],
@@ -540,16 +540,16 @@ export const cityPages = [
     slug: 'greer-sc',
     path: '/greer-sc',
     city: 'Greer',
-    title: 'Greer, SC builders for ADUs, primary suite additions, and granny pods',
-    metaTitle: 'Greer SC ADU, Suite Addition & Granny Pod Builder | Remodeling Contractors SC',
-    metaDescription: 'Greer, SC contractor for ADU builders, in-law suite additions, master suite additions, and granny pods with clean execution and local market awareness.',
+    title: 'Greer, SC builders for ADUs, primary suite additions, and ADUs',
+    metaTitle: 'Greer SC ADU, Suite Addition & ADU Builder | Remodeling Contractors SC',
+    metaDescription: 'Greer, SC contractor for ADU builders, in-law suite additions, master suite additions, and ADUs with clean execution and local market awareness.',
     intro: 'Greer homeowners often want additional family space and more comfortable primary living without leaving the convenience of a growing Upstate market.',
     marketNote: 'Greer projects benefit from early planning around lot access, setbacks, and how the new space will affect circulation, parking, and neighborhood fit.',
     servicePaths: ['/adu-builders', '/in-law-suite-additions', '/master-suite-additions', '/granny-pods'],
     localServicePaths: ['/adu-builder-greer-sc', '/in-law-suite-addition-greer-sc', '/master-suite-addition-greer-sc', '/granny-pod-builder-greer-sc'],
     projectSlugs: ['covered-composite-deck-greer'],
     faqs: [
-      { question: 'Do you build detached backyard family suites in Greer?', answer: 'Yes, where the lot and jurisdiction support detached structures like granny pods or ADU-style units.' },
+      { question: 'Do you build detached backyard family suites in Greer?', answer: 'Yes, where the lot and jurisdiction support detached structures like ADUs or ADU-style units.' },
       { question: 'Is a master suite addition better than moving?', answer: 'For many homeowners, yes. A well-planned suite addition can improve daily comfort without the cost and disruption of relocating.' }
     ],
     ctaTitle: 'Planning an addition or detached family suite in Greer?',
@@ -559,9 +559,9 @@ export const cityPages = [
     slug: 'mauldin-sc',
     path: '/mauldin-sc',
     city: 'Mauldin',
-    title: 'Mauldin, SC builders for ADUs, in-law suites, master suite additions, and granny pods',
+    title: 'Mauldin, SC builders for ADUs, in-law suites, master suite additions, and ADUs',
     metaTitle: 'Mauldin SC ADU & In-Law Suite Builder | Remodeling Contractors SC',
-    metaDescription: 'Mauldin, SC contractor for ADU builders, in-law suite additions, master suite additions, and granny pods with local planning and construction discipline.',
+    metaDescription: 'Mauldin, SC contractor for ADU builders, in-law suite additions, master suite additions, and ADUs with local planning and construction discipline.',
     intro: 'In Mauldin, many homeowners need more usable square footage but want a restrained, well-integrated solution instead of a disruptive whole-home overhaul.',
     marketNote: 'Projects in Mauldin work best when the plan is clear about family use, lot fit, and how new square footage ties into the existing roofline and exterior.',
     servicePaths: ['/adu-builders', '/in-law-suite-additions', '/master-suite-additions', '/granny-pods'],
@@ -569,7 +569,7 @@ export const cityPages = [
     projectSlugs: ['aluminum-screened-enclosure-mauldin'],
     faqs: [
       { question: 'Can an attached in-law suite work well in Mauldin?', answer: 'Yes. Attached family suites are often a strong fit when homeowners need private family space without building a separate detached structure.' },
-      { question: 'What should I consider before planning a granny pod?', answer: 'Lot coverage, setbacks, utilities, and how much independence the space needs are the main early planning questions.' }
+      { question: 'What should I consider before planning an ADU?', answer: 'Lot coverage, setbacks, utilities, and how much independence the space needs are the main early planning questions.' }
     ],
     ctaTitle: 'Need more family space in Mauldin?',
     ctaText: 'Request an estimate and we will help define the right attached or detached solution.'
@@ -578,9 +578,9 @@ export const cityPages = [
     slug: 'laurens-sc',
     path: '/laurens-sc',
     city: 'Laurens',
-    title: 'Laurens, SC builders for ADUs, family suite additions, and backyard granny pods',
-    metaTitle: 'Laurens SC ADU & Granny Pod Builder | Remodeling Contractors SC',
-    metaDescription: 'Laurens, SC contractor for ADU builders, in-law suite additions, master suite additions, and granny pods planned around property fit and long-term value.',
+    title: 'Laurens, SC builders for ADUs, family suite additions, and backyard ADUs',
+    metaTitle: 'Laurens SC ADU & ADU Builder | Remodeling Contractors SC',
+    metaDescription: 'Laurens, SC contractor for ADU builders, in-law suite additions, master suite additions, and ADUs planned around property fit and long-term value.',
     intro: 'Laurens homeowners often have the lot flexibility to consider detached family space, garage apartments, and larger suite additions when the planning is done carefully.',
     marketNote: 'The best Laurens projects balance usable square footage with practical site work, utility routing, and a design that still feels appropriate for the property.',
     servicePaths: ['/adu-builders', '/in-law-suite-additions', '/master-suite-additions', '/granny-pods'],
@@ -597,9 +597,9 @@ export const cityPages = [
     slug: 'gray-court-sc',
     path: '/gray-court-sc',
     city: 'Gray Court',
-    title: 'Gray Court, SC builders for ADUs, in-law suites, master suite additions, and granny pods',
+    title: 'Gray Court, SC builders for ADUs, in-law suites, master suite additions, and ADUs',
     metaTitle: 'Gray Court SC ADU & Suite Addition Builder | Remodeling Contractors SC',
-    metaDescription: 'Gray Court, SC contractor for ADU builders, in-law suite additions, master suite additions, and granny pods with practical lot-fit planning.',
+    metaDescription: 'Gray Court, SC contractor for ADU builders, in-law suite additions, master suite additions, and ADUs with practical lot-fit planning.',
     intro: 'Gray Court homeowners often have more flexibility in lot size, but practical planning still matters for detached structures, family additions, and long-term use.',
     marketNote: 'Gray Court projects are strongest when scope, utility routing, setbacks, and daily family use are aligned early.',
     servicePaths: ['/adu-builders', '/in-law-suite-additions', '/master-suite-additions', '/granny-pods'],
@@ -616,9 +616,9 @@ export const cityPages = [
     slug: 'owings-sc',
     path: '/owings-sc',
     city: 'Owings',
-    title: 'Owings, SC builders for ADUs, in-law suites, master suite additions, and granny pods',
+    title: 'Owings, SC builders for ADUs, in-law suites, master suite additions, and ADUs',
     metaTitle: 'Owings SC ADU & Family Suite Builder | Remodeling Contractors SC',
-    metaDescription: 'Owings, SC contractor for ADU builders, in-law suite additions, master suite additions, and granny pods with local site-fit planning.',
+    metaDescription: 'Owings, SC contractor for ADU builders, in-law suite additions, master suite additions, and ADUs with local site-fit planning.',
     intro: 'Owings homeowners often need practical family-use expansion that balances privacy, budget, and long-term property function.',
     marketNote: 'Projects in Owings benefit from early decisions around detached placement, access, and how new square footage integrates with the existing home.',
     servicePaths: ['/adu-builders', '/in-law-suite-additions', '/master-suite-additions', '/granny-pods'],
@@ -626,7 +626,7 @@ export const cityPages = [
     projectSlugs: [],
     faqs: [
       { question: 'Can an in-law suite addition be a better fit than a detached structure in Owings?', answer: 'Yes, on many properties an attached suite is more practical when utilities or detached placement are constrained.' },
-      { question: 'Are granny pods feasible in Owings?', answer: 'They can be, but setback, utility routing, and lot access should be reviewed before finalizing scope.' }
+      { question: 'Are ADUs feasible in Owings?', answer: 'They can be, but setback, utility routing, and lot access should be reviewed before finalizing scope.' }
     ],
     ctaTitle: 'Need a plan for an Owings, SC expansion project?',
     ctaText: 'Request an estimate and we will compare attached and detached options for your lot and goals.'
@@ -635,9 +635,9 @@ export const cityPages = [
     slug: 'enoree-sc',
     path: '/enoree-sc',
     city: 'Enoree',
-    title: 'Enoree, SC builders for ADUs, in-law suites, master suite additions, and granny pods',
+    title: 'Enoree, SC builders for ADUs, in-law suites, master suite additions, and ADUs',
     metaTitle: 'Enoree SC ADU & Suite Addition Builder | Remodeling Contractors SC',
-    metaDescription: 'Enoree, SC contractor for ADU builders, in-law suite additions, master suite additions, and granny pods with practical build planning.',
+    metaDescription: 'Enoree, SC contractor for ADU builders, in-law suite additions, master suite additions, and ADUs with practical build planning.',
     intro: 'Enoree projects are often driven by family-use flexibility and lot-based decisions around detached versus attached expansion.',
     marketNote: 'In Enoree, utility strategy, access, and property layout influence which service path delivers the best long-term result.',
     servicePaths: ['/adu-builders', '/in-law-suite-additions', '/master-suite-additions', '/granny-pods'],
@@ -654,9 +654,9 @@ export const cityPages = [
     slug: 'woodruff-sc',
     path: '/woodruff-sc',
     city: 'Woodruff',
-    title: 'Woodruff, SC builders for ADUs, in-law suites, master suite additions, and granny pods',
+    title: 'Woodruff, SC builders for ADUs, in-law suites, master suite additions, and ADUs',
     metaTitle: 'Woodruff SC ADU & Suite Expansion Builder | Remodeling Contractors SC',
-    metaDescription: 'Woodruff, SC contractor for ADU builders, in-law suite additions, master suite additions, and granny pods with local build planning.',
+    metaDescription: 'Woodruff, SC contractor for ADU builders, in-law suite additions, master suite additions, and ADUs with local build planning.',
     intro: 'Woodruff homeowners often choose additions and detached family living structures to gain long-term flexibility without moving.',
     marketNote: 'Woodruff projects perform best when lot constraints, utility routing, and family-use priorities are resolved before construction starts.',
     servicePaths: ['/adu-builders', '/in-law-suite-additions', '/master-suite-additions', '/granny-pods'],
@@ -673,9 +673,9 @@ export const cityPages = [
     slug: 'clinton-sc',
     path: '/clinton-sc',
     city: 'Clinton',
-    title: 'Clinton, SC builders for ADUs, in-law suites, master suite additions, and granny pods',
+    title: 'Clinton, SC builders for ADUs, in-law suites, master suite additions, and ADUs',
     metaTitle: 'Clinton SC ADU & Family Suite Builder | Remodeling Contractors SC',
-    metaDescription: 'Clinton, SC contractor for ADU builders, in-law suite additions, master suite additions, and granny pods with local planning awareness.',
+    metaDescription: 'Clinton, SC contractor for ADU builders, in-law suite additions, master suite additions, and ADUs with local planning awareness.',
     intro: 'Clinton homeowners frequently evaluate detached and attached options to add practical family space while preserving long-term property value.',
     marketNote: 'Clinton projects are strongest when parking, utility strategy, and structure type are planned around local lot realities.',
     servicePaths: ['/adu-builders', '/in-law-suite-additions', '/master-suite-additions', '/granny-pods'],
@@ -692,9 +692,9 @@ export const cityPages = [
     slug: 'joanna-sc',
     path: '/joanna-sc',
     city: 'Joanna',
-    title: 'Joanna, SC builders for ADUs, in-law suites, master suite additions, and granny pods',
+    title: 'Joanna, SC builders for ADUs, in-law suites, master suite additions, and ADUs',
     metaTitle: 'Joanna SC ADU & Suite Addition Builder | Remodeling Contractors SC',
-    metaDescription: 'Joanna, SC contractor for ADU builders, in-law suite additions, master suite additions, and granny pods with practical local planning.',
+    metaDescription: 'Joanna, SC contractor for ADU builders, in-law suite additions, master suite additions, and ADUs with practical local planning.',
     intro: 'Joanna homeowners often need practical space-creation strategies that fit existing lots, family use needs, and long-term budget priorities.',
     marketNote: 'Projects in Joanna benefit from early planning around utility access, detached placement, and attached integration with the main home.',
     servicePaths: ['/adu-builders', '/in-law-suite-additions', '/master-suite-additions', '/granny-pods'],
@@ -702,7 +702,7 @@ export const cityPages = [
     projectSlugs: [],
     faqs: [
       { question: 'What is the best first step for a Joanna expansion project?', answer: 'Begin with lot-fit and service-type review so detached and attached options are compared before design work starts.' },
-      { question: 'Can granny pod-style projects work in Joanna?', answer: 'They can, depending on setbacks, utility strategy, and the intended long-term use of the structure.' }
+      { question: 'Can ADU-style projects work in Joanna?', answer: 'They can, depending on setbacks, utility strategy, and the intended long-term use of the structure.' }
     ],
     ctaTitle: 'Need a local plan for a Joanna, SC project?',
     ctaText: 'Request an estimate and we will review your lot and define the right service option for your goals.'
@@ -825,33 +825,33 @@ export const localServicePages = [
     cityLabel: 'Greenville, South Carolina',
     parentSlug: 'granny-pods',
     eyebrow: 'Local Service Page',
-    name: 'Granny Pod Builder Greenville, SC',
-    title: 'Granny pod builder in Greenville, SC for backyard family suites and detached private living space',
-    metaTitle: 'Granny Pod Builder Greenville SC | Remodeling Contractors SC',
-    metaDescription: 'Greenville, SC granny pod builder for backyard family suites, detached private living space, and zoning-aware lot planning.',
-    intro: 'Homeowners looking for a granny pod builder in Greenville, SC usually need detached family space with more privacy than an attached addition can provide.',
+    name: 'ADU Builder Greenville, SC',
+    title: 'Detached ADU builder in Greenville, SC for backyard family suites and detached private living space',
+    metaTitle: 'ADU Builder Greenville SC | Remodeling Contractors SC',
+    metaDescription: 'Greenville, SC ADU builder for backyard family suites, detached private living space, and zoning-aware lot planning.',
+    intro: 'Homeowners looking for an ADU builder in Greenville, SC usually need detached family space with more privacy than an attached addition can provide.',
     highlights: ['Greenville backyard family suites', 'Detached privacy', 'Lot-fit and utility coordination'],
-    serviceType: 'Granny Pod Builder',
+    serviceType: 'ADU Builder',
     image: grannyPodImage,
-    imageAlt: 'Illustration of a granny pod planned for Greenville, South Carolina',
-    whatItIs: 'This page focuses on granny pod builder demand in Greenville, where detached backyard living space can be an effective answer for multi-generational living and flexible family use.',
-    whoItIsFor: ['Families planning backyard living space for parents or relatives', 'Homeowners wanting detached privacy on the same lot', 'Owners comparing granny pods with larger ADU options'],
-    optionsTitle: 'Greenville granny pod options',
+    imageAlt: 'Illustration of an ADU planned for Greenville, South Carolina',
+    whatItIs: 'This page focuses on ADU builder demand in Greenville, where detached backyard living space can be an effective answer for multi-generational living and flexible family use.',
+    whoItIsFor: ['Families planning backyard living space for parents or relatives', 'Homeowners wanting detached privacy on the same lot', 'Owners comparing ADUs with larger ADU options'],
+    optionsTitle: 'Greenville ADU options',
     options: [
       { title: 'Compact backyard pods', body: 'Smaller detached pods often provide the strongest balance of privacy, cost control, and site fit.' },
       { title: 'Larger detached family suites', body: 'Where the lot supports it, a larger detached layout can provide better long-term flexibility.' }
     ],
     process: ['Review detached placement options', 'Define the right footprint and feature set', 'Coordinate utilities, zoning review, and construction planning'],
     costFactors: ['Site prep and utility routing', 'Bath and kitchenette scope', 'Detached porch or accessibility features'],
-    permittingNote: 'Greenville granny pod planning should start with zoning, setbacks, access, and utility strategy before the detached layout is finalized.',
+    permittingNote: 'Greenville ADU planning should start with zoning, setbacks, access, and utility strategy before the detached layout is finalized.',
     faqs: [
-      { question: 'Are backyard granny pods allowed in Greenville, SC?', answer: 'That depends on the property and jurisdiction. We evaluate zoning, setbacks, utility access, and the intended use before recommending a detached direction.' },
-      { question: 'What is the best detached family suite option for a Greenville backyard?', answer: 'The best option depends on privacy goals, lot size, utilities, and whether a compact granny pod or larger ADU-style structure makes more sense.' }
+      { question: 'Are backyard ADUs allowed in Greenville, SC?', answer: 'That depends on the property and jurisdiction. We evaluate zoning, setbacks, utility access, and the intended use before recommending a detached direction.' },
+      { question: 'What is the best detached family suite option for a Greenville backyard?', answer: 'The best option depends on privacy goals, lot size, utilities, and whether a compact ADU or larger ADU-style structure makes more sense.' }
     ],
     relatedPaths: ['/granny-pods', '/greenville-sc', '/backyard-granny-pods'],
     projectSlugs: ['backyard-granny-pod-anderson'],
     actions: sharedActions,
-    ctaTitle: 'Need a granny pod builder in Greenville, SC?',
+    ctaTitle: 'Need an ADU builder in Greenville, SC?',
     ctaText: 'Request an estimate and we will review detached family suite options that fit your lot and long-term goals.'
   },
 
@@ -971,33 +971,33 @@ export const localServicePages = [
     cityLabel: 'Simpsonville, South Carolina',
     parentSlug: 'granny-pods',
     eyebrow: 'Local Service Page',
-    name: 'Granny Pod Builder Simpsonville, SC',
-    title: 'Granny pod builder in Simpsonville, SC for detached backyard family suites and private living space',
-    metaTitle: 'Granny Pod Builder Simpsonville SC | Remodeling Contractors SC',
-    metaDescription: 'Simpsonville, SC granny pod builder for backyard family suites, detached private living space, and lot-fit planning with local permitting awareness.',
-    intro: 'Families searching for a granny pod builder in Simpsonville often want a detached backyard space that gives aging relatives or adult children real privacy without a separate property.',
+    name: 'ADU Builder Simpsonville, SC',
+    title: 'Detached ADU builder in Simpsonville, SC for detached backyard family suites and private living space',
+    metaTitle: 'ADU Builder Simpsonville SC | Remodeling Contractors SC',
+    metaDescription: 'Simpsonville, SC ADU builder for backyard family suites, detached private living space, and lot-fit planning with local permitting awareness.',
+    intro: 'Families searching for an ADU builder in Simpsonville often want a detached backyard space that gives aging relatives or adult children real privacy without a separate property.',
     highlights: ['Simpsonville backyard family suites', 'Detached privacy and access', 'Lot-fit and utility planning'],
-    serviceType: 'Granny Pod Builder',
+    serviceType: 'ADU Builder',
     image: grannyPodImage,
-    imageAlt: 'Illustration of a backyard granny pod planned for Simpsonville, South Carolina',
-    whatItIs: 'This page focuses on granny pod builder demand in Simpsonville, where established residential lots can often support a detached backyard suite when placement and utility planning are handled correctly.',
-    whoItIsFor: ['Simpsonville families planning private backyard living space for relatives', 'Homeowners who need detached privacy on the same lot', 'Owners comparing granny pods with attached in-law suite options'],
-    optionsTitle: 'Simpsonville granny pod options',
+    imageAlt: 'Illustration of a backyard ADU planned for Simpsonville, South Carolina',
+    whatItIs: 'This page focuses on ADU builder demand in Simpsonville, where established residential lots can often support a detached backyard suite when placement and utility planning are handled correctly.',
+    whoItIsFor: ['Simpsonville families planning private backyard living space for relatives', 'Homeowners who need detached privacy on the same lot', 'Owners comparing ADUs with attached in-law suite options'],
+    optionsTitle: 'Simpsonville ADU options',
     options: [
       { title: 'Compact backyard pods', body: 'Smaller pods often provide the strongest balance of privacy, site fit, and cost control on established Simpsonville lots.' },
       { title: 'Larger detached family suites', body: 'Where the lot allows a broader footprint, a larger suite can provide more storage, a bigger bath, and better long-term flexibility.' }
     ],
     process: ['Evaluate Simpsonville lot placement, setbacks, and utility access', 'Define the right footprint and living features', 'Coordinate permitting, structure, and construction planning'],
     costFactors: ['Detached foundation and utility routing', 'Bath and kitchenette scope', 'Porch, accessibility, and finish level'],
-    permittingNote: 'Simpsonville granny pod planning should start with zoning review, setbacks, subdivision restrictions, and utility connection strategy before the layout is finalized.',
+    permittingNote: 'Simpsonville ADU planning should start with zoning review, setbacks, subdivision restrictions, and utility connection strategy before the layout is finalized.',
     faqs: [
-      { question: 'Are backyard granny pods practical in Simpsonville neighborhoods?', answer: 'They can be, but subdivision restrictions, setbacks, and utility access all affect whether a detached pod is feasible on a specific lot.' },
+      { question: 'Are backyard ADUs practical in Simpsonville neighborhoods?', answer: 'They can be, but subdivision restrictions, setbacks, and utility access all affect whether a detached pod is feasible on a specific lot.' },
       { question: 'What detached family suite options work best in Simpsonville?', answer: 'That depends on yard depth, access, privacy goals, and how independently the space needs to function day to day.' }
     ],
     relatedPaths: ['/granny-pods', '/simpsonville-sc', '/backyard-granny-pods'],
     projectSlugs: ['second-story-addition-simpsonville'],
     actions: sharedActions,
-    ctaTitle: 'Need a granny pod builder in Simpsonville, SC?',
+    ctaTitle: 'Need an ADU builder in Simpsonville, SC?',
     ctaText: 'Request an estimate and we will review lot fit, detached placement, and family suite options for your property.'
   },
 
@@ -1117,33 +1117,33 @@ export const localServicePages = [
     cityLabel: 'Greer, South Carolina',
     parentSlug: 'granny-pods',
     eyebrow: 'Local Service Page',
-    name: 'Granny Pod Builder Greer, SC',
-    title: 'Granny pod builder in Greer, SC for backyard family suites and detached private living space',
-    metaTitle: 'Granny Pod Builder Greer SC | Remodeling Contractors SC',
-    metaDescription: 'Greer, SC granny pod builder for backyard family suites, detached private living space, and lot-fit planning with local zoning awareness.',
-    intro: 'Families in Greer searching for a granny pod builder want a practical backyard space that keeps relatives close while giving everyone the privacy they need.',
+    name: 'ADU Builder Greer, SC',
+    title: 'Detached ADU builder in Greer, SC for backyard family suites and detached private living space',
+    metaTitle: 'ADU Builder Greer SC | Remodeling Contractors SC',
+    metaDescription: 'Greer, SC ADU builder for backyard family suites, detached private living space, and lot-fit planning with local zoning awareness.',
+    intro: 'Families in Greer searching for an ADU builder want a practical backyard space that keeps relatives close while giving everyone the privacy they need.',
     highlights: ['Greer backyard family suites', 'Detached privacy and placement', 'Utility-aware lot planning'],
-    serviceType: 'Granny Pod Builder',
+    serviceType: 'ADU Builder',
     image: grannyPodImage,
-    imageAlt: 'Illustration of a backyard granny pod planned for Greer, South Carolina',
-    whatItIs: 'This page focuses on granny pod builder demand in Greer, where homeowners often want detached family living space that can serve parents, adult children, or long-term guests.',
-    whoItIsFor: ['Greer families planning detached backyard space for relatives', 'Homeowners wanting private but nearby family living space', 'Owners comparing granny pods with larger ADU or in-law suite options'],
-    optionsTitle: 'Greer granny pod options',
+    imageAlt: 'Illustration of a backyard ADU planned for Greer, South Carolina',
+    whatItIs: 'This page focuses on ADU builder demand in Greer, where homeowners often want detached family living space that can serve parents, adult children, or long-term guests.',
+    whoItIsFor: ['Greer families planning detached backyard space for relatives', 'Homeowners wanting private but nearby family living space', 'Owners comparing ADUs with larger ADU or in-law suite options'],
+    optionsTitle: 'Greer ADU options',
     options: [
       { title: 'Compact backyard pods', body: 'Compact pods are often the most cost-efficient and site-friendly option in Greer neighborhoods.' },
       { title: 'Larger detached family suites', body: 'Where yard and setback conditions allow, a larger detached suite can offer better storage, bigger bath, and long-term flexibility.' }
     ],
     process: ['Review Greer lot layout, setbacks, and utility access', 'Choose the right footprint and feature level', 'Coordinate permitting, structure, and construction scope'],
     costFactors: ['Detached foundation and utility routing', 'Bath and kitchenette scope', 'Porch, access, and finish level'],
-    permittingNote: 'Greer granny pod planning requires early review of zoning jurisdiction, setbacks, access, and how the detached structure is classified locally before design decisions are made.',
+    permittingNote: 'Greer ADU planning requires early review of zoning jurisdiction, setbacks, access, and how the detached structure is classified locally before design decisions are made.',
     faqs: [
-      { question: 'Can a backyard granny pod be built in Greer, SC?', answer: 'It depends on zoning, setbacks, and utility access. We review those constraints before recommending a layout.' },
-      { question: 'How is a Greer granny pod different from an ADU?', answer: 'Granny pod is the common homeowner term, while ADU is the broader planning and zoning classification. Many granny pod projects fall within ADU territory depending on jurisdiction.' }
+      { question: 'Can a backyard ADU be built in Greer, SC?', answer: 'It depends on zoning, setbacks, and utility access. We review those constraints before recommending a layout.' },
+      { question: 'What makes a detached ADU a strong fit in Greer?', answer: 'That depends on setbacks, utility access, and how much privacy or independence the family needs from the main house.' }
     ],
     relatedPaths: ['/granny-pods', '/greer-sc', '/backyard-granny-pods'],
     projectSlugs: ['covered-composite-deck-greer'],
     actions: sharedActions,
-    ctaTitle: 'Need a granny pod builder in Greer, SC?',
+    ctaTitle: 'Need an ADU builder in Greer, SC?',
     ctaText: 'Request an estimate and we will review detached family suite placement and options for your Greer property.'
   },
 
@@ -1263,33 +1263,33 @@ export const localServicePages = [
     cityLabel: 'Mauldin, South Carolina',
     parentSlug: 'granny-pods',
     eyebrow: 'Local Service Page',
-    name: 'Granny Pod Builder Mauldin, SC',
-    title: 'Granny pod builder in Mauldin, SC for detached backyard family suites and private living space',
-    metaTitle: 'Granny Pod Builder Mauldin SC | Remodeling Contractors SC',
-    metaDescription: 'Mauldin, SC granny pod builder for backyard family suites, detached private living space, and lot-fit planning with subdivision and zoning awareness.',
-    intro: 'Families in Mauldin searching for a granny pod builder want a compact backyard structure that provides real daily independence without overbuilding the lot.',
+    name: 'ADU Builder Mauldin, SC',
+    title: 'Detached ADU builder in Mauldin, SC for detached backyard family suites and private living space',
+    metaTitle: 'ADU Builder Mauldin SC | Remodeling Contractors SC',
+    metaDescription: 'Mauldin, SC ADU builder for backyard family suites, detached private living space, and lot-fit planning with subdivision and zoning awareness.',
+    intro: 'Families in Mauldin searching for an ADU builder want a compact backyard structure that provides real daily independence without overbuilding the lot.',
     highlights: ['Mauldin backyard family suites', 'Compact detached placement', 'Zoning-aware lot planning'],
-    serviceType: 'Granny Pod Builder',
+    serviceType: 'ADU Builder',
     image: grannyPodImage,
-    imageAlt: 'Illustration of a backyard granny pod planned for Mauldin, South Carolina',
-    whatItIs: 'This page focuses on granny pod builder demand in Mauldin, where homeowners often want a compact detached living space for family use that fits well on an established residential lot.',
-    whoItIsFor: ['Mauldin families planning backyard living space for parents or relatives', 'Homeowners wanting nearby but private family space', 'Owners comparing compact granny pods with larger attached in-law suites'],
-    optionsTitle: 'Mauldin granny pod options',
+    imageAlt: 'Illustration of a backyard ADU planned for Mauldin, South Carolina',
+    whatItIs: 'This page focuses on ADU builder demand in Mauldin, where homeowners often want a compact detached living space for family use that fits well on an established residential lot.',
+    whoItIsFor: ['Mauldin families planning backyard living space for parents or relatives', 'Homeowners wanting nearby but private family space', 'Owners comparing compact ADUs with larger attached in-law suites'],
+    optionsTitle: 'Mauldin ADU options',
     options: [
       { title: 'Compact backyard pods', body: 'Compact pods often provide the best fit on Mauldin properties where yard space is limited but privacy still matters.' },
       { title: 'Attached alternatives', body: 'Where lot size or subdivision rules limit detached construction, an attached suite can meet many of the same family privacy goals.' }
     ],
     process: ['Assess Mauldin lot placement options and setbacks', 'Set footprint and living feature priorities', 'Coordinate permitting, utilities, and construction scope'],
     costFactors: ['Detached foundation and utility routing', 'Bath and kitchenette scope', 'Finish level and outdoor access features'],
-    permittingNote: 'Mauldin granny pod planning requires early attention to subdivision rules, zoning setbacks, utility connections, and how the detached structure is classified.',
+    permittingNote: 'Mauldin ADU planning requires early attention to subdivision rules, zoning setbacks, utility connections, and how the detached structure is classified.',
     faqs: [
-      { question: 'Are backyard granny pods allowed in Mauldin, SC?', answer: 'Rules vary by parcel and subdivision. We review zoning, setbacks, and subdivision guidelines before recommending a detached layout.' },
-      { question: 'Can a Mauldin granny pod work on a smaller lot?', answer: 'Sometimes, but setbacks, access, and utility routing are the main constraints. We evaluate those before committing to a detached approach.' }
+      { question: 'Are backyard ADUs allowed in Mauldin, SC?', answer: 'Rules vary by parcel and subdivision. We review zoning, setbacks, and subdivision guidelines before recommending a detached layout.' },
+      { question: 'Can a Mauldin ADU work on a smaller lot?', answer: 'Sometimes, but setbacks, access, and utility routing are the main constraints. We evaluate those before committing to a detached approach.' }
     ],
     relatedPaths: ['/granny-pods', '/mauldin-sc', '/backyard-granny-pods'],
     projectSlugs: ['aluminum-screened-enclosure-mauldin'],
     actions: sharedActions,
-    ctaTitle: 'Need a granny pod builder in Mauldin, SC?',
+    ctaTitle: 'Need an ADU builder in Mauldin, SC?',
     ctaText: 'Request an estimate and we will review detached family suite options, lot fit, and local constraints for your property.'
   },
 
@@ -1409,33 +1409,33 @@ export const localServicePages = [
     cityLabel: 'Fountain Inn, South Carolina',
     parentSlug: 'granny-pods',
     eyebrow: 'Local Service Page',
-    name: 'Granny Pod Builder Fountain Inn, SC',
-    title: 'Granny pod builder in Fountain Inn, SC for detached backyard family suites and private living space',
-    metaTitle: 'Granny Pod Builder Fountain Inn SC | Remodeling Contractors SC',
-    metaDescription: 'Fountain Inn, SC granny pod builder for backyard family suites, detached private living space, and lot planning with local zoning awareness.',
-    intro: 'Fountain Inn properties with larger lots often create strong conditions for a granny pod when the planning accounts for placement, utilities, and local zoning.',
+    name: 'ADU Builder Fountain Inn, SC',
+    title: 'Detached ADU builder in Fountain Inn, SC for detached backyard family suites and private living space',
+    metaTitle: 'ADU Builder Fountain Inn SC | Remodeling Contractors SC',
+    metaDescription: 'Fountain Inn, SC ADU builder for backyard family suites, detached private living space, and lot planning with local zoning awareness.',
+    intro: 'Fountain Inn properties with larger lots often create strong conditions for an ADU when the planning accounts for placement, utilities, and local zoning.',
     highlights: ['Fountain Inn backyard placement', 'Detached privacy and access', 'Family-use lot planning'],
-    serviceType: 'Granny Pod Builder',
+    serviceType: 'ADU Builder',
     image: grannyPodImage,
-    imageAlt: 'Illustration of a backyard granny pod planned for Fountain Inn, South Carolina',
-    whatItIs: 'This page focuses on granny pod builder demand in Fountain Inn, where the lot sizes and lower density that characterize this growing market often support detached backyard family living space well.',
-    whoItIsFor: ['Fountain Inn families planning nearby but private backyard living space', 'Homeowners with enough yard for a detached structure', 'Owners comparing granny pods with shared-wall in-law suite options'],
-    optionsTitle: 'Fountain Inn granny pod options',
+    imageAlt: 'Illustration of a backyard ADU planned for Fountain Inn, South Carolina',
+    whatItIs: 'This page focuses on ADU builder demand in Fountain Inn, where the lot sizes and lower density that characterize this growing market often support detached backyard family living space well.',
+    whoItIsFor: ['Fountain Inn families planning nearby but private backyard living space', 'Homeowners with enough yard for a detached structure', 'Owners comparing ADUs with shared-wall in-law suite options'],
+    optionsTitle: 'Fountain Inn ADU options',
     options: [
       { title: 'Detached backyard pods', body: 'Fountain Inn lots often provide enough yard depth for a detached pod when setbacks and utility access are reviewed early.' },
       { title: 'Larger detached family suites', body: 'Where layout and lot allow, a more spacious detached suite can improve long-term flexibility, storage, and daily comfort.' }
     ],
     process: ['Evaluate yard placement, setbacks, and utility routing', 'Define the right footprint and living features for family use', 'Coordinate permitting, structure, and construction planning'],
     costFactors: ['Detached foundation and utility connection', 'Bath and kitchenette scope', 'Porch, access features, and finish level'],
-    permittingNote: 'Fountain Inn granny pod projects require zoning and setback review before detailed layout decisions are made, even on larger lots.',
+    permittingNote: 'Fountain Inn ADU projects require zoning and setback review before detailed layout decisions are made, even on larger lots.',
     faqs: [
-      { question: 'Are detached granny pods commonly built in Fountain Inn?', answer: 'Yes. The larger lot sizes in the area often support detached family structures when planning and permitting are handled correctly.' },
-      { question: 'Can a Fountain Inn granny pod have a kitchenette?', answer: 'It can, depending on local classification rules and intended use. We review that early in the planning process.' }
+      { question: 'Are detached ADUs commonly built in Fountain Inn?', answer: 'Yes. The larger lot sizes in the area often support detached family structures when planning and permitting are handled correctly.' },
+      { question: 'Can a Fountain Inn ADU have a kitchenette?', answer: 'It can, depending on local classification rules and intended use. We review that early in the planning process.' }
     ],
     relatedPaths: ['/granny-pods', '/fountain-inn-sc', '/backyard-granny-pods'],
     projectSlugs: [],
     actions: sharedActions,
-    ctaTitle: 'Need a granny pod builder in Fountain Inn, SC?',
+    ctaTitle: 'Need an ADU builder in Fountain Inn, SC?',
     ctaText: 'Request an estimate and we will review detached placement, lot fit, and family suite options for your property.'
   },
 
@@ -1497,7 +1497,7 @@ export const localServicePages = [
     optionsTitle: 'Laurens in-law suite options',
     options: [
       { title: 'Attached family suites', body: 'Attached suites work well in Laurens when families want private space that remains close to the main home.' },
-      { title: 'Detached family suite alternatives', body: 'On larger Laurens properties, a granny pod or detached suite may give better independence and long-term flexibility.' }
+      { title: 'Detached family suite alternatives', body: 'On larger Laurens properties, an ADU or detached suite may give better independence and long-term flexibility.' }
     ],
     process: ['Define family use, privacy, and accessibility goals', 'Test layout options against the existing home structure', 'Plan structure, utilities, and local permitting proactively'],
     costFactors: ['Bath, entry, and kitchenette scope', 'Structural tie-in with the existing home', 'Accessibility upgrades and finish level'],
@@ -1555,33 +1555,33 @@ export const localServicePages = [
     cityLabel: 'Laurens, South Carolina',
     parentSlug: 'granny-pods',
     eyebrow: 'Local Service Page',
-    name: 'Granny Pod Builder Laurens, SC',
-    title: 'Granny pod builder in Laurens, SC for detached backyard family suites and private living space',
-    metaTitle: 'Granny Pod Builder Laurens SC | Remodeling Contractors SC',
-    metaDescription: 'Laurens, SC granny pod builder for detached backyard family suites, private living space, and property-fit planning with local zoning awareness.',
-    intro: 'Laurens homeowners often find that their larger rural-adjacent lots make detached granny pod construction more straightforward than in denser suburban markets.',
+    name: 'ADU Builder Laurens, SC',
+    title: 'Detached ADU builder in Laurens, SC for detached backyard family suites and private living space',
+    metaTitle: 'ADU Builder Laurens SC | Remodeling Contractors SC',
+    metaDescription: 'Laurens, SC ADU builder for detached backyard family suites, private living space, and property-fit planning with local zoning awareness.',
+    intro: 'Laurens homeowners often find that their larger rural-adjacent lots make detached ADU construction more straightforward than in denser suburban markets.',
     highlights: ['Laurens backyard family suites', 'Rural-adjacent lot flexibility', 'Detached placement and utility planning'],
-    serviceType: 'Granny Pod Builder',
+    serviceType: 'ADU Builder',
     image: grannyPodImage,
-    imageAlt: 'Illustration of a backyard granny pod planned for Laurens, South Carolina',
-    whatItIs: 'This page focuses on granny pod builder demand in Laurens, where larger properties and lower density often create favorable conditions for detached family living space when planning is handled correctly.',
-    whoItIsFor: ['Laurens families planning private backyard living space for relatives', 'Property owners with enough land for a detached structure', 'Homeowners comparing granny pods with attached in-law suite additions'],
-    optionsTitle: 'Laurens granny pod options',
+    imageAlt: 'Illustration of a backyard ADU planned for Laurens, South Carolina',
+    whatItIs: 'This page focuses on ADU builder demand in Laurens, where larger properties and lower density often create favorable conditions for detached family living space when planning is handled correctly.',
+    whoItIsFor: ['Laurens families planning private backyard living space for relatives', 'Property owners with enough land for a detached structure', 'Homeowners comparing ADUs with attached in-law suite additions'],
+    optionsTitle: 'Laurens ADU options',
     options: [
       { title: 'Detached backyard pods', body: 'Larger Laurens properties often support well-placed detached pods with better setback clearances than suburban markets.' },
-      { title: 'ADU-style detached structures', body: 'Some Laurens granny pod projects overlap with ADU planning, especially when the owner wants the option for independent long-term living.' }
+      { title: 'ADU-style detached structures', body: 'Some Laurens ADU projects overlap with ADU planning, especially when the owner wants the option for independent long-term living.' }
     ],
     process: ['Evaluate Laurens property placement, setbacks, and utilities', 'Define the right footprint and living feature set', 'Coordinate local permitting and construction planning'],
     costFactors: ['Detached foundation and utility routing on larger lots', 'Bath and kitchenette scope', 'Access, porch, and finish level'],
-    permittingNote: 'Laurens County granny pod projects require zoning review and setback analysis before the layout is designed, even on larger rural-adjacent properties.',
+    permittingNote: 'Laurens County ADU projects require zoning review and setback analysis before the layout is designed, even on larger rural-adjacent properties.',
     faqs: [
-      { question: 'Are detached granny pods practical on Laurens properties?', answer: 'Often yes. Larger and more rural-adjacent lots typically give more setback clearance, which makes detached placement more practical.' },
-      { question: 'Can a Laurens granny pod be used for long-term family living?', answer: 'Yes. Many families build them for aging relatives now and retain flexibility for guest use or other purposes later.' }
+      { question: 'Are detached ADUs practical on Laurens properties?', answer: 'Often yes. Larger and more rural-adjacent lots typically give more setback clearance, which makes detached placement more practical.' },
+      { question: 'Can a Laurens ADU be used for long-term family living?', answer: 'Yes. Many families build them for aging relatives now and retain flexibility for guest use or other purposes later.' }
     ],
     relatedPaths: ['/granny-pods', '/laurens-sc', '/backyard-granny-pods'],
     projectSlugs: [],
     actions: sharedActions,
-    ctaTitle: 'Need a granny pod builder in Laurens, SC?',
+    ctaTitle: 'Need an ADU builder in Laurens, SC?',
     ctaText: 'Request an estimate and we will review your property, detached placement options, and family suite scope.'
   }
 ];

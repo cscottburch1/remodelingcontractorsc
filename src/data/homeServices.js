@@ -42,12 +42,12 @@ export const homeServices = [
     linkLabel: 'Explore Enclosures'
   },
   {
-    title: 'Granny Pods',
+    title: 'Detached ADUs',
     slug: 'granny-pods',
-    path: '/granny-pods',
-    description: 'Detached backyard living spaces designed for privacy, flexibility, and multi-generational use.',
+    path: '/detached-adus',
+    description: 'Detached backyard ADUs designed for privacy, flexibility, and multi-generational living.',
     image: grannyPodImage,
-    imageAlt: 'Illustration of a compact detached backyard living pod with porch entry',
-    linkLabel: 'Explore Granny Pods'
+    imageAlt: 'Illustration of a compact detached backyard ADU with porch entry',
+    linkLabel: 'Explore Detached ADUs'
   }
 ];

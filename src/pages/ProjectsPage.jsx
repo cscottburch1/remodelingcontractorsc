@@ -10,7 +10,7 @@ export default function ProjectsPage() {
     <>
       <Seo
         title="Projects | Remodeling Contractors SC"
-        description="View garage, addition, deck, screened enclosure, and granny pod project highlights across Upstate South Carolina."
+        description="View garage, addition, deck, screened enclosure, and ADU project highlights across Upstate South Carolina."
         path="/projects"
         schema={createBreadcrumbSchema([
           { name: 'Home', path: '/' },

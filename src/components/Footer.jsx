@@ -7,28 +7,31 @@ export default function Footer() {
         <div>
           <h3>Remodeling Contractors SC</h3>
           <p>
-            Upstate South Carolina contractor focused on ADUs, in-law suite additions, master suite additions,
-            granny pods, and practical space-creation projects.
+            Upstate South Carolina contractor specializing in garages, home additions, decks, screened porches, and ADUs. Quality construction focused on expanding your home's functionality and value.
           </p>
         </div>
         <div>
           <h4>Services</h4>
           <ul>
-            <li><Link to="/adu-builders">ADU Builders</Link></li>
-            <li><Link to="/in-law-suite-additions">In-Law Suite Additions</Link></li>
-            <li><Link to="/master-suite-additions">Master Suite Additions</Link></li>
-            <li><Link to="/granny-pods">Granny Pods</Link></li>
+            <li><Link to="/garages">Garages</Link></li>
+            <li><Link to="/additions">Additions</Link></li>
+            <li><Link to="/screened-porches">Screened Porches</Link></li>
+            <li><Link to="/decks">Decks</Link></li>
+            <li><Link to="/adus">ADUs</Link></li>
           </ul>
         </div>
         <div>
-          <h4>Locations</h4>
+          <h4>Service Areas</h4>
           <ul>
-            <li><Link to="/greenville-sc">Greenville, SC</Link></li>
+            <li><Link to="/mauldin-sc">Mauldin, SC</Link></li>
             <li><Link to="/simpsonville-sc">Simpsonville, SC</Link></li>
             <li><Link to="/fountain-inn-sc">Fountain Inn, SC</Link></li>
-            <li><Link to="/greer-sc">Greer, SC</Link></li>
-            <li><Link to="/mauldin-sc">Mauldin, SC</Link></li>
+            <li><Link to="/gray-court-sc">Gray Court, SC</Link></li>
             <li><Link to="/laurens-sc">Laurens, SC</Link></li>
+            <li><Link to="/woodruff-sc">Woodruff, SC</Link></li>
+            <li><Link to="/clinton-sc">Clinton, SC</Link></li>
+            <li><Link to="/ora-sc">Ora, SC</Link></li>
+            <li><Link to="/joanna-sc">Joanna, SC</Link></li>
           </ul>
         </div>
         <div>

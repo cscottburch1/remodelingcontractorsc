@@ -8,7 +8,7 @@ export default function FinancingPage() {
     <>
       <Seo
         title="Financing | Remodeling Contractors SC"
-        description="Financing guidance for garage builds, room additions, decks, aluminum screened enclosures, and granny pod projects."
+        description="Financing guidance for garage builds, room additions, decks, aluminum screened enclosures, and ADU projects."
         path="/financing"
         schema={createBreadcrumbSchema([
           { name: 'Home', path: '/' },
@@ -31,7 +31,7 @@ export default function FinancingPage() {
               <li>Room additions and second-story expansions</li>
               <li>Covered and composite deck builds</li>
               <li>Aluminum screened enclosures and screen rooms</li>
-              <li>Granny pods and detached guest-house style structures</li>
+              <li>Detached ADUs and detached guest-house style structures</li>
             </ul>
 
             <h3>How we help</h3>

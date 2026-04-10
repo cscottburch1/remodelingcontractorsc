@@ -1,0 +1,23 @@
+[     546ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:3002/node_modules/.vite/deps/chunk-4JV6IK6A.js?v=01f477be:21548
+[     604ms] [ERROR] Warning: Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.%s 
+
+Check the render method of `Breadcrumbs`.  
+    at li
+    at Breadcrumbs (http://localhost:3002/src/components/Breadcrumbs.jsx:18:39)
+    at div
+    at section
+    at main
+    at CoreServicePage (http://localhost:3002/src/pages/CoreServicePage.jsx?t=1775502328245:32:20)
+    at RenderedRoute (http://localhost:3002/node_modules/.vite/deps/react-router-dom.js?v=01f477be:4129:5)
+    at Outlet (http://localhost:3002/node_modules/.vite/deps/react-router-dom.js?v=01f477be:4535:26)
+    at main
+    at div
+    at SiteLayout
+    at RenderedRoute (http://localhost:3002/node_modules/.vite/deps/react-router-dom.js?v=01f477be:4129:5)
+    at Routes (http://localhost:3002/node_modules/.vite/deps/react-router-dom.js?v=01f477be:4599:5)
+    at App
+    at Router (http://localhost:3002/node_modules/.vite/deps/react-router-dom.js?v=01f477be:4542:15)
+    at BrowserRouter (http://localhost:3002/node_modules/.vite/deps/react-router-dom.js?v=01f477be:5288:5)
+    at _a (http://localhost:3002/node_modules/.vite/deps/react-helmet-async.js?v=01f477be:622:5) @ http://localhost:3002/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=01f477be:61
+[     845ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://localhost:3002/node_modules/.vite/deps/react-router-dom.js?v=01f477be:4433
+[     845ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://localhost:3002/node_modules/.vite/deps/react-router-dom.js?v=01f477be:4433

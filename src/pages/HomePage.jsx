@@ -9,8 +9,8 @@ import Seo from '../components/Seo';
 import SectionIntro from '../components/SectionIntro';
 import Testimonials from '../components/Testimonials';
 import { faqs } from '../data/faqs';
-import { homeServices } from '../data/homeServices';
-import { locations } from '../data/locations';
+import { coreServices } from '../data/coreServices';
+import { serviceAreas } from '../data/serviceAreas';
 import { projects } from '../data/projects';
 import { createBreadcrumbSchema, createFaqSchema, createLocalBusinessSchema } from '../lib/schema';
 
@@ -21,11 +21,21 @@ export default function HomePage() {
     createBreadcrumbSchema([{ name: 'Home', path: '/' }])
   ];
 
+  // Map coreServices to homeServices format for HomeServiceCard
+  const mappedServices = coreServices.map(service => ({
+    title: service.name,
+    slug: service.slug,
+    path: service.servicePath,
+    description: service.summary,
+    image: service.image,
+    imageAlt: service.imageAlt
+  }));
+
   return (
     <>
       <Seo
-        title="Remodeling Contractors SC | Garages, Additions, Decks, Enclosures, Granny Pods"
-        description="Upstate South Carolina contractor for custom garages, room additions, decks, aluminum screened enclosures, and granny pods built for long-term value."
+        title="Remodeling Contractors SC | Garages, Additions, Decks, Screened Porches, ADUs"
+        description="Upstate South Carolina contractor for custom garages, home additions, decks, screened porches, and ADUs. Serving Mauldin, Simpsonville, Fountain Inn, and surrounding areas."
         schema={schema}
       />
       <Hero />
@@ -34,11 +44,11 @@ export default function HomePage() {
         <div className="container services-showcase">
           <SectionIntro
             eyebrow="Core Services"
-            title="Contractor-focused services for more space, better utility, and outdoor comfort"
-            text="Explore the five service categories homeowners across Greenville, Simpsonville, Fountain Inn, and the wider Upstate rely on most for daily function, long-term value, and clean project execution."
+            title="Five specialized services for space creation and outdoor living"
+            text="We focus on garages, additions, decks, screened porches, and ADUs — projects that expand your home's functionality while preserving neighborhood character and long-term value."
           />
           <div className="home-services-grid">
-            {homeServices.map((service) => (
+            {mappedServices.map((service) => (
               <HomeServiceCard key={service.slug} service={service} />
             ))}
           </div>
@@ -54,15 +64,15 @@ export default function HomePage() {
         <div className="container stat-strip">
           <article className="card stat-card">
             <strong>5</strong>
-            <p>Specialized build categories</p>
+            <p>Specialized core services</p>
           </article>
           <article className="card stat-card">
-            <strong>8</strong>
-            <p>Target Upstate SC markets</p>
+            <strong>9</strong>
+            <p>Primary Upstate SC communities</p>
           </article>
           <article className="card stat-card">
             <strong>100%</strong>
-            <p>Focused on space-creation projects</p>
+            <p>Focused on quality space creation</p>
           </article>
         </div>
       </section>
@@ -71,8 +81,8 @@ export default function HomePage() {
         <div className="container">
           <SectionIntro
             eyebrow="Projects"
-            title="Project-driven results across Upstate South Carolina"
-            text="Recent garages, additions, decks, enclosures, and detached backyard structure work."
+            title="Recent work across Upstate South Carolina"
+            text="Featured garages, additions, decks, screened porches, and outdoor living projects."
           />
           <div className="grid-3">
             {projects.map((project) => (
@@ -86,21 +96,21 @@ export default function HomePage() {
         <div className="container">
           <SectionIntro
             eyebrow="Process"
-            title="A clear build process from estimate through final walkthrough"
+            title="Clear process from consultation through final walkthrough"
             text="We keep planning disciplined so structural decisions, permit requirements, and finish quality stay on track."
           />
           <div className="grid-3">
             <article className="card prose-card">
-              <h3>1. Consultation + Scope</h3>
-              <p>We define your goals, priorities, and structural requirements before design details move forward.</p>
+              <h3>1. Consultation & Site Evaluation</h3>
+              <p>We visit your property to understand your needs, assess site conditions, and discuss practical project options.</p>
             </article>
             <article className="card prose-card">
-              <h3>2. Planning + Build Strategy</h3>
-              <p>Selections, scheduling, and trade coordination are outlined in advance for smoother execution.</p>
+              <h3>2. Design & Planning</h3>
+              <p>Layout development, material selections, and permit coordination happen before construction begins.</p>
             </article>
             <article className="card prose-card">
-              <h3>3. Construction + Closeout</h3>
-              <p>You get organized communication, quality control checkpoints, and a professional handoff.</p>
+              <h3>3. Construction & Closeout</h3>
+              <p>Quality execution, regular communication, and professional project handoff with all final inspections complete.</p>
             </article>
           </div>
         </div>
@@ -110,12 +120,12 @@ export default function HomePage() {
         <div className="container">
           <SectionIntro
             eyebrow="Service Areas"
-            title="Serving major Upstate South Carolina markets"
-            text="Focused local coverage so you get responsive communication and region-specific project knowledge."
+            title="Serving nine communities across Upstate SC"
+            text="Focused local coverage in Greenville, Laurens, and Spartanburg counties for responsive service and regional expertise."
           />
           <div className="chip-list">
-            {locations.map((location) => (
-              <Link key={location.slug} to={`/locations/${location.slug}`} className="chip-item">{location.name}</Link>
+            {serviceAreas.map((area) => (
+              <Link key={area.slug} to={area.servicePath} className="chip-item">{area.name}</Link>
             ))}
           </div>
         </div>
@@ -129,7 +139,7 @@ export default function HomePage() {
           <SectionIntro
             eyebrow="Request Estimate"
             title="Tell us what you want to build"
-            text="Share project goals and we will follow up with realistic next steps for your home and lot."
+            text="Share project goals and we'll follow up with realistic options for your property."
           />
           <div className="card form-card">
             <EstimateForm />
@@ -138,8 +148,8 @@ export default function HomePage() {
       </section>
 
       <CtaSection
-        title="Need more living space, storage, or outdoor comfort?"
-        text="We can map the right garage, addition, deck, enclosure, or granny pod scope for your property."
+        title="Ready to expand your home's potential?"
+        text="We'll help you plan the right garage, addition, deck, screened porch, or ADU for your property and budget."
       />
     </>
   );

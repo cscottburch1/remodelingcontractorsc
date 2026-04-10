@@ -5,7 +5,7 @@ import burchLogo from '../assets/images/Burch Contracting Logo.png';
 const navItems = [
   { label: 'Home', to: '/' },
   { label: 'Services', to: '/services' },
-  { label: 'Locations', to: '/locations' },
+  { label: 'Service Areas', to: '/service-areas' },
   { label: 'Projects', to: '/projects' },
   { label: 'Financing', to: '/financing' },
   { label: 'About', to: '/about' },

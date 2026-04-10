@@ -1,16 +1,10 @@
 import { Link, Navigate, useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import CtaSection from '../../components/CtaSection';
-import Seo from '../../components/Seo';
-import SectionIntro from '../../components/SectionIntro';
-import { locations } from '../../data/locations';
+import Breadcrumbs from '../../components/Breadcrumbs';
 import { projects } from '../../data/projects';
-import { services, supportServicePages } from '../../data/services';
-import { createBreadcrumbSchema } from '../../lib/schema';
-
-const serviceLookup = new Map([
-  ...services.map((service) => [service.slug, service]),
-  ...supportServicePages.map((subpage) => [subpage.slug, subpage])
-]);
+import { coreServices } from '../../data/coreServices';
+import { serviceAreas } from '../../data/serviceAreas';
 
 export default function ProjectDetailPage() {
   const { slug } = useParams();
@@ -20,68 +14,114 @@ export default function ProjectDetailPage() {
     return <Navigate to="/projects" replace />;
   }
 
-  const location = locations.find((item) => item.slug === project.locationSlug);
-  const schema = createBreadcrumbSchema([
-    { name: 'Home', path: '/' },
-    { name: 'Projects', path: '/projects' },
-    { name: project.title, path: `/projects/${project.slug}` }
-  ]);
+  const location = serviceAreas.find((item) => item.slug === project.locationSlug);
+
+  const breadcrumbs = [
+    { label: 'Home', to: '/' },
+    { label: 'Projects', to: '/projects' },
+    { label: project.title }
+  ];
 
   return (
     <>
-      <Seo
-        title={`${project.title} | Remodeling Contractors SC`}
-        description={`${project.location} project spotlight for ${project.relatedServices.join(', ')}.`}
-        path={`/projects/${project.slug}`}
-        image={project.image}
-        schema={schema}
-      />
+      <Helmet>
+        <title>{project.title} | Remodeling Contractors SC</title>
+        <meta 
+          name="description" 
+          content={`${project.location} project spotlight: ${project.description}`} 
+        />
+        <link rel="canonical" href={`https://remodelingcontractorsc.com/projects/${project.slug}`} />
+      </Helmet>
 
-      <section className="section-pad">
-        <div className="container page-wrap">
-          <SectionIntro
-            eyebrow={project.location}
-            title={project.title}
-            text={project.description}
-          />
+      <main>
+        {/* Hero Section */}
+        <section className="hero">
+          <div className="hero-media">
+            <div className="hero-media-overlay" />
+          </div>
+          <div className="hero-shell container">
+            <div className="hero-grid">
+              <div className="hero-copy">
+                <p className="eyebrow">{project.location}</p>
+                <h1 className="hero-title">
+                  {project.title}
+                </h1>
+                <p className="hero-lead">
+                  {project.description}
+                </p>
+                <div className="action-row">
+                  <Link to="/contact" className="btn btn-primary">Request Estimate</Link>
+                  <Link to="/projects" className="btn btn-soft">View All Projects</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="hero-bottom-fade" />
+        </section>
 
-          <article className="card service-detail">
-            <img src={project.image} alt={project.imageAlt} loading="eager" />
-            <div>
-              <h3>Project focus</h3>
-              <p>
-                This project demonstrates our approach to planning, structural execution, and finish details for
-                specialized home expansion and outdoor living builds.
-              </p>
-
-              <h3>Related services</h3>
-              <div className="chip-list">
-                {project.relatedServices.map((serviceSlug) => {
-                  const item = serviceLookup.get(serviceSlug);
-                  const href = 'parentSlug' in (item || {})
-                    ? `/services/${item.parentSlug}/${item.slug}`
-                    : `/services/${item?.slug}`;
-
-                  return item ? (
-                    <Link key={serviceSlug} to={href} className="chip-item">{item.name}</Link>
-                  ) : null;
-                })}
+        {/* Main Content */}
+        <section className="section-pad">
+          <div className="container">
+            <Breadcrumbs items={breadcrumbs} />
+            
+            <div className="page-shell">
+              {/* Project Image */}
+              <div className="page-content-card">
+                <img 
+                  src={project.image} 
+                  alt={project.imageAlt} 
+                  style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
+                  loading="eager" 
+                />
               </div>
 
-              {location ? (
-                <p>
-                  Local market page: <Link className="text-link" to={`/locations/${location.slug}`}>{location.name}</Link>
+              {/* Project Details */}
+              <div className="page-content-card card">
+                <h2>Project Overview</h2>
+                <p>{project.description}</p>
+                <p style={{ marginTop: '1rem' }}>
+                  <strong>Location:</strong> {project.location}
                 </p>
-              ) : null}
-            </div>
-          </article>
-        </div>
-      </section>
+              </div>
 
-      <CtaSection
-        title="Want similar results at your property?"
-        text="Request an estimate and we will outline options matched to your lot, scope, and timeline."
-      />
+              {/* Project Focus */}
+              <div className="page-content-card card">
+                <h2>Project Focus</h2>
+                <p>
+                  This project demonstrates our approach to planning, structural execution, and finish details for 
+                  specialized home expansion and outdoor living builds in Upstate South Carolina.
+                </p>
+                <p style={{ marginTop: '1rem' }}>
+                  Every project is tailored to the specific needs of the homeowner, site conditions, and local 
+                  architectural character. We prioritize quality craftsmanship, clear communication, and long-term value.
+                </p>
+              </div>
+
+              {/* Related Location Link */}
+              {location && (
+                <div className="page-content-card card">
+                  <h2>Learn More About {location.name}</h2>
+                  <p>
+                    We serve homeowners throughout {location.name} and {location.county}. 
+                    View our full range of services available in this area.
+                  </p>
+                  <Link to={location.servicePath} className="btn btn-soft" style={{ marginTop: '1rem' }}>
+                    View {location.name} Services →
+                  </Link>
+                </div>
+              )}
+
+              {/* CTA */}
+              <CtaSection
+                title="Want Similar Results at Your Property?"
+                text="Request an estimate and we'll outline options matched to your lot, scope, and timeline."
+                primaryAction={{ label: 'Request Estimate', to: '/contact' }}
+                secondaryAction={{ label: 'View More Projects', to: '/projects' }}
+              />
+            </div>
+          </div>
+        </section>
+      </main>
     </>
   );
 }
