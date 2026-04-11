@@ -9,7 +9,7 @@
 import garageImage from '../assets/images/garage-2-car-dark-gray.webp';
 import additionImage from '../assets/images/room-addition-fountain-inn.webp';
 import screenedPorchImage from '../assets/images/custom-screened-porch-aluminum-frame.png';
-import deckImage from '../assets/images/services/deck-service.svg';
+import deckImage from '../assets/images/custom-deck-greenville-sc.webp';
 import aduImage from '../assets/images/adu-cottage-light-gray.png';
 
 export const coreServices = [
@@ -242,7 +242,7 @@ export const coreServices = [
     
     relatedServices: ['screened-porches'],
     image: deckImage,
-    imageAlt: 'Elevated composite deck with modern aluminum railing and covered seating area'
+    imageAlt: 'Custom wooden deck in Greenville SC with modern railing and outdoor furniture'
   },
 
   {
