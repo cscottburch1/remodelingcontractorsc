@@ -4,14 +4,12 @@ import EstimateForm from '../components/EstimateForm';
 import Faq from '../components/Faq';
 import Hero from '../components/Hero';
 import HomeServiceCard from '../components/HomeServiceCard';
-import ProjectCard from '../components/ProjectCard';
 import Seo from '../components/Seo';
 import SectionIntro from '../components/SectionIntro';
 import Testimonials from '../components/Testimonials';
 import { faqs } from '../data/faqs';
 import { coreServices } from '../data/coreServices';
 import { serviceAreas } from '../data/serviceAreas';
-import { projects } from '../data/projects';
 import { createBreadcrumbSchema, createFaqSchema, createLocalBusinessSchema } from '../lib/schema';
 
 export default function HomePage() {
@@ -74,21 +72,6 @@ export default function HomePage() {
             <strong>100%</strong>
             <p>Focused on quality space creation</p>
           </article>
-        </div>
-      </section>
-
-      <section className="section-pad">
-        <div className="container">
-          <SectionIntro
-            eyebrow="Projects"
-            title="Recent work across Upstate South Carolina"
-            text="Featured garages, additions, decks, screened porches, and outdoor living projects."
-          />
-          <div className="grid-3">
-            {projects.map((project) => (
-              <ProjectCard key={project.title} project={project} />
-            ))}
-          </div>
         </div>
       </section>
 
