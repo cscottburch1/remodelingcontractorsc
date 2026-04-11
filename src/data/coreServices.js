@@ -7,7 +7,7 @@
 
 // Import service images
 import garageImage from '../assets/images/garage-2-car-dark-gray.webp';
-import additionImage from '../assets/images/services/room-addition-service.svg';
+import additionImage from '../assets/images/room-addition-fountain-inn.webp';
 import screenedPorchImage from '../assets/images/custom-screened-porch-aluminum-frame.png';
 import deckImage from '../assets/images/services/deck-service.svg';
 import aduImage from '../assets/images/adu-cottage-light-gray.png';
@@ -126,7 +126,7 @@ export const coreServices = [
     
     relatedServices: ['garages', 'adus'],
     image: additionImage,
-    imageAlt: 'Seamless home addition with integrated roofline and matching exterior finishes'
+    imageAlt: 'Modern home addition in Fountain Inn SC with gray siding and white trim'
   },
 
   {
