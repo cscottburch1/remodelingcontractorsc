@@ -6,7 +6,7 @@
  */
 
 // Import service images
-import garageImage from '../assets/images/services/garage-service.svg';
+import garageImage from '../assets/images/garage-2-car-dark-gray.webp';
 import additionImage from '../assets/images/services/room-addition-service.svg';
 import screenedPorchImage from '../assets/images/custom-screened-porch-aluminum-frame.png';
 import deckImage from '../assets/images/services/deck-service.svg';
@@ -67,7 +67,7 @@ export const coreServices = [
     
     relatedServices: ['additions', 'adus'],
     image: garageImage,
-    imageAlt: 'Custom detached two-car garage with matching siding and architectural details'
+    imageAlt: 'Dark gray two-car detached garage with white trim and bonus room upstairs'
   },
 
   {
