@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import heroImageWebp from '../assets/images/screened porch simpsonville sc_enhanced.png';
+import heroImageWebp from '../assets/images/screened porch simpsonville sc_enhanced.webp';
 
 export default function Hero() {
   return (

@@ -1,4 +1,4 @@
-import screenedPorch from '../assets/images/custom-screened-porch-aluminum-frame.png';
+import screenedPorch from '../assets/images/custom-screened-porch-aluminum-frame.webp';
 
 export const services = [
   {

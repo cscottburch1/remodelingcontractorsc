@@ -8,9 +8,9 @@
 // Import service images
 import garageImage from '../assets/images/garage-2-car-dark-gray.webp';
 import additionImage from '../assets/images/room-addition-fountain-inn.webp';
-import screenedPorchImage from '../assets/images/custom-screened-porch-aluminum-frame.png';
+import screenedPorchImage from '../assets/images/custom-screened-porch-aluminum-frame.webp';
 import deckImage from '../assets/images/custom-deck-greenville-sc.webp';
-import aduImage from '../assets/images/adu-cottage-light-gray.png';
+import aduImage from '../assets/images/adu-cottage-light-gray.webp';
 
 export const coreServices = [
   {
