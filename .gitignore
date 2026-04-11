@@ -6,3 +6,20 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+
+# Test and development files
+*.test.js
+test-results/
+.playwright-mcp/
+tests/
+draft-static/
+initial-*.png
+initial-*.md
+initial-*.log
+iteration-*.png
+homepage-desktop*.png
+homepage-desktop*.md
+playwright-visual-check.png
+
+# Deployment configs (these should not be in repo)
+nginx-*.conf

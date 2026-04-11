@@ -19,7 +19,7 @@ export default function Header() {
     <header className="header-wrap">
       <div className="header-band">
         <div className="container header-band-inner">
-          <p>Serving Greenville, Simpsonville, Fountain Inn & Upstate SC</p>
+          <p>Serving Greenville, Mauldin, Gray Court, Simpsonville, Fountain Inn, Woodruff, Laurens and Clinton, SC</p>
           <a href="tel:+18647244600">(864) 724-4600</a>
         </div>
       </div>

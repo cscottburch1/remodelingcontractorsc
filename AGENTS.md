@@ -1,88 +1,73 @@
-# AGENTS
+# Deployment and Infrastructure Safety Rules
 
-This file defines mandatory rules for any AI agent or automation working in this repository.
+This repository is allowed to deploy to the isolated Hostinger VPS environment for:
 
-## Mission
+* Domain: remodelingcontractorsc.com
+* WWW Domain: [www.remodelingcontractorsc.com](http://www.remodelingcontractorsc.com)
+* AppSlug: remodelingcontractorsc
+* AppPath: /var/www/remodelingcontractorsc
+* PM2 Process: remodelingcontractorsc
+* Allowed Repo: [git@github.com](mailto:git@github.com):cscottburch1/remodelingcontractorsc.git
 
-Build and maintain remodelingcontractorsc.com safely, with strict production isolation and predictable deploy behavior.
+## Allowed Actions
 
-## Non-Negotiable Rules
+The agent IS allowed to:
 
-1. Never access or modify VPS infrastructure directly from agent workflows.
-2. Never edit NGINX, PM2 services, or deployment config outside this repository.
-3. Never commit directly to `main` from autonomous agent workflows.
-4. Never bypass deploy guards or pre-push checks.
-5. Never introduce or restore `burchcontracting` identifiers in deployment values.
+* SSH into the VPS for this project
+* inspect the app directory for this project
+* run git pull for this project
+* run npm install and npm run build for this project
+* restart or inspect the PM2 process for this project
+* inspect and modify the dedicated nginx config for remodelingcontractorsc.com only
+* run validation checks for this project
+* inspect logs for this project
+* troubleshoot 403, nginx, PM2, build, permissions, and deployment issues for this project
+* verify DNS, SSL, and reverse proxy behavior for remodelingcontractorsc.com only
 
-## Git Workflow
+## Forbidden Actions
 
-1. Create a feature branch for each task:
-   - `feature/<short-task-name>`
-2. Make focused commits with clear messages.
-3. Open a pull request into `main`.
-4. Merge only after checks pass and changes are reviewed.
+The agent MUST NOT:
 
-## Required Validation Before PR
+* access, modify, deploy, restart, or troubleshoot burchcontracting.com
+* access, modify, deploy, restart, or troubleshoot any PM2 process for burchcontracting.com
+* edit or reload any nginx config for burchcontracting.com
+* pull, build, or deploy any burchcontracting repository
+* modify shared infrastructure in a way that could affect burchcontracting.com
+* change server-wide defaults unless strictly required for remodelingcontractorsc.com and confirmed safe
+* touch any unrelated app directory outside /var/www/remodelingcontractorsc
 
-Run these commands locally:
+## Isolation Rules
 
-```bash
-npm run verify:push
-```
+All deployment and troubleshooting actions must stay within these boundaries:
 
-This executes:
+* App directory: /var/www/remodelingcontractorsc
+* PM2 process: remodelingcontractorsc
+* Domain config: remodelingcontractorsc.com and [www.remodelingcontractorsc.com](http://www.remodelingcontractorsc.com)
+* Repository: [git@github.com](mailto:git@github.com):cscottburch1/remodelingcontractorsc.git
 
-1. `npm run deploy:guard`
-2. `npm run deploy:guard:staging`
-3. `npm run build`
+If the agent encounters any config, process, file path, or domain that appears to belong to burchcontracting.com, it must stop and avoid modifying it.
 
-## Deployment Lanes
+## Deployment Workflow for This Repo
 
-1. Production lane
-   - Config: `deploy/site.config.json`
-   - Guard: `npm run deploy:guard`
-   - PM2 process: `remodelingcontractorsc`
+For remodelingcontractorsc.com, the agent is allowed to execute this workflow:
 
-2. Staging lane
-   - Config: `deploy/site.staging.config.json`
-   - Guard: `npm run deploy:guard:staging`
-   - PM2 process: `remodelingcontractorsc-staging`
+1. SSH into the VPS
+2. cd /var/www/remodelingcontractorsc
+3. git pull origin main
+4. npm install
+5. npm run build
+6. pm2 restart remodelingcontractorsc
+7. verify pm2 status
+8. inspect logs
+9. inspect nginx site config for remodelingcontractorsc.com only
+10. reload nginx only if the remodelingcontractorsc.com config changed and validation passes
+11. verify live response and app health
 
-Use:
+## Safety Requirement
 
-```bash
-./scripts/deploy/deploy.sh production
-./scripts/deploy/deploy.sh staging
-```
+Before making any deployment or server change, the agent must confirm that:
 
-## Agent Scope Guidance
-
-1. Allowed
-   - Frontend, backend, content, SEO, tests, and repository scripts.
-2. Allowed
-   - Propose infra changes as PR notes (do not execute infra changes).
-3. Disallowed
-   - Direct server shell actions, secret rotation, DNS changes, or manual production restart.
-
-## Secrets and Safety
-
-1. Do not commit secrets or credentials.
-2. Use `.env` on deployment host; keep `.env.example` as template only.
-3. Sanitize logs and outputs before committing artifacts.
-
-## Human Approval Gates
-
-Require human confirmation before:
-
-1. Merging to `main`.
-2. Running production deployment.
-3. Changing domain, PM2 process name, app path, or app port.
-
-## Source of Truth
-
-When there is any conflict, follow these files:
-
-1. `deploy/WORKFLOW.md`
-2. `scripts/deploy/guard-site.mjs`
-3. `deploy/site.config.json`
-4. `deploy/site.staging.config.json`
+* the target app path is /var/www/remodelingcontractorsc
+* the target PM2 process is remodelingcontractorsc
+* the target domain is remodelingcontractorsc.com
+* no burchcontracting.com resource is being touched
