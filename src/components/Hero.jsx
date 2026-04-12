@@ -1,21 +1,23 @@
 import { Link } from 'react-router-dom';
-import heroImageWebp from '../assets/images/screened porch simpsonville sc_enhanced.webp';
+import { heroImageSet } from '../data/responsiveImages';
 
 export default function Hero() {
   return (
     <section className="hero hero-split">
       <div className="hero-media" aria-hidden="true">
         <picture>
-          <source srcSet={heroImageWebp} type="image/webp" />
+          <source srcSet={heroImageSet.srcSet} sizes={heroImageSet.sizes} type="image/webp" />
           <img
-            src={heroImageWebp}
+            src={heroImageSet.defaultSrc}
+            srcSet={heroImageSet.srcSet}
+            sizes={heroImageSet.sizes}
             alt=""
             className="hero-bg-img"
             loading="eager"
             fetchPriority="high"
             decoding="async"
-            width="1600"
-            height="1000"
+            width="960"
+            height="525"
           />
         </picture>
         <div className="hero-media-overlay" />

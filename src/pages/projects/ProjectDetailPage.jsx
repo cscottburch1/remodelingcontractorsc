@@ -69,9 +69,14 @@ export default function ProjectDetailPage() {
               <div className="page-content-card">
                 <img 
                   src={project.image} 
+                  srcSet={project.imageSrcSet}
+                  sizes="(max-width: 759px) calc(100vw - 2rem), (max-width: 899px) calc(50vw - 1.7rem), 42vw"
                   alt={project.imageAlt} 
                   style={{ width: '100%', height: 'auto', borderRadius: '8px' }}
                   loading="eager" 
+                  decoding="async"
+                  width="900"
+                  height="600"
                 />
               </div>
 

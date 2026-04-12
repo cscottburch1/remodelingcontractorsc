@@ -4,7 +4,16 @@ export default function HomeServiceCard({ service }) {
   return (
     <article className="home-service-card">
       <div className="home-service-media">
-        <img src={service.image} alt={service.imageAlt} loading="lazy" decoding="async" width="960" height="720" />
+        <img
+          src={service.image}
+          srcSet={service.imageSrcSet}
+          sizes={service.imageSizes}
+          alt={service.imageAlt}
+          loading="lazy"
+          decoding="async"
+          width="900"
+          height="600"
+        />
       </div>
       <div className="home-service-body">
         <h3>{service.title}</h3>

@@ -26,7 +26,9 @@ export default function HomePage() {
     path: service.servicePath,
     description: service.summary,
     image: service.image,
-    imageAlt: service.imageAlt
+    imageAlt: service.imageAlt,
+    imageSrcSet: service.imageSrcSet,
+    imageSizes: service.imageSizes
   }));
 
   return (

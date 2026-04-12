@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import burchLogo from '../assets/images/Burch Contracting Logo.png';
+import { logoImageSet } from '../data/responsiveImages';
 
 const navItems = [
   { label: 'Home', to: '/' },
@@ -26,7 +26,16 @@ export default function Header() {
 
       <div className="container header">
         <Link to="/" className="brand" onClick={() => setOpen(false)}>
-          <img className="brand-logo" src={burchLogo} alt="Remodeling Contractors SC logo" />
+          <picture>
+            <source srcSet={logoImageSet.webpSrcSet} sizes={logoImageSet.sizes} type="image/webp" />
+            <img
+              className="brand-logo"
+              src={logoImageSet.fallbackSrc}
+              alt="Remodeling Contractors SC logo"
+              width="320"
+              height="180"
+            />
+          </picture>
           <span className="brand-copy">
             <strong className="brand-title">Remodeling Contractors SC</strong>
             <small className="brand-subtitle">Garages, additions, decks, and screened porches</small>

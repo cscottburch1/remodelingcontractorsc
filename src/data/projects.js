@@ -1,8 +1,10 @@
-import garageImage from '../assets/images/garage-2-car-dark-gray.webp';
-import additionImage from '../assets/images/room-addition-fountain-inn.webp';
-import deckImage from '../assets/images/custom-deck-greenville-sc.webp';
-import screenedPorchImage from '../assets/images/custom-screened-porch-aluminum-frame.webp';
-import aduImage from '../assets/images/adu-cottage-light-gray.webp';
+import {
+  aduImageSet,
+  additionImageSet,
+  deckImageSet,
+  garageImageSet,
+  screenedPorchImageSet
+} from './responsiveImages';
 
 export const projects = [
   {
@@ -11,7 +13,9 @@ export const projects = [
     location: 'Simpsonville, SC',
     locationSlug: 'simpsonville-sc',
     description: 'Custom detached garage with matching siding, carriage-style doors, and upper-level storage framing.',
-    image: garageImage,
+    image: garageImageSet.defaultSrc,
+    imageSrcSet: garageImageSet.srcSet,
+    imageSizes: garageImageSet.sizes,
     imageAlt: 'Professional dark gray two-car detached garage with white trim',
     imagePosition: 'center 62%',
     relatedServices: ['garages']
@@ -22,7 +26,9 @@ export const projects = [
     location: 'Fountain Inn, SC',
     locationSlug: 'fountain-inn-sc',
     description: 'Bedroom suite expansion with structural reinforcement and seamless exterior detailing.',
-    image: additionImage,
+    image: additionImageSet.defaultSrc,
+    imageSrcSet: additionImageSet.srcSet,
+    imageSizes: additionImageSet.sizes,
     imageAlt: 'Modern room addition with vinyl exterior in Fountain Inn SC',
     imagePosition: 'center 58%',
     relatedServices: ['additions']
@@ -33,7 +39,9 @@ export const projects = [
     location: 'Greenville, SC',
     locationSlug: 'greenville-sc',
     description: 'Composite deck system with covered roof section, integrated stairs, and evening-ready lighting.',
-    image: deckImage,
+    image: deckImageSet.defaultSrc,
+    imageSrcSet: deckImageSet.srcSet,
+    imageSizes: deckImageSet.sizes,
     imageAlt: 'Custom composite deck with modern railings in Greenville SC',
     imagePosition: 'center 54%',
     relatedServices: ['decks']
@@ -44,7 +52,9 @@ export const projects = [
     location: 'Fountain Inn, SC',
     locationSlug: 'fountain-inn-sc',
     description: 'Full patio enclosure with powder-coated aluminum framing, pet-safe screens, and clean drainage design.',
-    image: screenedPorchImage,
+    image: screenedPorchImageSet.defaultSrc,
+    imageSrcSet: screenedPorchImageSet.srcSet,
+    imageSizes: screenedPorchImageSet.sizes,
     imageAlt: 'Custom aluminum-frame screened porch enclosure',
     imagePosition: 'center 52%',
     relatedServices: ['screened-porches']
@@ -55,7 +65,9 @@ export const projects = [
     location: 'Laurens, SC',
     locationSlug: 'laurens-sc',
     description: 'Detached backyard pod with kitchenette rough-ins, covered entry, and independent utility planning.',
-    image: aduImage,
+    image: aduImageSet.defaultSrc,
+    imageSrcSet: aduImageSet.srcSet,
+    imageSizes: aduImageSet.sizes,
     imageAlt: 'Light gray cottage-style ADU with front porch',
     imagePosition: 'center 60%',
     relatedServices: ['adus']

@@ -5,12 +5,13 @@
  * These drive the main service pages, navigation, and local service pages
  */
 
-// Import service images
-import garageImage from '../assets/images/garage-2-car-dark-gray.webp';
-import additionImage from '../assets/images/room-addition-fountain-inn.webp';
-import screenedPorchImage from '../assets/images/custom-screened-porch-aluminum-frame.webp';
-import deckImage from '../assets/images/custom-deck-greenville-sc.webp';
-import aduImage from '../assets/images/adu-cottage-light-gray.webp';
+import {
+  aduImageSet,
+  additionImageSet,
+  deckImageSet,
+  garageImageSet,
+  screenedPorchImageSet
+} from './responsiveImages';
 
 export const coreServices = [
   {
@@ -66,7 +67,9 @@ export const coreServices = [
     localContext: 'Garage projects in Upstate SC require careful planning around setbacks, lot coverage, HOA guidelines, and matching neighborhood character. We handle local permit requirements and ensure your garage complements your property.',
     
     relatedServices: ['additions', 'adus'],
-    image: garageImage,
+    image: garageImageSet.defaultSrc,
+    imageSrcSet: garageImageSet.srcSet,
+    imageSizes: garageImageSet.sizes,
     imageAlt: 'Dark gray two-car detached garage with white trim and bonus room upstairs'
   },
 
@@ -125,7 +128,9 @@ export const coreServices = [
     localContext: 'Addition projects in Upstate SC must address setbacks, lot coverage limits, and neighborhood design compatibility. We manage all local permitting and ensure your addition meets structural and zoning requirements.',
     
     relatedServices: ['garages', 'adus'],
-    image: additionImage,
+    image: additionImageSet.defaultSrc,
+    imageSrcSet: additionImageSet.srcSet,
+    imageSizes: additionImageSet.sizes,
     imageAlt: 'Modern home addition in Fountain Inn SC with gray siding and white trim'
   },
 
@@ -183,7 +188,9 @@ export const coreServices = [
     localContext: 'Screened porch projects in Upstate SC must meet wind load requirements, setback rules, and proper drainage planning. Aluminum systems hold up well in our humid climate and require minimal maintenance.',
     
     relatedServices: ['decks'],
-    image: screenedPorchImage,
+    image: screenedPorchImageSet.defaultSrc,
+    imageSrcSet: screenedPorchImageSet.srcSet,
+    imageSizes: screenedPorchImageSet.sizes,
     imageAlt: 'Covered screened porch with aluminum frame system and ceiling fan'
   },
 
@@ -241,7 +248,9 @@ export const coreServices = [
     localContext: 'Deck construction in Upstate SC requires proper footings, frost line consideration, and drainage planning. Composite materials perform well in our climate and reduce long-term maintenance.',
     
     relatedServices: ['screened-porches'],
-    image: deckImage,
+    image: deckImageSet.defaultSrc,
+    imageSrcSet: deckImageSet.srcSet,
+    imageSizes: deckImageSet.sizes,
     imageAlt: 'Custom wooden deck in Greenville SC with modern railing and outdoor furniture'
   },
 
@@ -300,7 +309,9 @@ export const coreServices = [
     localContext: 'ADU construction in Upstate SC varies by jurisdiction. Some areas have clear ADU ordinances while others review projects case-by-case. We help navigate setbacks, parking requirements, utility connections, and occupancy rules early in planning.',
     
     relatedServices: ['additions', 'garages'],
-    image: aduImage,
+    image: aduImageSet.defaultSrc,
+    imageSrcSet: aduImageSet.srcSet,
+    imageSizes: aduImageSet.sizes,
     imageAlt: 'Custom guest house ADU with screened porch living area and modern gray siding'
   }
 ];

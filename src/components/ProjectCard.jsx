@@ -6,6 +6,8 @@ export default function ProjectCard({ project }) {
       <div className="project-card-media">
         <img
           src={project.image}
+          srcSet={project.imageSrcSet}
+          sizes={project.imageSizes}
           alt={project.imageAlt}
           loading="lazy"
           decoding="async"
