@@ -1,3 +1,9 @@
+import garageImage from '../assets/images/garage-2-car-dark-gray.webp';
+import additionImage from '../assets/images/room-addition-fountain-inn.webp';
+import deckImage from '../assets/images/custom-deck-greenville-sc.webp';
+import screenedPorchImage from '../assets/images/custom-screened-porch-aluminum-frame.webp';
+import aduImage from '../assets/images/adu-cottage-light-gray.webp';
+
 export const projects = [
   {
     slug: 'detached-three-bay-garage-greenville',
@@ -5,8 +11,8 @@ export const projects = [
     location: 'Simpsonville, SC',
     locationSlug: 'simpsonville-sc',
     description: 'Custom detached garage with matching siding, carriage-style doors, and upper-level storage framing.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80',
-    imageAlt: 'Detached three bay garage with decorative doors and gable roof',
+    image: garageImage,
+    imageAlt: 'Professional dark gray two-car detached garage with white trim',
     relatedServices: ['garages']
   },
   {
@@ -15,8 +21,8 @@ export const projects = [
     location: 'Simpsonville, SC',
     locationSlug: 'simpsonville-sc',
     description: 'Upper-level bedroom suite expansion with structural reinforcement and seamless exterior detailing.',
-    image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1400&q=80',
-    imageAlt: 'Large two story home addition with finished exterior',
+    image: additionImage,
+    imageAlt: 'Modern room addition with brick exterior in Fountain Inn SC',
     relatedServices: ['additions']
   },
   {
@@ -25,8 +31,8 @@ export const projects = [
     location: 'Mauldin, SC',
     locationSlug: 'mauldin-sc',
     description: 'Composite deck system with covered roof section, integrated stairs, and evening-ready lighting.',
-    image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80',
-    imageAlt: 'Covered backyard deck with seating and modern railings',
+    image: deckImage,
+    imageAlt: 'Custom composite deck with modern railings in Greenville SC',
     relatedServices: ['decks']
   },
   {
@@ -35,8 +41,8 @@ export const projects = [
     location: 'Fountain Inn, SC',
     locationSlug: 'fountain-inn-sc',
     description: 'Full patio enclosure with powder-coated aluminum framing, pet-safe screens, and clean drainage design.',
-    image: 'https://images.unsplash.com/photo-1616048056617-93b94a339009?auto=format&fit=crop&w=1400&q=80',
-    imageAlt: 'Screened aluminum enclosure on rear patio',
+    image: screenedPorchImage,
+    imageAlt: 'Custom aluminum-frame screened porch enclosure',
     relatedServices: ['screened-porches']
   },
   {
@@ -45,8 +51,8 @@ export const projects = [
     location: 'Laurens, SC',
     locationSlug: 'laurens-sc',
     description: 'Detached backyard pod with kitchenette rough-ins, covered entry, and independent utility planning.',
-    image: 'https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=crop&w=1400&q=80',
-    imageAlt: 'Small detached backyard ADU structure with porch',
+    image: aduImage,
+    imageAlt: 'Light gray cottage-style ADU with front porch',
     relatedServices: ['adus']
   }
 ];
