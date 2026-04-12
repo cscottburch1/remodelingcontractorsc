@@ -16,7 +16,7 @@ export const projects = [
     image: garageImageSet.defaultSrc,
     imageSrcSet: garageImageSet.srcSet,
     imageSizes: garageImageSet.sizes,
-    imageAlt: 'Professional dark gray two-car detached garage with white trim',
+    imageAlt: 'Completed dark gray two-car detached garage with white trim and carriage-style doors in Simpsonville',
     imagePosition: 'center 62%',
     relatedServices: ['garages']
   },
@@ -29,7 +29,7 @@ export const projects = [
     image: additionImageSet.defaultSrc,
     imageSrcSet: additionImageSet.srcSet,
     imageSizes: additionImageSet.sizes,
-    imageAlt: 'Modern room addition with vinyl exterior in Fountain Inn SC',
+    imageAlt: 'Finished room addition with integrated roofline and gray vinyl exterior in Fountain Inn',
     imagePosition: 'center 58%',
     relatedServices: ['additions']
   },
@@ -42,7 +42,7 @@ export const projects = [
     image: deckImageSet.defaultSrc,
     imageSrcSet: deckImageSet.srcSet,
     imageSizes: deckImageSet.sizes,
-    imageAlt: 'Custom composite deck with modern railings in Greenville SC',
+    imageAlt: 'Composite deck with modern railings, bar seating, and outdoor living space in Greenville',
     imagePosition: 'center 54%',
     relatedServices: ['decks']
   },
@@ -55,7 +55,7 @@ export const projects = [
     image: screenedPorchImageSet.defaultSrc,
     imageSrcSet: screenedPorchImageSet.srcSet,
     imageSizes: screenedPorchImageSet.sizes,
-    imageAlt: 'Custom aluminum-frame screened porch enclosure',
+    imageAlt: 'Aluminum-frame screened patio enclosure with clean sightlines and covered roof structure',
     imagePosition: 'center 52%',
     relatedServices: ['screened-porches']
   },
@@ -68,7 +68,7 @@ export const projects = [
     image: aduImageSet.defaultSrc,
     imageSrcSet: aduImageSet.srcSet,
     imageSizes: aduImageSet.sizes,
-    imageAlt: 'Light gray cottage-style ADU with front porch',
+    imageAlt: 'Light gray cottage-style backyard ADU with covered front porch and landscaped entry in Laurens',
     imagePosition: 'center 60%',
     relatedServices: ['adus']
   }

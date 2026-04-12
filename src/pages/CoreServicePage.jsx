@@ -5,6 +5,7 @@ import { getLocalServicePagesByService } from '../data/localServicePages';
 import Breadcrumbs from '../components/Breadcrumbs';
 import PageFaq from '../components/PageFaq';
 import CtaSection from '../components/CtaSection';
+import SplitHero from '../components/SplitHero';
 import GarageCalculator from '../components/calculators/GarageCalculator';
 import AdditionCalculator from '../components/calculators/AdditionCalculator';
 import ScreenedPorchCalculator from '../components/calculators/ScreenedPorchCalculator';
@@ -70,49 +71,24 @@ export default function CoreServicePage() {
       </Helmet>
 
       <main>
-        {/* Hero Section */}
-        <section className="hero">
-          <div className="hero-media">
-            <img
-              src={service.image}
-              srcSet={service.imageSrcSet}
-              sizes="(max-width: 759px) 100vw, 85vw"
-              alt={service.imageAlt}
-              className="hero-bg-img"
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
-              width="900"
-              height="600"
-            />
-            <div className="hero-media-overlay" />
-          </div>
-          <div className="hero-shell container">
-            <div className="hero-grid">
-              <div className="hero-copy">
-                <p className="eyebrow">{service.serviceType}</p>
-                <h1 className="hero-title">
-                  {service.name} in Upstate SC
-                </h1>
-                <p className="hero-lead">
-                  {service.intro}
-                </p>
-                {service.highlights && service.highlights.length > 0 && (
-                  <div className="page-hero-highlights">
-                    {service.highlights.map((highlight, index) => (
-                      <span key={index}>{highlight}</span>
-                    ))}
-                  </div>
-                )}
-                <div className="action-row">
-                  <Link to="/contact" className="btn btn-primary">Request Estimate</Link>
-                  <Link to="/service-areas" className="btn btn-soft">View Service Areas</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="hero-bottom-fade" />
-        </section>
+        <SplitHero
+          eyebrow={service.serviceType}
+          title={`${service.name} in Upstate SC`}
+          text={service.intro}
+          actions={[
+            { label: 'Request Estimate', to: '/contact' },
+            { label: 'View Service Areas', to: '/service-areas', variant: 'soft' },
+          ]}
+          highlights={service.highlights || []}
+          image={{
+            defaultSrc: service.image,
+            srcSet: service.imageSrcSet,
+            sizes: service.imageSizes || '(max-width: 759px) 100vw, 85vw',
+            alt: service.imageAlt,
+            width: 900,
+            height: 600,
+          }}
+        />
 
         {/* Main Content */}
         <section className="section-pad">

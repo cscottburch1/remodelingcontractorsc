@@ -4,6 +4,7 @@ import { coreServices } from '../data/coreServices';
 import { heroImageSet } from '../data/responsiveImages';
 import Breadcrumbs from '../components/Breadcrumbs';
 import CtaSection from '../components/CtaSection';
+import SplitHero from '../components/SplitHero';
 
 export default function ServicesPage() {
   const breadcrumbs = [
@@ -23,46 +24,27 @@ export default function ServicesPage() {
       </Helmet>
 
       <main>
-        {/* Hero Section */}
-        <section className="hero">
-          <div className="hero-media">
-            <picture>
-              <source srcSet={heroImageSet.avifSrcSet} sizes={heroImageSet.sizes} type="image/avif" />
-              <source srcSet={heroImageSet.webpSrcSet} sizes={heroImageSet.sizes} type="image/webp" />
-              <img
-                src={heroImageSet.defaultSrc}
-                srcSet={heroImageSet.webpSrcSet}
-                sizes={heroImageSet.sizes}
-                alt="Custom ADU cottage exterior used as remodeling services hero image"
-                className="hero-bg-img"
-                loading="eager"
-                fetchPriority="high"
-                decoding="async"
-                width="960"
-                height="525"
-              />
-            </picture>
-            <div className="hero-media-overlay" />
-          </div>
-          <div className="hero-shell container">
-            <div className="hero-grid">
-              <div className="hero-copy">
-                <p className="eyebrow">Our Services</p>
-                <h1 className="hero-title">
-                  Six Specialized Services for Upstate SC Homeowners
-                </h1>
-                <p className="hero-lead">
-                  We specialize in custom garages, home additions, decks, screened porches, lake cabin screened porches, and ADUs. Each service is delivered with quality craftsmanship, local permitting expertise, and clear project communication.
-                </p>
-                <div className="action-row">
-                  <Link to="/contact" className="btn btn-primary">Request Estimate</Link>
-                  <Link to="/service-areas" className="btn btn-soft">View Service Areas</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="hero-bottom-fade" />
-        </section>
+        <SplitHero
+          eyebrow="Our Services"
+          title="Six Specialized Services for Upstate SC Homeowners"
+          text="We specialize in custom garages, home additions, decks, screened porches, lake cabin screened porches, and ADUs. Each service is delivered with quality craftsmanship, local permitting expertise, and clear project communication."
+          actions={[
+            { label: 'Request Estimate', to: '/contact' },
+            { label: 'View Service Areas', to: '/service-areas', variant: 'soft' },
+          ]}
+          highlights={[
+            'Six focused build categories',
+            'Permit-aware project planning',
+            'Responsive Upstate South Carolina coverage',
+          ]}
+          image={{
+            ...heroImageSet,
+            srcSet: heroImageSet.webpSrcSet,
+            alt: 'Accessory dwelling unit exterior representing the full remodeling service lineup in Upstate South Carolina',
+            width: 960,
+            height: 525,
+          }}
+        />
 
         {/* Services Grid */}
         <section className="section-pad">

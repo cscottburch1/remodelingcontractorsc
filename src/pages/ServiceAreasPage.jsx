@@ -4,6 +4,7 @@ import { serviceAreas } from '../data/serviceAreas';
 import { heroImageSet } from '../data/responsiveImages';
 import Breadcrumbs from '../components/Breadcrumbs';
 import CtaSection from '../components/CtaSection';
+import SplitHero from '../components/SplitHero';
 
 export default function ServiceAreasPage() {
   const breadcrumbs = [
@@ -23,46 +24,27 @@ export default function ServiceAreasPage() {
       </Helmet>
 
       <main>
-        {/* Hero Section */}
-        <section className="hero">
-          <div className="hero-media">
-            <picture>
-              <source srcSet={heroImageSet.avifSrcSet} sizes={heroImageSet.sizes} type="image/avif" />
-              <source srcSet={heroImageSet.webpSrcSet} sizes={heroImageSet.sizes} type="image/webp" />
-              <img
-                src={heroImageSet.defaultSrc}
-                srcSet={heroImageSet.webpSrcSet}
-                sizes={heroImageSet.sizes}
-                alt="Upstate South Carolina remodeling project exterior"
-                className="hero-bg-img"
-                loading="eager"
-                fetchPriority="high"
-                decoding="async"
-                width="960"
-                height="525"
-              />
-            </picture>
-            <div className="hero-media-overlay" />
-          </div>
-          <div className="hero-shell container">
-            <div className="hero-grid">
-              <div className="hero-copy">
-                <p className="eyebrow">Where We Work</p>
-                <h1 className="hero-title">
-                  Service Areas Across Upstate SC
-                </h1>
-                <p className="hero-lead">
-                  We proudly serve homeowners in nine communities across Greenville, Laurens, and Spartanburg counties with professional garage construction, home additions, decks, screened porches, and ADU services.
-                </p>
-                <div className="action-row">
-                  <Link to="/contact" className="btn btn-primary">Request Estimate</Link>
-                  <Link to="/services" className="btn btn-soft">View Services</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="hero-bottom-fade" />
-        </section>
+        <SplitHero
+          eyebrow="Where We Work"
+          title="Service Areas Across Upstate SC"
+          text="We proudly serve homeowners in ten communities across Greenville, Laurens, Greenwood, and Spartanburg counties with professional garage construction, home additions, decks, screened porches, and ADU services."
+          actions={[
+            { label: 'Request Estimate', to: '/contact' },
+            { label: 'View Services', to: '/services', variant: 'soft' },
+          ]}
+          highlights={[
+            'Ten primary service communities',
+            'Local permitting and inspection knowledge',
+            'Focused regional coverage for faster response',
+          ]}
+          image={{
+            ...heroImageSet,
+            srcSet: heroImageSet.webpSrcSet,
+            alt: 'Accessory dwelling unit exterior representing service coverage across Upstate South Carolina',
+            width: 960,
+            height: 525,
+          }}
+        />
 
         {/* Main Content */}
         <section className="section-pad">
@@ -73,7 +55,7 @@ export default function ServiceAreasPage() {
               <div className="section-intro">
                 <h2>Communities We Serve</h2>
                 <p>
-                  Our work spans Mauldin, Simpsonville, Fountain Inn, Gray Court, Laurens, Woodruff, Clinton, Ora, and Joanna. Each community has unique neighborhood character, local permitting requirements, and property considerations. We bring that local knowledge to every project.
+                  Our work spans Mauldin, Simpsonville, Fountain Inn, Gray Court, Laurens, Woodruff, Clinton, Ora, Joanna, and Greenwood. Each community has unique neighborhood character, local permitting requirements, and property considerations. We bring that local knowledge to every project.
                 </p>
               </div>
 
@@ -97,7 +79,7 @@ export default function ServiceAreasPage() {
               <div className="page-content-card card">
                 <h2>Our Service Coverage in Upstate South Carolina</h2>
                 <p>
-                  We focus on nine primary communities across Greenville, Laurens, and Spartanburg counties, with additional coverage in surrounding areas. This focused service region allows us to:
+                  We focus on ten primary communities across Greenville, Laurens, Greenwood, and Spartanburg counties, with additional coverage in surrounding areas. This focused service region allows us to:
                 </p>
                 <ul className="feature-list">
                   <li><strong>Maintain local expertise:</strong> We understand permitting processes, building codes, and neighborhood expectations in each area we serve.</li>

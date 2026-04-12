@@ -6,6 +6,7 @@ import { heroImageSet } from '../data/responsiveImages';
 import Breadcrumbs from '../components/Breadcrumbs';
 import PageFaq from '../components/PageFaq';
 import CtaSection from '../components/CtaSection';
+import SplitHero from '../components/SplitHero';
 
 const masterFAQs = [
   {
@@ -52,46 +53,27 @@ export default function MasterSEOPage() {
       </Helmet>
 
       <main>
-        {/* Hero Section */}
-        <section className="hero">
-          <div className="hero-media">
-            <picture>
-              <source srcSet={heroImageSet.avifSrcSet} sizes={heroImageSet.sizes} type="image/avif" />
-              <source srcSet={heroImageSet.webpSrcSet} sizes={heroImageSet.sizes} type="image/webp" />
-              <img
-                src={heroImageSet.defaultSrc}
-                srcSet={heroImageSet.webpSrcSet}
-                sizes={heroImageSet.sizes}
-                alt="Upstate South Carolina exterior remodeling project"
-                className="hero-bg-img"
-                loading="eager"
-                fetchPriority="high"
-                decoding="async"
-                width="960"
-                height="525"
-              />
-            </picture>
-            <div className="hero-media-overlay" />
-          </div>
-          <div className="hero-shell container">
-            <div className="hero-grid">
-              <div className="hero-copy">
-                <p className="eyebrow">Upstate South Carolina Contractor</p>
-                <h1 className="hero-title">
-                  Garages, Additions, Decks, Screened Porches & ADUs
-                </h1>
-                <p className="hero-lead">
-                  Professional contracting services across Upstate SC. We build custom garages, home additions, outdoor living spaces, and accessory dwelling units for homeowners who value quality craftsmanship, clear communication, and long-term value.
-                </p>
-                <div className="action-row">
-                  <Link to="/contact" className="btn btn-primary">Request Estimate</Link>
-                  <Link to="/projects" className="btn btn-soft">View Projects</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="hero-bottom-fade" />
-        </section>
+        <SplitHero
+          eyebrow="Upstate South Carolina Contractor"
+          title="Garages, Additions, Decks, Screened Porches and ADUs"
+          text="Professional contracting services across Upstate SC. We build custom garages, home additions, outdoor living spaces, and accessory dwelling units for homeowners who value quality craftsmanship, clear communication, and long-term value."
+          actions={[
+            { label: 'Request Estimate', to: '/contact' },
+            { label: 'View Projects', to: '/projects', variant: 'soft' },
+          ]}
+          highlights={[
+            'Full permit and inspection coordination',
+            'Garages, additions, decks, porches, and ADUs',
+            'Serving Upstate South Carolina homeowners',
+          ]}
+          image={{
+            ...heroImageSet,
+            srcSet: heroImageSet.webpSrcSet,
+            alt: 'Light gray accessory dwelling unit exterior used to represent Upstate South Carolina remodeling services',
+            width: 960,
+            height: 525,
+          }}
+        />
 
         {/* Service Introduction */}
         <section className="section-pad">

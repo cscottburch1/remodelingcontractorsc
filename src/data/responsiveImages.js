@@ -52,6 +52,7 @@ export const heroImageSet = {
   webpSrcSet: `${hero640} 640w, ${hero960Webp} 960w`,
   avifSrcSet: `${hero320Avif} 320w, ${hero640Avif} 640w, ${hero960Avif} 960w, ${hero1200Avif} 1200w`,
   sizes: '(max-width: 759px) calc(100vw - 2rem), (max-width: 1199px) 50vw, 610px',
+  alt: 'Light gray cottage-style accessory dwelling unit with a covered front porch and landscaped entry',
 };
 
 export const lakeCabinImageSet = {
@@ -59,6 +60,7 @@ export const lakeCabinImageSet = {
   webpSrcSet: `${lakeCabin640} 640w, ${lakeCabin960Webp} 960w`,
   avifSrcSet: `${lakeCabin320Avif} 320w, ${lakeCabin640Avif} 640w, ${lakeCabin960Avif} 960w, ${lakeCabin1200Avif} 1200w`,
   sizes: '(max-width: 759px) 100vw, (max-width: 1199px) 85vw, 900px',
+  alt: 'Screened porch attached to a lake cabin with wooded Lake Greenwood surroundings',
 };
 
 export const garageImageSet = makeImageSet(

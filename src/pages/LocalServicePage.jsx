@@ -5,6 +5,7 @@ import { getServiceBySlug } from '../data/coreServices';
 import Breadcrumbs from '../components/Breadcrumbs';
 import PageFaq from '../components/PageFaq';
 import CtaSection from '../components/CtaSection';
+import SplitHero from '../components/SplitHero';
 import GarageCalculator from '../components/calculators/GarageCalculator';
 import AdditionCalculator from '../components/calculators/AdditionCalculator';
 import ScreenedPorchCalculator from '../components/calculators/ScreenedPorchCalculator';
@@ -48,42 +49,24 @@ export default function LocalServicePage() {
       </Helmet>
 
       <main>
-        {/* Hero Section */}
-        <section className="hero">
-          <div className="hero-media">
-            <img
-              src={service.image}
-              srcSet={service.imageSrcSet}
-              sizes={service.imageSizes || '(max-width: 759px) 100vw, 85vw'}
-              alt={service.imageAlt}
-              className="hero-bg-img"
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
-              width="900"
-              height="600"
-            />
-            <div className="hero-media-overlay" />
-          </div>
-          <div className="hero-shell container">
-            <div className="hero-grid">
-              <div className="hero-copy">
-                <p className="eyebrow">{service.serviceType} in {page.county}</p>
-                <h1 className="hero-title">
-                  {page.h1}
-                </h1>
-                <p className="hero-lead">
-                  {page.intro}
-                </p>
-                <div className="action-row">
-                  <Link to="/contact" className="btn btn-primary">Request Estimate</Link>
-                  <Link to={page.parentServicePath} className="btn btn-soft">Learn About {page.serviceName}</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="hero-bottom-fade" />
-        </section>
+        <SplitHero
+          eyebrow={`${service.serviceType} in ${page.county}`}
+          title={page.h1}
+          text={page.intro}
+          actions={[
+            { label: 'Request Estimate', to: '/contact' },
+            { label: `Learn About ${page.serviceName}`, to: page.parentServicePath, variant: 'soft' },
+          ]}
+          highlights={service.highlights?.slice(0, 3) || []}
+          image={{
+            defaultSrc: service.image,
+            srcSet: service.imageSrcSet,
+            sizes: service.imageSizes || '(max-width: 759px) 100vw, 85vw',
+            alt: `${service.imageAlt} for ${page.townName} homeowners`,
+            width: 900,
+            height: 600,
+          }}
+        />
 
         {/* Main Content */}
         <section className="section-pad">

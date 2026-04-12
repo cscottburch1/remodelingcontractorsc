@@ -5,6 +5,7 @@ import { getLocalServicePagesByTown } from '../data/localServicePages';
 import { heroImageSet, lakeCabinImageSet } from '../data/responsiveImages';
 import Breadcrumbs from '../components/Breadcrumbs';
 import CtaSection from '../components/CtaSection';
+import SplitHero from '../components/SplitHero';
 
 export default function TownPage() {
   const location = useLocation();
@@ -17,8 +18,8 @@ export default function TownPage() {
 
   const heroImage = town.slug === 'greenwood-sc' ? lakeCabinImageSet : heroImageSet;
   const heroAlt = town.slug === 'greenwood-sc'
-    ? 'Custom screened porch on a lake cabin near Lake Greenwood SC'
-    : `${town.name} home improvement project in Upstate South Carolina`;
+    ? lakeCabinImageSet.alt
+    : `${heroImageSet.alt} representing remodeling work for ${town.name} homeowners`;
 
   const localServicePages = getLocalServicePagesByTown(town.slug);
   const nearbyTowns = getNearbyTowns(town.slug);
@@ -38,46 +39,23 @@ export default function TownPage() {
       </Helmet>
 
       <main>
-        {/* Hero Section */}
-        <section className="hero">
-          <div className="hero-media">
-            <picture>
-              <source srcSet={heroImage.avifSrcSet} sizes={heroImage.sizes} type="image/avif" />
-              <source srcSet={heroImage.webpSrcSet} sizes={heroImage.sizes} type="image/webp" />
-              <img
-                src={heroImage.defaultSrc}
-                srcSet={heroImage.webpSrcSet}
-                sizes={heroImage.sizes}
-                alt={heroAlt}
-                className="hero-bg-img"
-                loading="eager"
-                fetchPriority="high"
-                decoding="async"
-                width="960"
-                height="600"
-              />
-            </picture>
-            <div className="hero-media-overlay" />
-          </div>
-          <div className="hero-shell container">
-            <div className="hero-grid">
-              <div className="hero-copy">
-                <p className="eyebrow">{town.county}</p>
-                <h1 className="hero-title">
-                  {town.name} Contractor
-                </h1>
-                <p className="hero-lead">
-                  {town.intro}
-                </p>
-                <div className="action-row">
-                  <Link to="/contact" className="btn btn-primary">Request Estimate</Link>
-                  <Link to="/projects" className="btn btn-soft">View Projects</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="hero-bottom-fade" />
-        </section>
+        <SplitHero
+          eyebrow={town.county}
+          title={`${town.name} Contractor`}
+          text={town.intro}
+          actions={[
+            { label: 'Request Estimate', to: '/contact' },
+            { label: 'View Projects', to: '/projects', variant: 'soft' },
+          ]}
+          highlights={town.commonProjects.slice(0, 3)}
+          image={{
+            ...heroImage,
+            srcSet: heroImage.webpSrcSet,
+            alt: heroAlt,
+            width: 960,
+            height: 600,
+          }}
+        />
 
         {/* Main Content */}
         <section className="section-pad">

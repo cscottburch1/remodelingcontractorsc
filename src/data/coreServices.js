@@ -71,7 +71,7 @@ export const coreServices = [
     image: garageImageSet.defaultSrc,
     imageSrcSet: garageImageSet.srcSet,
     imageSizes: garageImageSet.sizes,
-    imageAlt: 'Dark gray two-car detached garage with white trim and bonus room upstairs'
+    imageAlt: 'Dark gray detached two-car garage with white trim, carriage-style doors, and upper-level bonus space'
   },
 
   {
@@ -132,7 +132,7 @@ export const coreServices = [
     image: additionImageSet.defaultSrc,
     imageSrcSet: additionImageSet.srcSet,
     imageSizes: additionImageSet.sizes,
-    imageAlt: 'Modern home addition in Fountain Inn SC with gray siding and white trim'
+    imageAlt: 'Gray home addition with integrated roofline, white trim, and multiple front-facing windows'
   },
 
   {
@@ -192,7 +192,7 @@ export const coreServices = [
     image: screenedPorchImageSet.defaultSrc,
     imageSrcSet: screenedPorchImageSet.srcSet,
     imageSizes: screenedPorchImageSet.sizes,
-    imageAlt: 'Covered screened porch with aluminum frame system and ceiling fan'
+    imageAlt: 'Covered aluminum-framed screened porch with white roof panels and a ceiling fan'
   },
 
   {
@@ -252,7 +252,7 @@ export const coreServices = [
     image: deckImageSet.defaultSrc,
     imageSrcSet: deckImageSet.srcSet,
     imageSizes: deckImageSet.sizes,
-    imageAlt: 'Custom wooden deck in Greenville SC with modern railing and outdoor furniture'
+    imageAlt: 'Elevated backyard deck with modern railings, wide stairs, and outdoor gathering space'
   },
 
   {
@@ -313,7 +313,7 @@ export const coreServices = [
     image: aduImageSet.defaultSrc,
     imageSrcSet: aduImageSet.srcSet,
     imageSizes: aduImageSet.sizes,
-    imageAlt: 'Custom guest house ADU with screened porch living area and modern gray siding'
+    imageAlt: 'Light gray accessory dwelling unit with a screened porch living area and covered front entry'
   },
 
   {
@@ -374,7 +374,7 @@ export const coreServices = [
     image: lakeCabinImageSet.defaultSrc,
     imageSrcSet: lakeCabinImageSet.webpSrcSet,
     imageSizes: lakeCabinImageSet.sizes,
-    imageAlt: 'Custom screened porch on a lake cabin near Lake Greenwood SC'
+    imageAlt: 'Screened porch attached to a lake cabin with wooded Lake Greenwood surroundings'
   }
 ];
 

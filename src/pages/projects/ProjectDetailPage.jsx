@@ -2,6 +2,7 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import CtaSection from '../../components/CtaSection';
 import Breadcrumbs from '../../components/Breadcrumbs';
+import SplitHero from '../../components/SplitHero';
 import { projects } from '../../data/projects';
 import { coreServices } from '../../data/coreServices';
 import { serviceAreas } from '../../data/serviceAreas';
@@ -34,42 +35,25 @@ export default function ProjectDetailPage() {
       </Helmet>
 
       <main>
-        {/* Hero Section */}
-        <section className="hero">
-          <div className="hero-media">
-            <img
-              src={project.image}
-              srcSet={project.imageSrcSet}
-              sizes="(max-width: 759px) 100vw, 85vw"
-              alt={project.imageAlt}
-              className="hero-bg-img"
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
-              width="900"
-              height="600"
-            />
-            <div className="hero-media-overlay" />
-          </div>
-          <div className="hero-shell container">
-            <div className="hero-grid">
-              <div className="hero-copy">
-                <p className="eyebrow">{project.location}</p>
-                <h1 className="hero-title">
-                  {project.title}
-                </h1>
-                <p className="hero-lead">
-                  {project.description}
-                </p>
-                <div className="action-row">
-                  <Link to="/contact" className="btn btn-primary">Request Estimate</Link>
-                  <Link to="/projects" className="btn btn-soft">View All Projects</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="hero-bottom-fade" />
-        </section>
+        <SplitHero
+          eyebrow={project.location}
+          title={project.title}
+          text={project.description}
+          actions={[
+            { label: 'Request Estimate', to: '/contact' },
+            { label: 'View All Projects', to: '/projects', variant: 'soft' },
+          ]}
+          highlights={location ? [location.county, 'Project spotlight', 'Real completed work'] : ['Project spotlight', 'Real completed work']}
+          image={{
+            defaultSrc: project.image,
+            srcSet: project.imageSrcSet,
+            sizes: project.imageSizes || '(max-width: 759px) 100vw, 85vw',
+            alt: project.imageAlt,
+            width: 900,
+            height: 600,
+            objectPosition: project.imagePosition,
+          }}
+        />
 
         {/* Main Content */}
         <section className="section-pad">

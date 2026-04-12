@@ -387,7 +387,7 @@ picture {
 
 .hero-title {
   margin-top: 0.45rem;
-  max-width: 10ch;
+  max-width: none;
   font-size: clamp(28px, 4vw, 44px);
   line-height: 1.15;
   font-weight: 700;
