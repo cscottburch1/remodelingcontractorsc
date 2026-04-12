@@ -28,13 +28,13 @@ export const projects = [
     relatedServices: ['additions']
   },
   {
-    slug: 'covered-composite-deck-mauldin-sc',
-    title: 'Covered Composite Deck With Lighting',
-    location: 'Mauldin, SC',
-    locationSlug: 'mauldin-sc',
+    slug: 'composite-deck-greenville-sc',
+    title: 'Composite Deck with outdoor living area with a bar and a firepit',
+    location: 'Greenville, SC',
+    locationSlug: 'greenville-sc',
     description: 'Composite deck system with covered roof section, integrated stairs, and evening-ready lighting.',
     image: deckImage,
-    imageAlt: 'Custom composite deck with modern railings in Mauldin SC',
+    imageAlt: 'Custom composite deck with modern railings in Greenville SC',
     imagePosition: 'center 54%',
     relatedServices: ['decks']
   },
