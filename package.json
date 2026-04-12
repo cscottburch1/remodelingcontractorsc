@@ -8,6 +8,8 @@
     "build": "vite build",
     "preview": "vite preview --host 0.0.0.0 --port 3002",
     "start": "node server/index.mjs",
+    "heal:403": "node scripts/deploy/auto-repair-403.mjs --once",
+    "heal:403:watch": "node scripts/deploy/auto-repair-403.mjs --watch",
     "deploy:guard": "node scripts/deploy/guard-site.mjs --env=production",
     "deploy:guard:staging": "node scripts/deploy/guard-site.mjs --env=staging",
     "verify:push": "node scripts/git/verify-push.mjs",
