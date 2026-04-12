@@ -47,7 +47,7 @@ const servicePatterns = [
   'screened-porch-builder',
   'deck-builder',
   'adu-builder',
-  'lake-cabin-screened-porch-builder',
+  'lake-cabins-and-screened-porch-builder',
 ];
 
 const projectPaths = [

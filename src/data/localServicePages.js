@@ -17,7 +17,7 @@ const serviceUrlPatterns = {
   'screened-porches': 'screened-porch-builder',
   'decks': 'deck-builder',
   'adus': 'adu-builder',
-  'lake-cabin-screened-porches': 'lake-cabin-screened-porch-builder'
+  'lake-cabin-screened-porches': 'lake-cabins-and-screened-porch-builder'
 };
 
 /**
