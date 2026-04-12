@@ -2,6 +2,7 @@
 import { Helmet } from 'react-helmet-async';
 import { getServiceAreaBySlug, getNearbyTowns } from '../data/serviceAreas';
 import { getLocalServicePagesByTown } from '../data/localServicePages';
+import { heroImageSet, lakeCabinImageSet } from '../data/responsiveImages';
 import Breadcrumbs from '../components/Breadcrumbs';
 import CtaSection from '../components/CtaSection';
 
@@ -13,6 +14,11 @@ export default function TownPage() {
   if (!town) {
     return <Navigate to="/service-areas" replace />;
   }
+
+  const heroImage = town.slug === 'greenwood-sc' ? lakeCabinImageSet : heroImageSet;
+  const heroAlt = town.slug === 'greenwood-sc'
+    ? 'Custom screened porch on a lake cabin near Lake Greenwood SC'
+    : `${town.name} home improvement project in Upstate South Carolina`;
 
   const localServicePages = getLocalServicePagesByTown(town.slug);
   const nearbyTowns = getNearbyTowns(town.slug);
@@ -35,6 +41,22 @@ export default function TownPage() {
         {/* Hero Section */}
         <section className="hero">
           <div className="hero-media">
+            <picture>
+              <source srcSet={heroImage.avifSrcSet} sizes={heroImage.sizes} type="image/avif" />
+              <source srcSet={heroImage.webpSrcSet} sizes={heroImage.sizes} type="image/webp" />
+              <img
+                src={heroImage.defaultSrc}
+                srcSet={heroImage.webpSrcSet}
+                sizes={heroImage.sizes}
+                alt={heroAlt}
+                className="hero-bg-img"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                width="960"
+                height="600"
+              />
+            </picture>
             <div className="hero-media-overlay" />
           </div>
           <div className="hero-shell container">

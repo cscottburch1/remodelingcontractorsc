@@ -37,6 +37,18 @@ export default function ProjectDetailPage() {
         {/* Hero Section */}
         <section className="hero">
           <div className="hero-media">
+            <img
+              src={project.image}
+              srcSet={project.imageSrcSet}
+              sizes="(max-width: 759px) 100vw, 85vw"
+              alt={project.imageAlt}
+              className="hero-bg-img"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              width="900"
+              height="600"
+            />
             <div className="hero-media-overlay" />
           </div>
           <div className="hero-shell container">

@@ -51,6 +51,18 @@ export default function LocalServicePage() {
         {/* Hero Section */}
         <section className="hero">
           <div className="hero-media">
+            <img
+              src={service.image}
+              srcSet={service.imageSrcSet}
+              sizes={service.imageSizes || '(max-width: 759px) 100vw, 85vw'}
+              alt={service.imageAlt}
+              className="hero-bg-img"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
+              width="900"
+              height="600"
+            />
             <div className="hero-media-overlay" />
           </div>
           <div className="hero-shell container">

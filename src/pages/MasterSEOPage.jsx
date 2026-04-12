@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { coreServices } from '../data/coreServices';
 import { serviceAreas } from '../data/serviceAreas';
+import { heroImageSet } from '../data/responsiveImages';
 import Breadcrumbs from '../components/Breadcrumbs';
 import PageFaq from '../components/PageFaq';
 import CtaSection from '../components/CtaSection';
@@ -54,6 +55,22 @@ export default function MasterSEOPage() {
         {/* Hero Section */}
         <section className="hero">
           <div className="hero-media">
+            <picture>
+              <source srcSet={heroImageSet.avifSrcSet} sizes={heroImageSet.sizes} type="image/avif" />
+              <source srcSet={heroImageSet.webpSrcSet} sizes={heroImageSet.sizes} type="image/webp" />
+              <img
+                src={heroImageSet.defaultSrc}
+                srcSet={heroImageSet.webpSrcSet}
+                sizes={heroImageSet.sizes}
+                alt="Upstate South Carolina exterior remodeling project"
+                className="hero-bg-img"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                width="960"
+                height="525"
+              />
+            </picture>
             <div className="hero-media-overlay" />
           </div>
           <div className="hero-shell container">
