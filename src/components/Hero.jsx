@@ -6,10 +6,11 @@ export default function Hero() {
     <section className="hero hero-split">
       <div className="hero-media" aria-hidden="true">
         <picture>
-          <source srcSet={heroImageSet.srcSet} sizes={heroImageSet.sizes} type="image/webp" />
+          <source srcSet={heroImageSet.avifSrcSet} sizes={heroImageSet.sizes} type="image/avif" />
+          <source srcSet={heroImageSet.webpSrcSet} sizes={heroImageSet.sizes} type="image/webp" />
           <img
             src={heroImageSet.defaultSrc}
-            srcSet={heroImageSet.srcSet}
+            srcSet={heroImageSet.webpSrcSet}
             sizes={heroImageSet.sizes}
             alt=""
             className="hero-bg-img"
