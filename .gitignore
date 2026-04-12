@@ -7,6 +7,10 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Database and uploads (sensitive data)
+data/
+uploads/
+
 # Test and development files
 *.test.js
 test-results/

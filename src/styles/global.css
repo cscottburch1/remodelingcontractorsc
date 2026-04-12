@@ -949,6 +949,124 @@ picture {
   border: 1px solid #f8d0cb;
 }
 
+.budget-range {
+  width: 100%;
+}
+
+.budget-inputs {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.budget-inputs input {
+  flex: 1;
+  min-width: 0;
+}
+
+.budget-separator {
+  color: var(--text-muted);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.file-upload-section {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.file-upload-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.8rem 1.2rem;
+  background: #ffffff;
+  border: 2px dashed #cbd5e1;
+  border-radius: var(--radius-control);
+  color: var(--brand-primary);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  justify-content: center;
+}
+
+.file-upload-label:hover {
+  border-color: var(--brand-primary);
+  background: #f8fafc;
+}
+
+.file-upload-label svg {
+  flex-shrink: 0;
+}
+
+.file-upload-hint {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.selected-files {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.file-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 0.9rem;
+  background: #f1f5f9;
+  border-radius: var(--radius-control);
+  font-size: 0.9rem;
+}
+
+.file-name {
+  flex: 1;
+  font-weight: 600;
+  color: var(--text-strong);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-size {
+  color: var(--text-muted);
+  font-size: 0.84rem;
+  flex-shrink: 0;
+}
+
+.file-remove {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e2e8f0;
+  border: none;
+  border-radius: 50%;
+  color: var(--text-muted);
+  font-size: 1.3rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+  line-height: 1;
+  padding: 0;
+}
+
+.file-remove:hover {
+  background: #dc2626;
+  color: white;
+}
+
+.cf-turnstile {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
 .full-width {
   width: 100%;
 }
