@@ -9,7 +9,7 @@ import CtaSection from '../components/CtaSection';
 const masterFAQs = [
   {
     question: 'What services does Remodeling Contractors SC provide?',
-    answer: 'We specialize in five core services across Upstate South Carolina: custom garage construction, home additions, screened porches, deck building, and accessory dwelling units (ADUs). Each service is delivered with quality craftsmanship, local permitting expertise, and neighborhood-appropriate design.'
+    answer: 'We specialize in six core services across Upstate South Carolina: custom garage construction, home additions, screened porches, lake cabin screened porches, deck building, and accessory dwelling units (ADUs). Each service is delivered with quality craftsmanship, local permitting expertise, and neighborhood-appropriate design.'
   },
   {
     question: 'What areas of Upstate SC do you serve?',
@@ -94,7 +94,7 @@ export default function MasterSEOPage() {
 
               {/* Five Core Services Grid */}
               <div>
-                <h2>Our Five Core Services</h2>
+                <h2>Our Six Core Services</h2>
                 <p style={{ marginBottom: '1.5rem' }}>Choose the service that fits your needs, then explore local options for your area:</p>
                 
                 <div className="grid-3">

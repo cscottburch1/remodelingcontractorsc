@@ -125,7 +125,7 @@ export default function ServiceAreasPage() {
               <div className="page-content-card card">
                 <h2>Services Available in All Areas</h2>
                 <p>
-                  Regardless of which Upstate SC community you call home, we provide the same five core services with consistent quality and professionalism:
+                  Regardless of which Upstate SC community you call home, we provide the same six core services with consistent quality and professionalism:
                 </p>
                 <div className="chip-list" style={{ marginTop: '1rem' }}>
                   <Link to="/garages" className="chip-item">Custom Garages</Link>
@@ -133,6 +133,7 @@ export default function ServiceAreasPage() {
                   <Link to="/screened-porches" className="chip-item">Screened Porches</Link>
                   <Link to="/decks" className="chip-item">Decks</Link>
                   <Link to="/adus" className="chip-item">ADUs</Link>
+                                  <Link to="/lake-cabin-screened-porches" className="chip-item">Lake Cabin Screened Porches</Link>
                 </div>
               </div>
 

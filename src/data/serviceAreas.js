@@ -184,6 +184,26 @@ export const serviceAreas = [
       'In-law suite conversions'
     ],
     nearbyTowns: ['Clinton', 'Laurens', 'Woodruff']
+  },
+
+  {
+    name: 'Greenwood',
+    slug: 'greenwood-sc',
+    county: 'Greenwood County',
+    servicePath: '/greenwood-sc',
+    metaTitle: 'Greenwood SC Contractor | Lake Cabin Screened Porches & Home Services Near Lake Greenwood',
+    metaDescription: 'Professional contractor serving Greenwood, SC and lake cabin properties near Lake Greenwood. Custom screened porches, garages, additions, and decks built for lakeside and residential living.',
+    intro: 'We serve Greenwood homeowners and Lake Greenwood cabin owners with screened porches, garage construction, home additions, and deck projects. Our team understands lakeside building requirements, Greenwood County permitting, and the unique needs of waterfront properties.',
+    population: '~23,000',
+    about: 'Greenwood is the county seat of Greenwood County and home of Lake Greenwood, a popular 11,400-acre reservoir. The area combines established city neighborhoods with a large community of lakefront cabin properties. Home improvement projects near Lake Greenwood frequently focus on screened porch enclosures, dock-adjacent structures, and outdoor living upgrades for maximum waterfront enjoyment.',
+    commonProjects: [
+      'Lake cabin screened porch enclosures',
+      'Aluminum screen rooms for lakeside cabins',
+      'Covered deck additions facing the water',
+      'Detached garage structures for cabin properties',
+      'In-law suite additions for multi-generational lake homes'
+    ],
+    nearbyTowns: ['Laurens', 'Clinton', 'Joanna']
   }
 ];
 

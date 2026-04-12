@@ -14,7 +14,8 @@ const SERVICE_AREA_CITIES = [
   { name: 'Mauldin', state: 'South Carolina' },
   { name: 'Laurens', state: 'South Carolina' },
   { name: 'Clinton', state: 'South Carolina' },
-  { name: 'Joanna', state: 'South Carolina' }
+  { name: 'Joanna', state: 'South Carolina' },
+  { name: 'Greenwood', state: 'South Carolina' }
 ];
 
 export function createLocalBusinessSchema() {

@@ -44,8 +44,8 @@ export default function HomePage() {
         <div className="container services-showcase">
           <SectionIntro
             eyebrow="Core Services"
-            title="Five specialized services for space creation and outdoor living"
-            text="We focus on garages, additions, decks, screened porches, and ADUs — projects that expand your home's functionality while preserving neighborhood character and long-term value."
+            title="Six specialized services for space creation and outdoor living"
+            text="We focus on garages, additions, decks, screened porches, lake cabin screened porches, and ADUs — projects that expand your home's functionality while preserving neighborhood character and long-term value."
           />
           <div className="home-services-grid">
             {mappedServices.map((service) => (

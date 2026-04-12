@@ -32,10 +32,10 @@ export default function ServicesPage() {
               <div className="hero-copy">
                 <p className="eyebrow">Our Services</p>
                 <h1 className="hero-title">
-                  Five Core Services for Upstate SC Homeowners
+                  Six Specialized Services for Upstate SC Homeowners
                 </h1>
                 <p className="hero-lead">
-                  We specialize in custom garages, home additions, decks, screened porches, and accessory dwelling units. Each service is delivered with quality craftsmanship, local permitting expertise, and clear project communication.
+                  We specialize in custom garages, home additions, decks, screened porches, lake cabin screened porches, and ADUs. Each service is delivered with quality craftsmanship, local permitting expertise, and clear project communication.
                 </p>
                 <div className="action-row">
                   <Link to="/contact" className="btn btn-primary">Request Estimate</Link>
@@ -85,7 +85,7 @@ export default function ServicesPage() {
                 <h2>Why Homeowners Choose Our Services</h2>
                 <ul className="feature-list">
                   <li>
-                    <strong>Focused expertise:</strong> We specialize in five core services and deliver them exceptionally well rather than spreading too thin across dozens of project types.
+                    <strong>Focused expertise:</strong> We specialize in six core services and deliver them exceptionally well rather than spreading too thin across dozens of project types.
                   </li>
                   <li>
                     <strong>Local permitting knowledge:</strong> We navigate Upstate SC building codes, setbacks, and jurisdiction-specific requirements daily.

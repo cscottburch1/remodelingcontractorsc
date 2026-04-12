@@ -13,6 +13,14 @@ export const faqs = [
   },
   {
     question: 'What locations do you serve?',
-    answer: 'We serve Mauldin, Simpsonville, Fountain Inn, Gray Court, Owings, Enoree, Woodruff, Laurens, Clinton, and Joanna, plus nearby Upstate communities.'
+    answer: 'We serve Mauldin, Simpsonville, Fountain Inn, Gray Court, Owings, Enoree, Woodruff, Laurens, Clinton, Joanna, and the Greenwood / Lake Greenwood area, plus nearby Upstate South Carolina communities.'
+  },
+  {
+    question: 'Do you build screened porches on lake cabin properties near Lake Greenwood?',
+    answer: 'Yes. We specialize in aluminum-framed screened porches and enclosures for lake cabin properties near Lake Greenwood in Greenwood County. These builds use corrosion-resistant framing and hardware rated for lakeside humidity so your enclosure holds up long-term without rusting or warping.'
+  },
+  {
+    question: 'What makes lake cabin screened porches different from a standard build?',
+    answer: 'Lakeside properties expose structures to elevated humidity, morning dew, and occasional water spray. We select aluminum framing over wood, use stainless fasteners, and plan drainage carefully to prevent moisture trapping. We also account for Greenwood County shoreline setback rules and permit requirements specific to lake-adjacent properties.'
   }
 ];

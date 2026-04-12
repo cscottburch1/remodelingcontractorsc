@@ -57,14 +57,15 @@ export default function App() {
             {/* Service Areas Hub */}
             <Route path="/service-areas" element={<ServiceAreasPage />} />
 
-            {/* Core Service Pages (5 services) */}
+            {/* Core Service Pages (6 services) */}
             <Route path="/garages" element={<CoreServicePage />} />
             <Route path="/additions" element={<CoreServicePage />} />
             <Route path="/screened-porches" element={<CoreServicePage />} />
             <Route path="/decks" element={<CoreServicePage />} />
             <Route path="/adus" element={<CoreServicePage />} />
+            <Route path="/lake-cabin-screened-porches" element={<CoreServicePage />} />
 
-            {/* Town Pages (9 towns) */}
+            {/* Town Pages (10 towns) */}
             <Route path="/mauldin-sc" element={<TownPage />} />
             <Route path="/simpsonville-sc" element={<TownPage />} />
             <Route path="/fountain-inn-sc" element={<TownPage />} />
@@ -74,6 +75,7 @@ export default function App() {
             <Route path="/clinton-sc" element={<TownPage />} />
             <Route path="/ora-sc" element={<TownPage />} />
             <Route path="/joanna-sc" element={<TownPage />} />
+            <Route path="/greenwood-sc" element={<TownPage />} />
 
             {/* Local Service Pages (45 pages: 5 services × 9 towns) */}
             {localServicePages.map((page) => (

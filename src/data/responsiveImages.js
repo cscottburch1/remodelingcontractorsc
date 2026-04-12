@@ -1,13 +1,22 @@
 import logoPng from '../assets/images/Burch Contracting Logo.png';
 import logo160 from '../assets/images/responsive/burch-logo-160.webp';
 import logo320 from '../assets/images/responsive/burch-logo-320.webp';
-import hero960 from '../assets/images/Screened_Porch_lake_cabin.jpg';
-import hero640 from '../assets/images/responsive/hero-cabin-640.webp';
-import hero960Webp from '../assets/images/responsive/hero-cabin-960.webp';
-import hero320Avif from '../assets/images/responsive/hero-cabin-320.avif';
-import hero640Avif from '../assets/images/responsive/hero-cabin-640.avif';
-import hero960Avif from '../assets/images/responsive/hero-cabin-960.avif';
-import hero1200Avif from '../assets/images/responsive/hero-cabin-1200.avif';
+// Hero image — adu cottage (natural background, 50/50 split)
+import hero960 from '../assets/images/adu-cottage-light-gray.webp';
+import hero640 from '../assets/images/responsive/hero-adu-640.webp';
+import hero960Webp from '../assets/images/responsive/hero-adu-960.webp';
+import hero320Avif from '../assets/images/responsive/hero-adu-320.avif';
+import hero640Avif from '../assets/images/responsive/hero-adu-640.avif';
+import hero960Avif from '../assets/images/responsive/hero-adu-960.avif';
+import hero1200Avif from '../assets/images/responsive/hero-adu-1200.avif';
+// Lake cabin service placeholder (swap when real photo arrives)
+import lakeCabin960 from '../assets/images/Screened_Porch_lake_cabin.jpg';
+import lakeCabin640 from '../assets/images/responsive/hero-cabin-640.webp';
+import lakeCabin960Webp from '../assets/images/responsive/hero-cabin-960.webp';
+import lakeCabin320Avif from '../assets/images/responsive/hero-cabin-320.avif';
+import lakeCabin640Avif from '../assets/images/responsive/hero-cabin-640.avif';
+import lakeCabin960Avif from '../assets/images/responsive/hero-cabin-960.avif';
+import lakeCabin1200Avif from '../assets/images/responsive/hero-cabin-1200.avif';
 import garage900 from '../assets/images/garage-2-car-dark-gray.webp';
 import garage768 from '../assets/images/responsive/garage-768.webp';
 import garage480 from '../assets/images/responsive/garage-480.webp';
@@ -43,6 +52,13 @@ export const heroImageSet = {
   webpSrcSet: `${hero640} 640w, ${hero960Webp} 960w`,
   avifSrcSet: `${hero320Avif} 320w, ${hero640Avif} 640w, ${hero960Avif} 960w, ${hero1200Avif} 1200w`,
   sizes: '(max-width: 759px) calc(100vw - 2rem), (max-width: 1199px) 50vw, 610px',
+};
+
+export const lakeCabinImageSet = {
+  defaultSrc: lakeCabin960,
+  webpSrcSet: `${lakeCabin640} 640w, ${lakeCabin960Webp} 960w`,
+  avifSrcSet: `${lakeCabin320Avif} 320w, ${lakeCabin640Avif} 640w, ${lakeCabin960Avif} 960w, ${lakeCabin1200Avif} 1200w`,
+  sizes: '(max-width: 759px) 100vw, (max-width: 1199px) 85vw, 900px',
 };
 
 export const garageImageSet = makeImageSet(

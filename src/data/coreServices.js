@@ -10,6 +10,7 @@ import {
   additionImageSet,
   deckImageSet,
   garageImageSet,
+  lakeCabinImageSet,
   screenedPorchImageSet
 } from './responsiveImages';
 
@@ -313,6 +314,67 @@ export const coreServices = [
     imageSrcSet: aduImageSet.srcSet,
     imageSizes: aduImageSet.sizes,
     imageAlt: 'Custom guest house ADU with screened porch living area and modern gray siding'
+  },
+
+  {
+    name: 'Lake Cabin Screened Porches',
+    slug: 'lake-cabin-screened-porches',
+    servicePath: '/lake-cabin-screened-porches',
+    serviceType: 'Lake Cabin Screened Porch Builder',
+    summary: 'Custom screened porches and enclosures for lake cabin properties on Lake Greenwood, SC.',
+    metaTitle: 'Lake Cabin Screened Porches Near Lake Greenwood, SC | Custom Enclosures',
+    metaDescription: 'Professional screened porch builder serving lake cabin owners near Lake Greenwood in Greenwood County, SC. Custom aluminum-framed enclosures built for lakeside living, humidity resistance, and year-round outdoor enjoyment.',
+    highlights: [
+      'Built for lakeside humidity and weather',
+      'Aluminum framing for long-term durability',
+      'Lake Greenwood area permit expertise',
+      'Year-round outdoor living design'
+    ],
+    intro: 'We build screened porches and aluminum enclosures for lake cabin properties near Lake Greenwood. Enjoy bug-free evenings on the water with a properly built enclosure designed for Greenwood County\'s humid lakeside conditions.',
+
+    whatItIs: 'A lake cabin screened porch is an aluminum-framed enclosure attached to or surrounding your cabin that keeps insects out while preserving airflow, lake views, and the outdoor living experience. Built with corrosion-resistant materials suited to lakeside humidity, these structures extend your usable outdoor space across all seasons.',
+
+    whoItsFor: [
+      'Lake Greenwood cabin owners wanting bug-free evenings outdoors',
+      'Property owners looking to maximize waterfront enjoyment year-round',
+      'Families upgrading older unscreened porches with durable aluminum systems',
+      'Investors improving rental cabin properties with high-value outdoor amenities'
+    ],
+
+    commonProjects: [
+      'Screened porches wrapping the lakeside face of a cabin',
+      'Aluminum enclosures over existing concrete slabs or decks',
+      'Screen rooms with ceiling fans and outdoor lighting',
+      'Replacement enclosures upgrading aged wood-frame screen rooms',
+      'Covered screened porches with metal roofing for rain protection'
+    ],
+
+    process: [
+      'Site visit: assess cabin footprint, lake orientation, sun angle, and prevailing breeze',
+      'Design planning: size, roof type, screen height, door placement',
+      'Greenwood County permit coordination and structural review',
+      'Foundation or deck base prep (slab, block, or treated wood deck)',
+      'Aluminum frame installation with corrosion-resistant hardware',
+      'Fiberglass or pet-resistant screen panel installation',
+      'Ceiling fans, lighting, door hardware, and final walkthrough'
+    ],
+
+    costFactors: [
+      'Enclosure size and number of screened openings',
+      'Whether a new roof structure is included',
+      'Base type: existing slab vs new deck base',
+      'Screen type: standard fiberglass, solar, or pet-resistant',
+      'Electrical package: outlets, ceiling fans, lighting',
+      'Site access and proximity to Lake Greenwood shoreline'
+    ],
+
+    localContext: 'Lake Greenwood properties sit in Greenwood County and are subject to local building permits and setback rules that vary by shoreline proximity. Lakeside humidity accelerates corrosion in low-grade materials — we use aluminum framing and stainless hardware rated for wet, high-humidity environments. We handle all Greenwood County permit coordination.',
+
+    relatedServices: ['screened-porches', 'decks'],
+    image: lakeCabinImageSet.defaultSrc,
+    imageSrcSet: lakeCabinImageSet.webpSrcSet,
+    imageSizes: lakeCabinImageSet.sizes,
+    imageAlt: 'Custom screened porch on a lake cabin near Lake Greenwood SC'
   }
 ];
 
