@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function ProjectCard({ project }) {
   return (
     <article className="card project-card">
-      <img src={project.image} alt={project.imageAlt} loading="lazy" decoding="async" width="1400" height="875" />
+      <img src={project.image} alt={project.imageAlt} loading="lazy" decoding="async" width="960" height="600" />
       <div>
         <p className="eyebrow">{project.location}</p>
         <h3>{project.title}</h3>
