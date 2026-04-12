@@ -6,8 +6,8 @@ import aduImage from '../assets/images/adu-cottage-light-gray.webp';
 
 export const projects = [
   {
-    slug: 'detached-three-bay-garage-greenville',
-    title: 'Detached Three-Bay Garage Build',
+    slug: 'detached-two-bay-garage-simpsonville-sc',
+    title: 'Detached Two-Bay Garage Build',
     location: 'Simpsonville, SC',
     locationSlug: 'simpsonville-sc',
     description: 'Custom detached garage with matching siding, carriage-style doors, and upper-level storage framing.',
@@ -17,7 +17,7 @@ export const projects = [
     relatedServices: ['garages']
   },
   {
-    slug: 'New bedroom suite addition-Fountain Inn SC',
+    slug: 'new-bedroom-suite-addition-fountain-inn-sc',
     title: 'Room Addition + Roofline Integration',
     location: 'Fountain Inn, SC',
     locationSlug: 'fountain-inn-sc',
@@ -28,18 +28,18 @@ export const projects = [
     relatedServices: ['additions']
   },
   {
-    slug: 'covered-composite-deck-greer',
+    slug: 'covered-composite-deck-mauldin-sc',
     title: 'Covered Composite Deck With Lighting',
     location: 'Mauldin, SC',
     locationSlug: 'mauldin-sc',
     description: 'Composite deck system with covered roof section, integrated stairs, and evening-ready lighting.',
     image: deckImage,
-    imageAlt: 'Custom composite deck with modern railings in Greenville SC',
+    imageAlt: 'Custom composite deck with modern railings in Mauldin SC',
     imagePosition: 'center 54%',
     relatedServices: ['decks']
   },
   {
-    slug: 'aluminum-screened-enclosure-mauldin',
+    slug: 'aluminum-screened-enclosure-fountain-inn-sc',
     title: 'Aluminum Screened Patio Enclosure',
     location: 'Fountain Inn, SC',
     locationSlug: 'fountain-inn-sc',
@@ -50,7 +50,7 @@ export const projects = [
     relatedServices: ['screened-porches']
   },
   {
-    slug: 'backyard-granny-pod-anderson',
+    slug: 'backyard-granny-pod-laurens-sc',
     title: 'Backyard ADU Build',
     location: 'Laurens, SC',
     locationSlug: 'laurens-sc',
