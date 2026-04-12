@@ -131,7 +131,7 @@ export default function EstimateForm() {
       
       <label>
         Phone
-        <input type="tel" name="phone" placeholder="(803) 555-0147" />
+        <input type="tel" name="phone" placeholder="(864) 724-4600" />
       </label>
       
       <label>
