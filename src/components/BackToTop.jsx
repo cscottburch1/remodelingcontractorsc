@@ -8,6 +8,8 @@ export default function BackToTop() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
+
     const toggleVisibility = () => {
       // Show button when page is scrolled down 300px
       if (window.scrollY > 300) {
@@ -15,12 +17,21 @@ export default function BackToTop() {
       } else {
         setIsVisible(false);
       }
+
+      ticking = false;
     };
 
-    window.addEventListener('scroll', toggleVisibility);
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(toggleVisibility);
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
-      window.removeEventListener('scroll', toggleVisibility);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 

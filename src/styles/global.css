@@ -42,7 +42,7 @@ body {
     radial-gradient(circle at top, rgba(37, 99, 235, 0.1), transparent 32%),
     linear-gradient(180deg, #f8fbff 0%, var(--bg-page) 100%);
   line-height: 1.6;
-  padding-bottom: 5rem;
+  padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
 }
 
 a {
@@ -120,6 +120,7 @@ main > section:nth-of-type(even) {
   display: flex;
   align-items: center;
   gap: 8px;
+  min-width: 0;
 }
 
 .brand-logo {
@@ -144,6 +145,7 @@ main > section:nth-of-type(even) {
 .brand-copy {
   display: grid;
   gap: 0.02rem;
+  min-width: 0;
 }
 
 .brand-title {
@@ -443,6 +445,7 @@ picture {
 
 .hero-trust {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.55rem;
   margin-top: 1.15rem;
 }
@@ -1131,7 +1134,7 @@ picture {
   right: 0;
   bottom: 0;
   z-index: 40;
-  padding: 0.62rem;
+  padding: 0.62rem 0.62rem calc(0.62rem + env(safe-area-inset-bottom, 0px));
   background: rgba(26, 31, 37, 0.96);
   border-top: 1px solid rgba(255, 255, 255, 0.16);
 }
@@ -1262,6 +1265,11 @@ picture {
 
   .brand-subtitle {
     max-width: 18rem;
+    font-size: 11px;
+  }
+
+  .brand-title {
+    font-size: 0.9rem;
   }
 
   h1 {
@@ -1538,7 +1546,7 @@ picture {
 /* Mobile adjustments */
 @media (max-width: 759px) {
   .back-to-top {
-    bottom: 1.5rem;
+    bottom: calc(5.4rem + env(safe-area-inset-bottom, 0px));
     right: 1.5rem;
     width: 2.75rem;
     height: 2.75rem;
