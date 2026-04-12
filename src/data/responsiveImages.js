@@ -1,12 +1,13 @@
 import logoPng from '../assets/images/Burch Contracting Logo.png';
 import logo160 from '../assets/images/responsive/burch-logo-160.webp';
 import logo320 from '../assets/images/responsive/burch-logo-320.webp';
-import hero960 from '../assets/images/screened porch simpsonville sc_enhanced.webp';
-import hero640 from '../assets/images/responsive/hero-screened-640.webp';
-import hero320Avif from '../assets/images/responsive/hero-screened-320.avif';
-import hero640Avif from '../assets/images/responsive/hero-screened-640.avif';
-import hero960Avif from '../assets/images/responsive/hero-screened-960.avif';
-import hero1200Avif from '../assets/images/responsive/hero-screened-1200.avif';
+import hero960 from '../assets/images/Screened_Porch_lake_cabin.jpg';
+import hero640 from '../assets/images/responsive/hero-cabin-640.webp';
+import hero960Webp from '../assets/images/responsive/hero-cabin-960.webp';
+import hero320Avif from '../assets/images/responsive/hero-cabin-320.avif';
+import hero640Avif from '../assets/images/responsive/hero-cabin-640.avif';
+import hero960Avif from '../assets/images/responsive/hero-cabin-960.avif';
+import hero1200Avif from '../assets/images/responsive/hero-cabin-1200.avif';
 import garage900 from '../assets/images/garage-2-car-dark-gray.webp';
 import garage768 from '../assets/images/responsive/garage-768.webp';
 import garage480 from '../assets/images/responsive/garage-480.webp';
@@ -39,7 +40,7 @@ export const logoImageSet = {
 
 export const heroImageSet = {
   defaultSrc: hero960,
-  webpSrcSet: `${hero640} 640w, ${hero960} 960w, ${hero960} 1200w`,
+  webpSrcSet: `${hero640} 640w, ${hero960Webp} 960w`,
   avifSrcSet: `${hero320Avif} 320w, ${hero640Avif} 640w, ${hero960Avif} 960w, ${hero1200Avif} 1200w`,
   sizes: '(max-width: 759px) calc(100vw - 2rem), (max-width: 1199px) 50vw, 610px',
 };
