@@ -17,13 +17,13 @@ export const projects = [
     relatedServices: ['garages']
   },
   {
-    slug: 'second-story-addition-simpsonville',
-    title: 'Second Story Addition + Roofline Integration',
-    location: 'Simpsonville, SC',
-    locationSlug: 'simpsonville-sc',
-    description: 'Upper-level bedroom suite expansion with structural reinforcement and seamless exterior detailing.',
+    slug: 'New bedroom suite addition-Fountain Inn SC',
+    title: 'Room Addition + Roofline Integration',
+    location: 'Fountain Inn, SC',
+    locationSlug: 'fountain-inn-sc',
+    description: 'Bedroom suite expansion with structural reinforcement and seamless exterior detailing.',
     image: additionImage,
-    imageAlt: 'Modern room addition with brick exterior in Fountain Inn SC',
+    imageAlt: 'Modern room addition with vinyl exterior in Fountain Inn SC',
     imagePosition: 'center 58%',
     relatedServices: ['additions']
   },
