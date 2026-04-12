@@ -10,7 +10,7 @@ export default function EstimateForm() {
   const formStartedAt = useRef(Date.now());
   const turnstileRef = useRef(null);
   const turnstileSiteKey = import.meta.env.VITE_TURNSTILE_SITE_KEY || '';
-  const turnstileEnabled = Boolean(turnstileSiteKey);
+  const turnstileEnabled = import.meta.env.VITE_ENABLE_TURNSTILE === 'true' && Boolean(turnstileSiteKey);
 
   // Load Cloudflare Turnstile script
   useEffect(() => {
