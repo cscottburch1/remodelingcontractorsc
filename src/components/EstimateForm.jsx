@@ -9,9 +9,15 @@ export default function EstimateForm() {
   const [selectedFiles, setSelectedFiles] = useState([]);
   const formStartedAt = useRef(Date.now());
   const turnstileRef = useRef(null);
+  const turnstileSiteKey = import.meta.env.VITE_TURNSTILE_SITE_KEY || '';
+  const turnstileEnabled = Boolean(turnstileSiteKey);
 
   // Load Cloudflare Turnstile script
   useEffect(() => {
+    if (!turnstileEnabled) {
+      return undefined;
+    }
+
     const script = document.createElement('script');
     script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
     script.async = true;
@@ -23,10 +29,14 @@ export default function EstimateForm() {
         document.body.removeChild(script);
       }
     };
-  }, []);
+  }, [turnstileEnabled]);
 
   // Make turnstile callback globally accessible
   useEffect(() => {
+    if (!turnstileEnabled) {
+      return undefined;
+    }
+
     window.onTurnstileSuccess = (token) => {
       setTurnstileToken(token);
     };
@@ -34,7 +44,7 @@ export default function EstimateForm() {
     return () => {
       delete window.onTurnstileSuccess;
     };
-  }, []);
+  }, [turnstileEnabled]);
 
   function handleFileChange(event) {
     const files = Array.from(event.target.files || []);
@@ -65,6 +75,12 @@ export default function EstimateForm() {
 
     setError('');
     setSubmitting(true);
+
+    if (turnstileEnabled && !turnstileToken) {
+      setError('Please complete the spam protection check.');
+      setSubmitting(false);
+      return;
+    }
 
     const form = event.currentTarget;
     const formData = new FormData(form);
@@ -97,22 +113,20 @@ export default function EstimateForm() {
       formStartedAt.current = Date.now();
       
       // Reset turnstile widget
-      if (window.turnstile && turnstileRef.current) {
+      if (turnstileEnabled && window.turnstile && turnstileRef.current) {
         window.turnstile.reset(turnstileRef.current);
       }
     } catch (submitError) {
       setError(submitError instanceof Error ? submitError.message : 'Submission failed. Please try again.');
       
       // Reset turnstile on error
-      if (window.turnstile && turnstileRef.current) {
+      if (turnstileEnabled && window.turnstile && turnstileRef.current) {
         window.turnstile.reset(turnstileRef.current);
       }
     } finally {
       setSubmitting(false);
     }
   }
-
-  const turnstileSiteKey = import.meta.env.VITE_TURNSTILE_SITE_KEY || '1x00000000000000000000AA';
 
   return (
     <form className="estimate-form" onSubmit={onSubmit}>
@@ -208,13 +222,15 @@ export default function EstimateForm() {
         )}
       </div>
 
-      <div 
-        ref={turnstileRef}
-        className="cf-turnstile full-width" 
-        data-sitekey={turnstileSiteKey}
-        data-callback="onTurnstileSuccess"
-        data-theme="light"
-      ></div>
+      {turnstileEnabled ? (
+        <div
+          ref={turnstileRef}
+          className="cf-turnstile full-width"
+          data-sitekey={turnstileSiteKey}
+          data-callback="onTurnstileSuccess"
+          data-theme="light"
+        ></div>
+      ) : null}
 
       <button type="submit" className="btn btn-primary full-width" disabled={submitting}>
         {submitting ? 'Sending Request...' : sent ? 'Estimate Request Sent' : 'Request Estimate'}
