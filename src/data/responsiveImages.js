@@ -41,7 +41,7 @@ export const heroImageSet = {
   defaultSrc: hero960,
   webpSrcSet: `${hero640} 640w, ${hero960} 960w, ${hero960} 1200w`,
   avifSrcSet: `${hero320Avif} 320w, ${hero640Avif} 640w, ${hero960Avif} 960w, ${hero1200Avif} 1200w`,
-  sizes: '(max-width: 540px) 100vw, (max-width: 960px) 92vw, 85vw',
+  sizes: '85vw',
 };
 
 export const garageImageSet = makeImageSet(

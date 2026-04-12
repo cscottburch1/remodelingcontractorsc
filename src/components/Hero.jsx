@@ -19,6 +19,7 @@ export default function Hero() {
             decoding="async"
             width="960"
             height="525"
+            style={{ aspectRatio: '960/525' }}
           />
         </picture>
         <div className="hero-media-overlay" />
