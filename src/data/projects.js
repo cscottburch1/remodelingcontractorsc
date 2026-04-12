@@ -13,6 +13,7 @@ export const projects = [
     description: 'Custom detached garage with matching siding, carriage-style doors, and upper-level storage framing.',
     image: garageImage,
     imageAlt: 'Professional dark gray two-car detached garage with white trim',
+    imagePosition: 'center 62%',
     relatedServices: ['garages']
   },
   {
@@ -23,6 +24,7 @@ export const projects = [
     description: 'Upper-level bedroom suite expansion with structural reinforcement and seamless exterior detailing.',
     image: additionImage,
     imageAlt: 'Modern room addition with brick exterior in Fountain Inn SC',
+    imagePosition: 'center 58%',
     relatedServices: ['additions']
   },
   {
@@ -33,6 +35,7 @@ export const projects = [
     description: 'Composite deck system with covered roof section, integrated stairs, and evening-ready lighting.',
     image: deckImage,
     imageAlt: 'Custom composite deck with modern railings in Greenville SC',
+    imagePosition: 'center 54%',
     relatedServices: ['decks']
   },
   {
@@ -43,6 +46,7 @@ export const projects = [
     description: 'Full patio enclosure with powder-coated aluminum framing, pet-safe screens, and clean drainage design.',
     image: screenedPorchImage,
     imageAlt: 'Custom aluminum-frame screened porch enclosure',
+    imagePosition: 'center 52%',
     relatedServices: ['screened-porches']
   },
   {
@@ -53,6 +57,7 @@ export const projects = [
     description: 'Detached backyard pod with kitchenette rough-ins, covered entry, and independent utility planning.',
     image: aduImage,
     imageAlt: 'Light gray cottage-style ADU with front porch',
+    imagePosition: 'center 60%',
     relatedServices: ['adus']
   }
 ];

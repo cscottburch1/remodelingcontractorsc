@@ -535,6 +535,22 @@ picture {
   background: #f8f9fa;
 }
 
+.service-card img {
+  display: block;
+}
+
+.project-card-media {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f6f8fb 0%, #edf2f7 100%);
+}
+
+.project-card img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
 .service-card div,
 .project-card div,
 .quote-card,
