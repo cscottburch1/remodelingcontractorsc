@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer-grid">
         <div>
-          <h3>Remodeling Contractors SC</h3>
+          <h3>Remodeling Contractor SC</h3>
           <p>
-            Upstate South Carolina contractor specializing in garages, home additions, decks, screened porches, and ADUs. Quality construction focused on expanding your home's functionality and value.
+            Upstate South Carolina Licensed General Contractor specializing in garages, home additions, decks, screened porches, lake cabins and ADUs. Quality construction focused on expanding your home's functionality and value.
           </p>
         </div>
         <div>
@@ -32,6 +32,7 @@ export default function Footer() {
             <li><Link to="/clinton-sc">Clinton, SC</Link></li>
             <li><Link to="/ora-sc">Ora, SC</Link></li>
             <li><Link to="/joanna-sc">Joanna, SC</Link></li>
+            <li><Link to="/greenwood-sc">Greenwood, SC</Link></li>
           </ul>
         </div>
         <div>
