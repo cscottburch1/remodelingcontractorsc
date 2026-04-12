@@ -5,7 +5,7 @@ export default function StickyEstimateBar() {
     <div className="sticky-estimate" aria-label="Quick contact options">
       <div className="sticky-estimate-inner">
         <Link className="btn btn-primary" to="/request-estimate">Request Estimate</Link>
-        <a className="btn btn-soft" href="tel:+18035550147">Call Now</a>
+        <a className="btn btn-soft" href="tel:+18647244600">Call Now</a>
       </div>
     </div>
   );
