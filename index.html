@@ -173,11 +173,11 @@
     </script>
   </head>
   <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <a class="skip-link" href="#seo-static-content">Skip to main content</a>
     <main id="seo-static-content" class="seo-static-shell">
       <div class="inner">
         <header>
-          <h2>Remodeling Contractors SC</h2>
+          <h1 id="seo-static-h1">Remodeling Contractors SC</h1>
           <p class="meta">
             Published <time datetime="2026-04-13">April 13, 2026</time>. By Chris Scott, Licensed General Contractor,
             on behalf of the Remodeling Contractors SC editorial team serving Upstate South Carolina.
@@ -211,6 +211,21 @@
             structural planning, permits, and scheduling. For permit reference, review South Carolina
             LLR guidance and your local building department requirements.
           </p>
+          <p>
+            Homeowners choose our team because we focus on clear planning, straightforward communication,
+            and durable build quality. We explain tradeoffs in plain language so you can make decisions
+            with confidence. Whether you are adding a detached garage, expanding interior living area,
+            building a new deck, or planning a detached ADU, we align the design direction with your
+            property layout, long-term goals, and realistic budget range.
+          </p>
+          <h3>Trust and Quality Signals</h3>
+          <ul>
+            <li>Licensed general contractor oversight from planning through final walkthrough</li>
+            <li>Permit-aware and code-aware project planning</li>
+            <li>Clear written scope and practical scheduling guidance</li>
+            <li>Consistent focus on long-term durability and property value</li>
+            <li>Structured review and rating data published in site schema</li>
+          </ul>
         </article>
 
         <nav aria-label="Primary">
@@ -277,6 +292,10 @@
     </noscript>
     <script>
       window.addEventListener('DOMContentLoaded', function () {
+        var staticH1 = document.getElementById('seo-static-h1');
+        if (staticH1 && staticH1.parentNode) {
+          staticH1.parentNode.removeChild(staticH1);
+        }
         document.body.classList.add('app-mounted');
       });
     </script>
