@@ -9,6 +9,9 @@ export default function Footer() {
           <p>
             Upstate South Carolina Licensed General Contractor specializing in garages, home additions, decks, screened porches, lake cabins and ADUs. Quality construction focused on expanding your home's functionality and value.
           </p>
+          <p>
+            For interior Remodeling and Renovations, visit our parent company: <a href="https://burchcontracting.com" target="_blank" rel="noopener noreferrer">burchcontracting.com</a>
+          </p>
         </div>
         <div>
           <h4>Services</h4>
