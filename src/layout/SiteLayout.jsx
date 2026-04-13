@@ -10,7 +10,7 @@ export default function SiteLayout() {
     <div className="site-shell">
       <SitewideSchema />
       <Header />
-      <main>
+      <main id="main-content" tabIndex="-1">
         <Outlet />
       </main>
       <StickyEstimateBar />

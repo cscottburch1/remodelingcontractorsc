@@ -130,27 +130,27 @@ export default function EstimateForm() {
 
   return (
     <form className="estimate-form" onSubmit={onSubmit}>
-      <input type="text" name="website" tabIndex="-1" autoComplete="off" className="hp-field" aria-hidden="true" />
+      <input type="text" name="website" tabIndex="-1" autoComplete="off" className="hp-field" aria-hidden="true" hidden />
       <input type="hidden" name="startedAt" value={String(formStartedAt.current)} />
       
-      <label>
+      <label htmlFor="estimate-name">
         Full Name
-        <input type="text" name="name" required placeholder="Your name" />
+        <input id="estimate-name" type="text" name="name" required placeholder="Your name" />
       </label>
       
-      <label>
+      <label htmlFor="estimate-email">
         Email
-        <input type="email" name="email" required placeholder="you@example.com" />
+        <input id="estimate-email" type="email" name="email" required placeholder="you@example.com" />
       </label>
       
-      <label>
+      <label htmlFor="estimate-phone">
         Phone
-        <input type="tel" name="phone" placeholder="(864) 724-4600" />
+        <input id="estimate-phone" type="tel" name="phone" placeholder="(864) 724-4600" />
       </label>
       
-      <label>
+      <label htmlFor="estimate-project-type">
         Project Type
-        <select name="projectType" defaultValue="Garage Builders">
+        <select id="estimate-project-type" name="projectType" defaultValue="Garage Builders">
           {projectTypeOptions.map((projectType) => (
             <option key={projectType}>{projectType}</option>
           ))}
@@ -158,10 +158,11 @@ export default function EstimateForm() {
       </label>
 
       <div className="budget-range">
-        <label>
+        <label htmlFor="estimate-budget-min">
           Budget Range (Optional)
           <div className="budget-inputs">
             <input 
+              id="estimate-budget-min"
               type="number" 
               name="budgetMin" 
               placeholder="Min $" 
@@ -170,6 +171,7 @@ export default function EstimateForm() {
             />
             <span className="budget-separator">to</span>
             <input 
+              id="estimate-budget-max"
               type="number" 
               name="budgetMax" 
               placeholder="Max $" 
@@ -180,9 +182,9 @@ export default function EstimateForm() {
         </label>
       </div>
       
-      <label className="full-width">
+      <label htmlFor="estimate-details" className="full-width">
         Project Details
-        <textarea name="details" rows="5" placeholder="Tell us about your goals, style, and timing." />
+        <textarea id="estimate-details" name="details" rows="5" placeholder="Tell us about your goals, style, and timing." />
       </label>
 
       <div className="file-upload-section full-width">

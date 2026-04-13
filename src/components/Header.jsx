@@ -34,6 +34,8 @@ export default function Header() {
               alt="Remodeling Contractors SC logo"
               width="320"
               height="180"
+              loading="eager"
+              fetchPriority="high"
             />
           </picture>
           <span className="brand-copy">
