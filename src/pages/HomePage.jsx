@@ -8,13 +8,27 @@ import Seo from '../components/Seo';
 import SectionIntro from '../components/SectionIntro';
 import Testimonials from '../components/Testimonials';
 import { faqs } from '../data/faqs';
+import { testimonials } from '../data/testimonials';
 import { coreServices } from '../data/coreServices';
 import { serviceAreas } from '../data/serviceAreas';
-import { createBreadcrumbSchema, createFaqSchema, createLocalBusinessSchema } from '../lib/schema';
+import {
+  createAggregateRatingSchema,
+  createBreadcrumbSchema,
+  createFaqSchema,
+  createLocalBusinessSchema,
+  createReviewSchema,
+} from '../lib/schema';
 
 export default function HomePage() {
+  const localBusinessSchema = createLocalBusinessSchema();
+  localBusinessSchema.aggregateRating = createAggregateRatingSchema({
+    ratingValue: 5,
+    reviewCount: testimonials.length,
+  });
+  localBusinessSchema.review = createReviewSchema(testimonials);
+
   const schema = [
-    createLocalBusinessSchema(),
+    localBusinessSchema,
     createFaqSchema(faqs),
     createBreadcrumbSchema([{ name: 'Home', path: '/' }])
   ];

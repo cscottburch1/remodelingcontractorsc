@@ -5,11 +5,35 @@ import { heroImageSet } from '../data/responsiveImages';
 import Breadcrumbs from '../components/Breadcrumbs';
 import CtaSection from '../components/CtaSection';
 import SplitHero from '../components/SplitHero';
+import { createBreadcrumbSchema, createFaqSchema } from '../lib/schema';
 
 export default function ServicesPage() {
   const breadcrumbs = [
     { label: 'Home', to: '/' },
     { label: 'Services' }
+  ];
+
+  const serviceFaqs = [
+    {
+      question: 'What services does Remodeling Contractors SC provide?',
+      answer: 'We build garages, room additions, decks, porch enclosures, ADUs, and lake cabin enclosure projects across Upstate South Carolina.',
+    },
+    {
+      question: 'Do you handle permits for service projects?',
+      answer: 'Yes. We coordinate permitting and code-compliance planning based on your project scope and local jurisdiction requirements.',
+    },
+    {
+      question: 'How do I get an estimate for my project?',
+      answer: 'Use the contact form to request an estimate, and we will schedule a consultation to review scope, site conditions, and budget priorities.',
+    },
+  ];
+
+  const schema = [
+    createBreadcrumbSchema([
+      { name: 'Home', path: '/' },
+      { name: 'Services', path: '/services' },
+    ]),
+    createFaqSchema(serviceFaqs),
   ];
 
   return (
@@ -21,6 +45,9 @@ export default function ServicesPage() {
           content="Professional construction services in Upstate SC: custom garages, home additions, decks, screened porches, and ADUs. Quality craftsmanship, local expertise, clear communication." 
         />
         <link rel="canonical" href="https://remodelingcontractorsc.com/services" />
+        {schema.map((schemaItem, idx) => (
+          <script key={idx} type="application/ld+json">{JSON.stringify(schemaItem)}</script>
+        ))}
       </Helmet>
 
       <main>

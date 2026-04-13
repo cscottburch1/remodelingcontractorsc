@@ -1,19 +1,37 @@
 import CtaSection from '../components/CtaSection';
 import Seo from '../components/Seo';
 import SectionIntro from '../components/SectionIntro';
-import { createBreadcrumbSchema } from '../lib/schema';
+import { createBreadcrumbSchema, createFaqSchema } from '../lib/schema';
 
 export default function FinancingPage() {
+  const financingFaqs = [
+    {
+      question: 'Can I finance garage, addition, deck, and ADU projects?',
+      answer: 'Many homeowners use financing for garage, addition, deck, porch enclosure, and ADU projects, depending on lender terms and eligibility.',
+    },
+    {
+      question: 'Does Remodeling Contractors SC provide direct financing?',
+      answer: 'We discuss financing-friendly scope options during planning, while final loan decisions and terms come from third-party lenders.',
+    },
+    {
+      question: 'What should I prepare before requesting financing?',
+      answer: 'Prepare project priorities, rough budget range, and timeline expectations so we can help structure phased scope options for your estimate.',
+    },
+  ];
+
   return (
     <>
       <Seo
         title="Financing | Remodeling Contractors SC"
         description="Financing guidance for garage builds, room additions, decks, aluminum screened enclosures, and ADU projects."
         path="/financing"
-        schema={createBreadcrumbSchema([
-          { name: 'Home', path: '/' },
-          { name: 'Financing', path: '/financing' }
-        ])}
+        schema={[
+          createBreadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Financing', path: '/financing' }
+          ]),
+          createFaqSchema(financingFaqs),
+        ]}
       />
 
       <section className="section-pad">

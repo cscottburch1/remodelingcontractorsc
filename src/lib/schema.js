@@ -2,6 +2,8 @@ const BUSINESS_NAME = 'Remodeling Contractors SC';
 const SITE_URL = 'https://remodelingcontractorsc.com';
 const BUSINESS_PHONE = '+1-864-724-4600';
 const BUSINESS_EMAIL = 'estimates@remodelingcontractorsc.com';
+const BUSINESS_LATITUDE = 34.8526;
+const BUSINESS_LONGITUDE = -82.394;
 const SERVICE_AREA_CITIES = [
   { name: 'Greenville', state: 'South Carolina' },
   { name: 'Simpsonville', state: 'South Carolina' },
@@ -33,6 +35,12 @@ export function createLocalBusinessSchema() {
       addressRegion: 'SC',
       addressCountry: 'US'
     },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: BUSINESS_LATITUDE,
+      longitude: BUSINESS_LONGITUDE
+    },
+    hasMap: `https://www.google.com/maps?q=${BUSINESS_LATITUDE},${BUSINESS_LONGITUDE}`,
     areaServed: SERVICE_AREA_CITIES.map(({ name, state }) => ({
       '@type': 'City',
       name,
@@ -57,7 +65,8 @@ export function createLocalBusinessSchema() {
     ],
     sameAs: [
       'https://www.facebook.com/remodelingcontractorsc',
-      'https://www.instagram.com/remodelingcontractorsc'
+      'https://www.instagram.com/remodelingcontractorsc',
+      'https://burchcontracting.com'
     ]
   };
 }
@@ -114,4 +123,34 @@ export function createBreadcrumbSchema(items) {
       item: `https://remodelingcontractorsc.com${item.path}`
     }))
   };
+}
+
+export function createAggregateRatingSchema({
+  ratingValue = 5,
+  reviewCount = 1,
+  bestRating = 5,
+  worstRating = 1,
+} = {}) {
+  return {
+    '@type': 'AggregateRating',
+    ratingValue,
+    reviewCount,
+    bestRating,
+    worstRating,
+  };
+}
+
+export function createReviewSchema(items = []) {
+  return items.map((item) => ({
+    '@type': 'Review',
+    reviewBody: item.quote,
+    author: {
+      '@type': 'Person',
+      name: item.name,
+    },
+    itemReviewed: {
+      '@type': 'LocalBusiness',
+      name: BUSINESS_NAME,
+    },
+  }));
 }
