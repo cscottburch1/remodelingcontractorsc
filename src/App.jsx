@@ -8,7 +8,10 @@ const ContactPage = lazy(() => import('./pages/ContactPage'));
 const FinancingPage = lazy(() => import('./pages/FinancingPage'));
 const HomePage = lazy(() => import('./pages/HomePage'));
 const ProjectsPage = lazy(() => import('./pages/ProjectsPage'));
+const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
+const TermsPage = lazy(() => import('./pages/TermsPage'));
+const EditorialPolicyPage = lazy(() => import('./pages/EditorialPolicyPage'));
 const MasterSEOPage = lazy(() => import('./pages/MasterSEOPage'));
 const CoreServicePage = lazy(() => import('./pages/CoreServicePage'));
 const ServiceAreasPage = lazy(() => import('./pages/ServiceAreasPage'));
@@ -50,6 +53,9 @@ export default function App() {
             <Route path="/financing" element={<FinancingPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/request-estimate" element={<ContactPage />} />
+            <Route path="/privacy-policy" element={<PrivacyPage />} />
+            <Route path="/terms" element={<TermsPage />} />
+            <Route path="/editorial-policy" element={<EditorialPolicyPage />} />
 
             {/* Master SEO Landing Page */}
             <Route path="/upstate-sc-contractor" element={<MasterSEOPage />} />

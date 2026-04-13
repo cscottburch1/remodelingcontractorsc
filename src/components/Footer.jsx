@@ -42,8 +42,21 @@ export default function Footer() {
             <li><Link to="/projects">Projects</Link></li>
             <li><Link to="/financing">Financing</Link></li>
             <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+            <li><Link to="/terms">Terms of Service</Link></li>
+            <li><Link to="/editorial-policy">Editorial Policy</Link></li>
             <li><a href="tel:+18647244600">(864) 724-4600</a></li>
             <li><a href="mailto:estimates@remodelingcontractorsc.com">estimates@remodelingcontractorsc.com</a></li>
+            <li>
+              <a href="https://www.facebook.com/remodelingcontractorsc" target="_blank" rel="noopener noreferrer">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/remodelingcontractorsc" target="_blank" rel="noopener noreferrer">
+                Instagram
+              </a>
+            </li>
           </ul>
         </div>
       </div>
