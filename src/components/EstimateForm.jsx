@@ -199,6 +199,7 @@ export default function EstimateForm() {
           type="file"
           multiple
           accept="image/*,.pdf,.doc,.docx"
+          aria-label="Attach photos or documents"
           onChange={handleFileChange}
           style={{ display: 'none' }}
         />
