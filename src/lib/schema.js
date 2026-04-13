@@ -63,6 +63,27 @@ export function createLocalBusinessSchema() {
         closes: '13:00'
       }
     ],
+    knowsAbout: [
+      'garage construction',
+      'room additions',
+      'deck building',
+      'screened porch enclosures',
+      'accessory dwelling units',
+      'lake cabin screened porches',
+      'residential remodeling'
+    ],
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Remodeling Services',
+      itemListElement: [
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Garage Builders', url: `${SITE_URL}/garage-builders` } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Room Additions', url: `${SITE_URL}/room-additions` } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Deck Builders', url: `${SITE_URL}/deck-builders` } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Aluminum Screened Enclosures', url: `${SITE_URL}/aluminum-screened-enclosures` } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Detached ADUs', url: `${SITE_URL}/granny-pods` } },
+        { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Lake Cabin Screened Porches', url: `${SITE_URL}/lake-cabin-screened-porches` } }
+      ]
+    },
     sameAs: [
       'https://www.facebook.com/remodelingcontractorsc',
       'https://www.instagram.com/remodelingcontractorsc',
@@ -122,6 +143,25 @@ export function createBreadcrumbSchema(items) {
       name: item.name,
       item: `https://remodelingcontractorsc.com${item.path}`
     }))
+  };
+}
+
+export function createWebSiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: BUSINESS_NAME,
+    url: SITE_URL,
+    description:
+      'Upstate South Carolina contractor for garages, room additions, decks, screened enclosures, and ADUs.',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${SITE_URL}/services?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
   };
 }
 

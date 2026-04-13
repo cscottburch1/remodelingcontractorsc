@@ -17,6 +17,7 @@ import {
   createFaqSchema,
   createLocalBusinessSchema,
   createReviewSchema,
+  createWebSiteSchema,
 } from '../lib/schema';
 
 export default function HomePage() {
@@ -29,6 +30,7 @@ export default function HomePage() {
 
   const schema = [
     localBusinessSchema,
+    createWebSiteSchema(),
     createFaqSchema(faqs),
     createBreadcrumbSchema([{ name: 'Home', path: '/' }])
   ];
