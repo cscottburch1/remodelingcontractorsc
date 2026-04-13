@@ -323,52 +323,52 @@ export const coreServices = [
     serviceType: 'Lake Cabin Screened Porch Builder',
     summary: 'Custom screened porches and enclosures for lake cabin properties on Lake Greenwood, SC.',
     metaTitle: 'Lake Cabin Screened Porches Near Lake Greenwood, SC | Custom Enclosures',
-    metaDescription: 'Professional screened porch builder serving lake cabin owners near Lake Greenwood in Greenwood County, SC. Custom aluminum-framed enclosures built for lakeside living, humidity resistance, and year-round outdoor enjoyment.',
+    metaDescription: 'Custom porch enclosures for cabin properties near Lake Greenwood, SC. Durable aluminum framing, permit support, and practical designs for comfortable outdoor living.',
     highlights: [
       'Built for lakeside humidity and weather',
       'Aluminum framing for long-term durability',
       'Lake Greenwood area permit expertise',
       'Year-round outdoor living design'
     ],
-    intro: 'We build screened porches and aluminum enclosures for lake cabin properties near Lake Greenwood. Enjoy bug-free evenings on the water with a properly built enclosure designed for Greenwood County\'s humid lakeside conditions.',
+    intro: 'We build porch enclosures for cabin properties near Lake Greenwood. Our team focuses on durable materials, clean installation, and comfortable outdoor use in humid conditions.',
 
-    whatItIs: 'A lake cabin screened porch is an aluminum-framed enclosure attached to or surrounding your cabin that keeps insects out while preserving airflow, lake views, and the outdoor living experience. Built with corrosion-resistant materials suited to lakeside humidity, these structures extend your usable outdoor space across all seasons.',
+    whatItIs: 'A cabin porch enclosure is an aluminum-framed structure attached to your home that blocks insects while keeping airflow and views. We build with corrosion-resistant materials so your outdoor space stays usable through changing weather.',
 
     whoItsFor: [
-      'Lake Greenwood cabin owners wanting bug-free evenings outdoors',
-      'Property owners looking to maximize waterfront enjoyment year-round',
-      'Families upgrading older unscreened porches with durable aluminum systems',
-      'Investors improving rental cabin properties with high-value outdoor amenities'
+      'Cabin owners who want bug-free evenings outdoors',
+      'Property owners who want more usable waterfront living space',
+      'Families replacing aging porch systems with low-maintenance aluminum framing',
+      'Investors upgrading rental properties with practical outdoor amenities'
     ],
 
     commonProjects: [
-      'Screened porches wrapping the lakeside face of a cabin',
+      'Porch enclosures along the waterfront side of a cabin',
       'Aluminum enclosures over existing concrete slabs or decks',
-      'Screen rooms with ceiling fans and outdoor lighting',
-      'Replacement enclosures upgrading aged wood-frame screen rooms',
-      'Covered screened porches with metal roofing for rain protection'
+      'Enclosed outdoor rooms with ceiling fans and lighting',
+      'Replacement projects upgrading older wood-frame porch systems',
+      'Covered enclosures with metal roofing for rain protection'
     ],
 
     process: [
-      'Site visit: assess cabin footprint, lake orientation, sun angle, and prevailing breeze',
-      'Design planning: size, roof type, screen height, door placement',
+      'Site visit: assess cabin footprint, orientation, sun angle, and breeze',
+      'Design planning: size, roof type, panel height, and door placement',
       'Greenwood County permit coordination and structural review',
       'Foundation or deck base prep (slab, block, or treated wood deck)',
       'Aluminum frame installation with corrosion-resistant hardware',
-      'Fiberglass or pet-resistant screen panel installation',
+      'Panel installation and finish details',
       'Ceiling fans, lighting, door hardware, and final walkthrough'
     ],
 
     costFactors: [
-      'Enclosure size and number of screened openings',
+      'Enclosure size and number of panel openings',
       'Whether a new roof structure is included',
       'Base type: existing slab vs new deck base',
-      'Screen type: standard fiberglass, solar, or pet-resistant',
-      'Electrical package: outlets, ceiling fans, lighting',
-      'Site access and proximity to Lake Greenwood shoreline'
+      'Panel material and finish options',
+      'Electrical package: outlets, ceiling fans, and lighting',
+      'Site access and proximity to shoreline'
     ],
 
-    localContext: 'Lake Greenwood properties sit in Greenwood County and are subject to local building permits and setback rules that vary by shoreline proximity. Lakeside humidity accelerates corrosion in low-grade materials — we use aluminum framing and stainless hardware rated for wet, high-humidity environments. We handle all Greenwood County permit coordination.',
+    localContext: 'Properties near Lake Greenwood are subject to Greenwood County permit and setback requirements that can vary by shoreline location. Humid conditions can wear down low-grade materials, so we use aluminum framing and corrosion-resistant hardware designed for wet environments.',
 
     relatedServices: ['screened-porches', 'decks'],
     image: lakeCabinImageSet.defaultSrc,

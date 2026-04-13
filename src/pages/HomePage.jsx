@@ -35,7 +35,7 @@ export default function HomePage() {
     <>
       <Seo
         title="Remodeling Contractors SC | Garages, Additions, Decks, Screened Porches, ADUs"
-        description="Upstate South Carolina contractor for custom garages, home additions, decks, screened porches, and ADUs. Serving Mauldin, Simpsonville, Fountain Inn, and surrounding areas."
+        description="Upstate SC contractor for garages, additions, decks, porch enclosures, and ADUs. Serving Mauldin, Simpsonville, Fountain Inn, and nearby areas."
         schema={schema}
       />
       <Hero />

@@ -43,12 +43,12 @@ coreServices.forEach(service => {
       
       // SEO
       metaTitle: `${service.name} in ${town.name}, SC | ${service.serviceType}`,
-      metaDescription: `Professional ${service.serviceType.toLowerCase()} in ${town.name}, South Carolina. Quality ${service.name.toLowerCase()} construction with local expertise, reliable service, and neighborhood-appropriate design.`,
+      metaDescription: `${service.serviceType} in ${town.name}, SC. Quality ${service.name.toLowerCase()} with clear pricing, permit support, and dependable local service.`,
       
       // Page content structure
       h1: `${service.name} in ${town.name}, SC`,
       
-      intro: `We build ${service.name.toLowerCase()} for homeowners in ${town.name} who need ${service.summary.toLowerCase()} Our team brings local knowledge, quality craftsmanship, and clear communication to every ${service.name.toLowerCase().replace(/s$/, '')} project in ${town.county}.`,
+      intro: `We build ${service.name.toLowerCase()} for homeowners in ${town.name}. ${service.summary} Our team brings local knowledge, quality craftsmanship, and clear communication to every ${service.name.toLowerCase().replace(/s$/, '')} project in ${town.county}.`,
       
       serviceOverview: service.summary,
       
