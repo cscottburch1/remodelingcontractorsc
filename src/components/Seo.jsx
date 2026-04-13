@@ -1,7 +1,16 @@
 import { Helmet } from 'react-helmet-async';
 import heroImage from '../assets/images/screen-porch-hero.webp';
 
-export default function Seo({ title, description, path = '/', image, schema, noindex = false }) {
+export default function Seo({
+  title,
+  description,
+  path = '/',
+  image,
+  schema,
+  noindex = false,
+  suppressDescription = false,
+  suppressCanonical = false,
+}) {
   const url = `https://remodelingcontractorsc.com${path}`;
   const ogImage = image || heroImage;
   const schemaList = Array.isArray(schema) ? schema : schema ? [schema] : [];
@@ -9,8 +18,8 @@ export default function Seo({ title, description, path = '/', image, schema, noi
   return (
     <Helmet>
       <title>{title}</title>
-      <meta name="description" content={description} />
-      <link rel="canonical" href={url} />
+      {!suppressDescription ? <meta name="description" content={description} /> : null}
+      {!suppressCanonical ? <link rel="canonical" href={url} /> : null}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
