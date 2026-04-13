@@ -11,6 +11,7 @@ import { faqs } from '../data/faqs';
 import { testimonials } from '../data/testimonials';
 import { coreServices } from '../data/coreServices';
 import { serviceAreas } from '../data/serviceAreas';
+import { heroImageSet } from '../data/responsiveImages';
 import {
   createAggregateRatingSchema,
   createBreadcrumbSchema,
@@ -54,9 +55,27 @@ export default function HomePage() {
         description="Upstate SC contractor for garages, additions, decks, porch enclosures, and ADUs. Serving Mauldin, Simpsonville, Fountain Inn, and nearby areas."
         suppressDescription
         suppressCanonical
+        preloads={[
+          {
+            href: heroImageSet.defaultSrc,
+            as: 'image',
+            imageSrcSet: heroImageSet.webpSrcSet,
+            imageSizes: heroImageSet.sizes,
+            fetchPriority: 'high'
+          }
+        ]}
         schema={schema}
       />
       <Hero />
+
+      <section className="home-byline-wrap" aria-label="Author and editorial review">
+        <div className="container">
+          <p className="home-byline">
+            Reviewed April 13, 2026 by Chris Scott, Licensed General Contractor. Content is maintained by the
+            Remodeling Contractors SC editorial team for homeowners in Upstate South Carolina.
+          </p>
+        </div>
+      </section>
 
       <section className="home-services section-pad">
         <div className="container services-showcase">

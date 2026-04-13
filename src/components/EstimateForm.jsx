@@ -130,7 +130,7 @@ export default function EstimateForm() {
 
   return (
     <form className="estimate-form" onSubmit={onSubmit}>
-      <input type="text" name="website" tabIndex="-1" autoComplete="off" className="hp-field" aria-hidden="true" hidden />
+      <input type="text" name="website" tabIndex="-1" autoComplete="off" className="hp-field" aria-hidden="true" aria-label="Leave this field empty" hidden />
       <input type="hidden" name="startedAt" value={String(formStartedAt.current)} />
       
       <label htmlFor="estimate-name">

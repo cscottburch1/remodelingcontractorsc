@@ -87,6 +87,17 @@ main > section:nth-of-type(even) {
   padding: clamp(4.5rem, 6vw, 7rem) 0;
 }
 
+.home-byline-wrap {
+  padding: 0.75rem 0 0.25rem;
+  background: var(--bg-section);
+}
+
+.home-byline {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
 .hero.section-pad {
   padding: clamp(4.5rem, 7vw, 5.6rem) 0;
 }

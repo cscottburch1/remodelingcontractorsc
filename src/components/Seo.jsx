@@ -7,6 +7,7 @@ export default function Seo({
   path = '/',
   image,
   schema,
+  preloads,
   noindex = false,
   suppressDescription = false,
   suppressCanonical = false,
@@ -14,12 +15,24 @@ export default function Seo({
   const url = `https://remodelingcontractorsc.com${path}`;
   const ogImage = image || heroImage;
   const schemaList = Array.isArray(schema) ? schema : schema ? [schema] : [];
+  const preloadList = Array.isArray(preloads) ? preloads : [];
 
   return (
     <Helmet>
       <title>{title}</title>
       {!suppressDescription ? <meta name="description" content={description} /> : null}
       {!suppressCanonical ? <link rel="canonical" href={url} /> : null}
+      {preloadList.map((preload, idx) => (
+        <link
+          key={`${preload.href}-${idx}`}
+          rel="preload"
+          as={preload.as || 'image'}
+          href={preload.href}
+          imagesrcset={preload.imageSrcSet}
+          imagesizes={preload.imageSizes}
+          fetchpriority={preload.fetchPriority}
+        />
+      ))}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
