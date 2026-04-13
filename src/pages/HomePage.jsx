@@ -82,11 +82,15 @@ export default function HomePage() {
           <SectionIntro
             eyebrow="Core Services"
             title="Six specialized services for space creation and outdoor living"
-            text="We focus on garages, additions, decks, screened porches, lake cabin screened porches, and ADUs — projects that expand your home's functionality while preserving neighborhood character and long-term value."
+            text="We focus on garages, additions, decks, porch enclosures, lake cabin projects, and ADUs — projects that expand your home's functionality while preserving neighborhood character and long-term value."
           />
           <div className="home-services-grid">
-            {mappedServices.map((service) => (
-              <HomeServiceCard key={service.slug} service={service} />
+            {mappedServices.map((service, index) => (
+              <HomeServiceCard
+                key={service.slug}
+                service={service}
+                prioritizeImage={index === 0}
+              />
             ))}
           </div>
 
@@ -171,7 +175,7 @@ export default function HomePage() {
 
       <CtaSection
         title="Ready to expand your home's potential?"
-        text="We'll help you plan the right garage, addition, deck, screened porch, or ADU for your property and budget."
+        text="We'll help you plan the right garage, addition, deck, porch enclosure, or ADU for your property and budget."
       />
     </>
   );

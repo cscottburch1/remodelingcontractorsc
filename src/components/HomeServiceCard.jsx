@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function HomeServiceCard({ service }) {
+export default function HomeServiceCard({ service, prioritizeImage = false }) {
   return (
     <article className="home-service-card">
       <div className="home-service-media">
@@ -9,7 +9,8 @@ export default function HomeServiceCard({ service }) {
           srcSet={service.imageSrcSet}
           sizes={service.imageSizes}
           alt={service.imageAlt}
-          loading="lazy"
+          loading={prioritizeImage ? 'eager' : 'lazy'}
+          fetchPriority={prioritizeImage ? 'high' : 'auto'}
           decoding="async"
           width="900"
           height="600"
