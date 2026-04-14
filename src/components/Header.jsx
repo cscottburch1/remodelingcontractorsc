@@ -25,7 +25,7 @@ export default function Header() {
         </div>
         <div className="contractor-credentials">
           <small>
-            <strong>SC Licensed General Contractor:</strong> SC# CLG 118679 | <strong>Insured</strong> National Grange | <a href="/about">Details</a>
+            <strong>SC Licensed General Contractor:</strong> SC# CLG 118679 | <strong>Insured</strong> National Grange
           </small>
         </div>
       </div>

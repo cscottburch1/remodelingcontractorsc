@@ -1,6 +1,7 @@
 import CtaSection from '../components/CtaSection';
 import ProjectCard from '../components/ProjectCard';
 import Seo from '../components/Seo';
+import createOrganizationSchema from '../lib/organizationSchema';
 import SectionIntro from '../components/SectionIntro';
 import { projects } from '../data/projects';
 import { createBreadcrumbSchema } from '../lib/schema';
@@ -12,10 +13,18 @@ export default function ProjectsPage() {
         title="Projects | Remodeling Contractors SC"
         description="View garage, addition, deck, screened enclosure, and ADU project highlights across Upstate South Carolina."
         path="/projects"
-        schema={createBreadcrumbSchema([
-          { name: 'Home', path: '/' },
-          { name: 'Projects', path: '/projects' }
-        ])}
+        schema={[
+          createBreadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Projects', path: '/projects' }
+          ]),
+          createOrganizationSchema(),
+          {
+            '@type': 'WebPage',
+            'datePublished': '2026-04-13',
+            'dateModified': '2026-04-13'
+          }
+        ]}
       />
       <section className="section-pad">
         <div className="container">

@@ -1,5 +1,6 @@
 import CtaSection from '../components/CtaSection';
 import Seo from '../components/Seo';
+import createOrganizationSchema from '../lib/organizationSchema';
 import SectionIntro from '../components/SectionIntro';
 import { createBreadcrumbSchema, createFaqSchema } from '../lib/schema';
 
@@ -31,6 +32,12 @@ export default function FinancingPage() {
             { name: 'Financing', path: '/financing' }
           ]),
           createFaqSchema(financingFaqs),
+          createOrganizationSchema(),
+          {
+            '@type': 'WebPage',
+            'datePublished': '2026-04-13',
+            'dateModified': '2026-04-13'
+          }
         ]}
       />
 

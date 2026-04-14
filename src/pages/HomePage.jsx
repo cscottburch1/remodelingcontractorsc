@@ -73,7 +73,7 @@ export default function HomePage() {
       <section className="home-byline-wrap" aria-label="Author and editorial review">
         <div className="container">
           <p className="home-byline">
-            Reviewed April 13, 2026 by Chris Scott, Licensed General Contractor. Content is maintained by the
+            Reviewed April 13, 2026 by Scott Burch, SC Licensed General Contractor. Content is maintained by the
             Remodeling Contractors SC editorial team for homeowners in Upstate South Carolina.
           </p>
         </div>

@@ -1,5 +1,6 @@
 import CtaSection from '../components/CtaSection';
 import Seo from '../components/Seo';
+import createOrganizationSchema from '../lib/organizationSchema';
 import SectionIntro from '../components/SectionIntro';
 import { createBreadcrumbSchema } from '../lib/schema';
 
@@ -10,10 +11,18 @@ export default function AboutPage() {
         title="About | Remodeling Contractors SC"
         description="Learn how Remodeling Contractors SC plans and builds garages, additions, decks, screened enclosures, and ADUs in South Carolina."
         path="/about"
-        schema={createBreadcrumbSchema([
-          { name: 'Home', path: '/' },
-          { name: 'About', path: '/about' }
-        ])}
+        schema={[
+          createBreadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'About', path: '/about' }
+          ]),
+          createOrganizationSchema(),
+          {
+            '@type': 'WebPage',
+            'datePublished': '2026-04-13',
+            'dateModified': '2026-04-13'
+          }
+        ]}
       />
       <section className="section-pad">
         <div className="container page-wrap">

@@ -1,6 +1,7 @@
 import CtaSection from '../components/CtaSection';
 import EstimateForm from '../components/EstimateForm';
 import Seo from '../components/Seo';
+import createOrganizationSchema from '../lib/organizationSchema';
 import SectionIntro from '../components/SectionIntro';
 import { createBreadcrumbSchema } from '../lib/schema';
 
@@ -11,10 +12,18 @@ export default function ContactPage() {
         title="Contact | Request Estimate | Remodeling Contractors SC"
         description="Request an estimate for garages, room additions, decks, aluminum screened enclosures, and ADUs in South Carolina."
         path="/contact"
-        schema={createBreadcrumbSchema([
-          { name: 'Home', path: '/' },
-          { name: 'Contact', path: '/contact' }
-        ])}
+        schema={[
+          createBreadcrumbSchema([
+            { name: 'Home', path: '/' },
+            { name: 'Contact', path: '/contact' }
+          ]),
+          createOrganizationSchema(),
+          {
+            '@type': 'WebPage',
+            'datePublished': '2026-04-13',
+            'dateModified': '2026-04-13'
+          }
+        ]}
       />
       <section className="section-pad">
         <div className="container page-wrap">

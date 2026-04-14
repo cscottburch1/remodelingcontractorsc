@@ -3,14 +3,18 @@ import { Link } from 'react-router-dom';
 import CtaSection from '../../components/CtaSection';
 import Seo from '../../components/Seo';
 import SectionIntro from '../../components/SectionIntro';
+
 import { locations } from '../../data/locations';
 import { projects } from '../../data/projects';
 import { services } from '../../data/services';
+import { serviceContent } from '../../data/serviceContent';
 import { createBreadcrumbSchema, createServiceSchema } from '../../lib/schema';
+import createOrganizationSchema from '../../lib/organizationSchema';
 
 export default function ServiceDetailPage() {
   const { slug } = useParams();
   const service = services.find((item) => item.slug === slug);
+  const content = serviceContent[slug];
 
   if (!service) {
     return <Navigate to="/services" replace />;
@@ -23,7 +27,13 @@ export default function ServiceDetailPage() {
       { name: 'Home', path: '/' },
       { name: 'Services', path: '/services' },
       { name: service.name, path: `/services/${service.slug}` }
-    ])
+    ]),
+    createOrganizationSchema(),
+    {
+      '@type': 'WebPage',
+      'datePublished': '2026-04-13',
+      'dateModified': content?.lastUpdated || '2026-04-13'
+    }
   ];
 
   return (
@@ -51,6 +61,54 @@ export default function ServiceDetailPage() {
                   <li key={item}>{item}</li>
                 ))}
               </ul>
+
+              {content?.questions && (
+                <>
+                  <h3>Frequently Asked Questions</h3>
+                  <ul className="faq-list">
+                    {content.questions.map((qa, idx) => (
+                      <li key={idx}>
+                        <strong>Q: {qa.q}</strong>
+                        <br />A: {qa.a}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+
+              {content?.stats && (
+                <>
+                  <h3>Service Stats & Facts</h3>
+                  <ul className="stats-list">
+                    {content.stats.map((stat, idx) => (
+                      <li key={idx}>
+                        <strong>{stat.label}:</strong> {stat.value}
+                        {stat.source && <span className="stat-source"> ({stat.source})</span>}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+
+              {content?.caseStudies && (
+                <>
+                  <h3>Case Study</h3>
+                  {content.caseStudies.map((cs, idx) => (
+                    <div key={idx} className="case-study">
+                      <strong>{cs.title}</strong>
+                      <p>{cs.summary}</p>
+                      <ul>
+                        <li><strong>Before:</strong> {cs.before}</li>
+                        <li><strong>After:</strong> {cs.after}</li>
+                      </ul>
+                    </div>
+                  ))}
+                </>
+              )}
+
+              {content?.lastUpdated && (
+                <div className="last-updated">Last updated: {content.lastUpdated}</div>
+              )}
 
               <h3>Supporting pages</h3>
               <div className="chip-list">

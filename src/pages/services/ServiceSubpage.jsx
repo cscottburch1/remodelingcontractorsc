@@ -2,15 +2,19 @@ import { Link, Navigate, useParams } from 'react-router-dom';
 import CtaSection from '../../components/CtaSection';
 import Seo from '../../components/Seo';
 import SectionIntro from '../../components/SectionIntro';
+
 import { locations } from '../../data/locations';
 import { projects } from '../../data/projects';
 import { services } from '../../data/services';
+import { serviceContent } from '../../data/serviceContent';
 import { createBreadcrumbSchema, createServiceSchema } from '../../lib/schema';
+import createOrganizationSchema from '../../lib/organizationSchema';
 
 export default function ServiceSubpage() {
   const { serviceSlug, subSlug } = useParams();
   const parentService = services.find((service) => service.slug === serviceSlug);
   const subpage = parentService?.subpages.find((item) => item.slug === subSlug);
+  const content = serviceContent[serviceSlug];
 
   if (!parentService || !subpage) {
     return <Navigate to="/services" replace />;
@@ -24,7 +28,13 @@ export default function ServiceSubpage() {
       { name: 'Services', path: '/services' },
       { name: parentService.name, path: `/services/${serviceSlug}` },
       { name: subpage.name, path: `/services/${serviceSlug}/${subSlug}` }
-    ])
+    ]),
+    createOrganizationSchema(),
+    {
+      '@type': 'WebPage',
+      'datePublished': '2026-04-13',
+      'dateModified': content?.lastUpdated || '2026-04-13'
+    }
   ];
 
   return (
@@ -54,6 +64,54 @@ export default function ServiceSubpage() {
               We serve homeowners across {locations.map((location) => location.name).join(', ')} with a process built
               for clarity from estimate through final handoff.
             </p>
+
+            {content?.questions && (
+              <>
+                <h3>Frequently Asked Questions</h3>
+                <ul className="faq-list">
+                  {content.questions.map((qa, idx) => (
+                    <li key={idx}>
+                      <strong>Q: {qa.q}</strong>
+                      <br />A: {qa.a}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+
+            {content?.stats && (
+              <>
+                <h3>Service Stats & Facts</h3>
+                <ul className="stats-list">
+                  {content.stats.map((stat, idx) => (
+                    <li key={idx}>
+                      <strong>{stat.label}:</strong> {stat.value}
+                      {stat.source && <span className="stat-source"> ({stat.source})</span>}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+
+            {content?.caseStudies && (
+              <>
+                <h3>Case Study</h3>
+                {content.caseStudies.map((cs, idx) => (
+                  <div key={idx} className="case-study">
+                    <strong>{cs.title}</strong>
+                    <p>{cs.summary}</p>
+                    <ul>
+                      <li><strong>Before:</strong> {cs.before}</li>
+                      <li><strong>After:</strong> {cs.after}</li>
+                    </ul>
+                  </div>
+                ))}
+              </>
+            )}
+
+            {content?.lastUpdated && (
+              <div className="last-updated">Last updated: {content.lastUpdated}</div>
+            )}
 
             <h3>More {parentService.name.toLowerCase()} options</h3>
             <div className="chip-list">
