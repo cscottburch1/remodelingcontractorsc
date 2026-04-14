@@ -2,5 +2,15 @@
 User-agent: *
 Allow: /
 
+# Explicitly allow major AI crawlers (GEO audit quick win)
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
 Sitemap: https://remodelingcontractorsc.com/sitemap.xml
 LLMS: https://remodelingcontractorsc.com/llms.txt

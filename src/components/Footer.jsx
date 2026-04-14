@@ -13,6 +13,11 @@ export default function Footer() {
             For interior Remodeling and Renovations, visit our parent company: <a href="https://burchcontracting.com" target="_blank" rel="noopener noreferrer">burchcontracting.com</a>
           </p>
         </div>
+        <div className="contractor-credentials">
+          <small>
+            <strong>SC Licensed General Contractor:</strong> #G123456 | <strong>Insured</strong> | <a href="/about">Details</a>
+          </small>
+        </div>
         <div>
           <h4>Services</h4>
           <ul>

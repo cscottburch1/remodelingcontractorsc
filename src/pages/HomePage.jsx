@@ -20,6 +20,7 @@ import {
   createReviewSchema,
   createWebSiteSchema,
 } from '../lib/schema';
+import createOrganizationSchema from '../lib/organizationSchema';
 
 export default function HomePage() {
   const localBusinessSchema = createLocalBusinessSchema();
@@ -31,6 +32,7 @@ export default function HomePage() {
 
   const schema = [
     localBusinessSchema,
+    createOrganizationSchema(),
     createWebSiteSchema(),
     createFaqSchema(faqs),
     createBreadcrumbSchema([{ name: 'Home', path: '/' }])
