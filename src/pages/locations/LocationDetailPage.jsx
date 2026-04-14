@@ -7,6 +7,7 @@ import { projects } from '../../data/projects';
 import { services } from '../../data/services';
 import { locations } from '../../data/locations';
 import { createBreadcrumbSchema } from '../../lib/schema';
+import createOrganizationSchema from '../../lib/organizationSchema';
 
 export default function LocationDetailPage() {
   const { slug } = useParams();
@@ -17,11 +18,72 @@ export default function LocationDetailPage() {
   }
 
   const localProjects = projects.filter((project) => project.locationSlug === location.slug);
-  const schema = createBreadcrumbSchema([
+  // Author schema for E-E-A-T
+  const authorSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    'name': 'Chris Scott',
+    'jobTitle': 'Licensed General Contractor',
+    'worksFor': {
+      '@type': 'Organization',
+      'name': 'Remodeling Contractors SC',
+      'url': 'https://remodelingcontractorsc.com/'
+    },
+    'identifier': 'SC CLG 118679',
+    'hasCredential': [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        'credentialCategory': 'Contractor License',
+        'identifier': 'SC CLG 118679'
+      }
+    ],
+    'sameAs': [
+      'https://www.facebook.com/remodelingcontractorsc',
+      'https://www.instagram.com/remodelingcontractorsc',
+      'https://burchcontracting.com/'
+    ]
+  };
+
+  // FAQ schema from location questions
+  const faqSchema = location.questions && location.questions.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: location.questions.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.a
+      }
+    }))
+  } : null;
+
+  // Breadcrumb schema
+  const breadcrumbSchema = createBreadcrumbSchema([
     { name: 'Home', path: '/' },
     { name: 'Locations', path: '/locations' },
     { name: location.name, path: `/locations/${location.slug}` }
   ]);
+
+  // Organization schema
+  const orgSchema = createOrganizationSchema();
+
+  // dateModified schema
+  const dateModified = location.lastUpdated || '2026-04-13';
+
+  const schema = [
+    breadcrumbSchema,
+    orgSchema,
+    authorSchema,
+    ...(faqSchema ? [faqSchema] : []),
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      'name': `${location.name} Service Area`,
+      'url': `https://remodelingcontractorsc.com/locations/${location.slug}`,
+      'dateModified': dateModified
+    }
+  ];
 
   return (
     <>
@@ -44,9 +106,33 @@ export default function LocationDetailPage() {
               {` ${services.map((service) => service.name.toLowerCase()).join(', ')}.`}
             </p>
             <p>
-              Our local approach is built around planning quality, structural execution, and clean project
-              communication so homeowners can move from concept to completed build with confidence.
+              {location.localContent}
             </p>
+
+            {/* Citable local statistics */}
+            {location.stats && location.stats.length > 0 && (
+              <section>
+                <h2>Local Project Statistics</h2>
+                <ul>
+                  {location.stats.map((stat, idx) => (
+                    <li key={idx}><strong>{stat.label}:</strong> {stat.value} <em>({stat.source})</em></li>
+                  ))}
+                </ul>
+              </section>
+            )}
+
+            {/* Question-based H2s */}
+            {location.questions && location.questions.length > 0 && (
+              <section>
+                <h2>Frequently Asked Questions for {location.name}</h2>
+                {location.questions.map((qa, idx) => (
+                  <div key={idx} className="faq-block">
+                    <h3>{qa.q}</h3>
+                    <p>{qa.a}</p>
+                  </div>
+                ))}
+              </section>
+            )}
 
             <h3>Core services in {location.name}</h3>
             <div className="chip-list">
@@ -61,6 +147,10 @@ export default function LocationDetailPage() {
                 <Link key={project.slug} to={`/projects/${project.slug}`} className="chip-item">{project.title}</Link>
               ))}
               {localProjects.length === 0 ? <p>Ask for nearby project examples during your estimate call.</p> : null}
+            </div>
+
+            <div className="last-updated">
+              <small>Last updated: {location.lastUpdated || '2026-04-13'}</small>
             </div>
           </article>
         </div>
