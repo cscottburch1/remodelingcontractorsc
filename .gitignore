@@ -1,11 +1,18 @@
 node_modules
 dist
 .env
+.env.local
+.env.*.local
 .DS_Store
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+
+# Next.js specific
+.next/
+out/
+build/
 
 # Database and uploads (sensitive data)
 data/
@@ -27,3 +34,14 @@ playwright-visual-check.png
 
 # Deployment configs (these should not be in repo)
 nginx-*.conf
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+
+# Build outputs
+.turbo/

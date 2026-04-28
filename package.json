@@ -1,44 +1,26 @@
 {
   "name": "remodelingcontractorsc",
+  "description": "High-performance Next.js 14 site for remodelingcontractorsc.com",
+  "version": "2.0.0",
   "private": true,
-  "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host 0.0.0.0 --port 3002",
-    "build": "vite build",
-    "preview": "vite preview --host 0.0.0.0 --port 3002",
-    "start": "node server/index.mjs",
-    "heal:403": "node scripts/deploy/auto-repair-403.mjs --once",
-    "heal:403:watch": "node scripts/deploy/auto-repair-403.mjs --watch",
-    "deploy:guard": "node scripts/deploy/guard-site.mjs --env=production",
-    "deploy:guard:staging": "node scripts/deploy/guard-site.mjs --env=staging",
-    "verify:push": "node scripts/git/verify-push.mjs",
-    "hooks:install": "node scripts/git/install-hooks.mjs",
-    "mcp:playwright": "playwright-mcp",
-    "mcp:playwright:help": "playwright-mcp --help",
-    "mcp:playwright:secure": "playwright-mcp --isolated --allowed-hosts 127.0.0.1 localhost --output-mode stdout"
+    "dev": "next dev -p 3002 -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start -p 3002",
+    "lint": "next lint"
   },
   "dependencies": {
-    "bcryptjs": "^3.0.3",
-    "better-sqlite3": "^12.8.0",
-    "cookie-parser": "^1.4.7",
-    "express": "^5.2.1",
-    "express-rate-limit": "^8.3.2",
-    "express-session": "^1.19.0",
-    "helmet": "^8.1.0",
-    "multer": "^2.1.1",
-    "nodemailer": "^8.0.4",
+    "next": "^14.0.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-helmet-async": "^2.0.5",
-    "react-router-dom": "^6.30.1",
-    "uuid": "^13.0.0"
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@playwright/mcp": "^0.0.70",
-    "@playwright/test": "^1.59.1",
-    "@vitejs/plugin-react": "^4.5.0",
-    "sharp": "^0.34.5",
-    "vite": "^5.4.19"
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
