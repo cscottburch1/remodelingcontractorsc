@@ -8,7 +8,7 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Main Service Pages (flat URLs) -->
+  <!-- Main Service Pages -->
   <url>
     <loc>https://remodelingcontractorsc.com/garages</loc>
     <lastmod>2026-04-28</lastmod>
@@ -75,4 +75,63 @@
     <loc>https://remodelingcontractorsc.com/calculator/decks</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://remodelingcontractorsc.com/calculator/screened-porches</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://remodelingcontractorsc.com/calculator/kitchen-remodeling</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://remodelingcontractorsc.com/calculator/bathroom-remodeling</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://remodelingcontractorsc.com/calculator/basement-finishing</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://remodelingcontractorsc.com/calculator/adu</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
 
+  <!-- Core Pages -->
+  <url>
+    <loc>https://remodelingcontractorsc.com/about</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://remodelingcontractorsc.com/contact</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://remodelingcontractorsc.com/projects</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://remodelingcontractorsc.com/pricing</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
