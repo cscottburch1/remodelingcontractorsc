@@ -12,6 +12,10 @@ export default function ContactPage() {
           <input className="rounded-lg border border-slate-300 px-3 py-2" type="text" required />
         </label>
         <label className="flex flex-col gap-1 text-sm font-semibold text-slate-700">
+          Address
+          <input className="rounded-lg border border-slate-300 px-3 py-2" type="text" required />
+        </label>
+        <label className="flex flex-col gap-1 text-sm font-semibold text-slate-700">
           Phone
           <input className="rounded-lg border border-slate-300 px-3 py-2" type="tel" required />
         </label>
