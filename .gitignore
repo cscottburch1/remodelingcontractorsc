@@ -15,8 +15,8 @@ out/
 build/
 
 # Database and uploads (sensitive data)
-data/
-uploads/
+/data/
+/uploads/
 
 # Test and development files
 *.test.js

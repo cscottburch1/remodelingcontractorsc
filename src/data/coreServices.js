@@ -4,12 +4,12 @@ export const CORE_SERVICES = [
     name: 'Garages',
     teaser: 'Detached and attached garages built for storage, function, and curb appeal.',
     hero: 'Custom garages that look original to your home and perform for decades.',
-    intro: 'Burch Contracting builds high-quality custom garages across Upstate South Carolina—from single-car detached structures to three-car attached garages with workshop space. Every garage is engineered for Upstate SC's clay soil conditions, humid climate, and local building codes with proper foundation design, moisture control, and durable siding that matches your home. With 35+ years of experience, we deliver garages built to last.',
+    intro: 'Burch Contracting builds high-quality custom garages across Upstate South Carolina - from single-car detached structures to three-car attached garages with workshop space. Every garage is engineered for Upstate SC\'s clay soil conditions, humid climate, and local building codes with proper foundation design, moisture control, and durable siding that matches your home. With 35+ years of experience, we deliver garages built to last.',
     benefits: [
       'Custom foundation design for Upstate SC clay soil and drainage',
       'Proper structural tie-in for attached garages with zero settling issues',
       'Moisture-resistant construction for humid Upstate climate',
-      'Siding and trim matched to your existing home's style',
+      'Siding and trim matched to your existing home\'s style',
       'Electrical planning for lighting, outlets, and future EV charging',
       'Code-compliant framing, insulation, and final inspection coordination',
     ],
@@ -38,23 +38,23 @@ export const CORE_SERVICES = [
     name: 'Room Additions',
     teaser: 'Seamless square footage expansions with proper structural tie-in.',
     hero: 'Room additions planned for comfort, flow, and long-term home value.',
-    intro: 'Burch Contracting delivers room additions that feel like original construction—never an afterthought. Whether you need a primary suite, home office, or expanded living space, we handle foundation design for Upstate SC clay soil, structural tie-in to your existing home, and moisture control for our humid climate. Every addition is permitted, inspected, and built with 35+ years of local remodeling experience.',
+    intro: 'Burch Contracting delivers room additions that feel like original construction - never an afterthought. Whether you need a primary suite, home office, or expanded living space, we handle foundation design for Upstate SC clay soil, structural tie-in to your existing home, and moisture control for our humid climate. Every addition is permitted, inspected, and built with 35+ years of local remodeling experience.',
     benefits: [
       'Foundation systems engineered for Upstate SC clay soil and drainage',
       'Seamless structural tie-in with zero settling or separation over time',
       'HVAC planning to maintain comfort in new and existing spaces',
-      'Exterior finishes matched perfectly to your home's current siding and trim',
+      'Exterior finishes matched perfectly to your home\'s current siding and trim',
       'Code-compliant framing, electrical, and insulation throughout',
       'Interior flow designed for daily use and long-term home value',
     ],
     process: [
       {
         title: 'Design & Structural Planning',
-        description: 'We create a detailed plan that ties into your home's existing structure, accounts for local soil conditions, and ensures proper load transfer and foundation design.',
+        description: 'We create a detailed plan that ties into your home\'s existing structure, accounts for local soil conditions, and ensures proper load transfer and foundation design.',
       },
       {
         title: 'Foundation & Framing',
-        description: 'Foundations are poured to match your home's existing system. Framing connects structurally to eliminate settling or separation, with all work inspected and code-compliant.',
+        description: 'Foundations are poured to match your home\'s existing system. Framing connects structurally to eliminate settling or separation, with all work inspected and code-compliant.',
       },
       {
         title: 'Systems Integration',
@@ -62,7 +62,7 @@ export const CORE_SERVICES = [
       },
       {
         title: 'Finish Work & Final Details',
-        description: 'Interior finishes match your home's existing style. We complete trim, flooring, paint, and a detailed final walkthrough to ensure every detail is complete.',
+        description: 'Interior finishes match your home\'s existing style. We complete trim, flooring, paint, and a detailed final walkthrough to ensure every detail is complete.',
       },
     ],
     miniDefaults: { size: 360, complexity: 'standard', finish: 'standard' },
@@ -84,11 +84,11 @@ export const CORE_SERVICES = [
     process: [
       {
         title: 'Site Evaluation & Design',
-        description: 'We evaluate your yard's slope, drainage, and soil conditions, then design a deck system with proper foundation support and material selection for your budget and style.',
+        description: 'We evaluate your yard\'s slope, drainage, and soil conditions, then design a deck system with proper foundation support and material selection for your budget and style.',
       },
       {
         title: 'Foundation & Structural Framing',
-        description: 'Footings are poured to support load requirements. Ledger boards are properly flashed and attached to your home's structure. All framing is inspected and code-compliant.',
+        description: 'Footings are poured to support load requirements. Ledger boards are properly flashed and attached to your home\'s structure. All framing is inspected and code-compliant.',
       },
       {
         title: 'Decking & Railing Installation',
@@ -106,7 +106,7 @@ export const CORE_SERVICES = [
     name: 'Screened Porches',
     teaser: 'Bug-free outdoor living with strong framing and clean finishes.',
     hero: 'Screened porches that stay comfortable, bright, and practical year-round.',
-    intro: 'Burch Contracting builds screened porches that transform outdoor spaces into comfortable, bug-free living areas perfect for Upstate South Carolina's warm months. Every porch includes strong structural framing, proper foundation support for local clay soil, and moisture-resistant materials designed for our humid climate. With 35+ years of experience, we deliver screened porch projects built for daily use and long-term durability.',
+    intro: 'Burch Contracting builds screened porches that transform outdoor spaces into comfortable, bug-free living areas perfect for Upstate South Carolina\'s warm months. Every porch includes strong structural framing, proper foundation support for local clay soil, and moisture-resistant materials designed for our humid climate. With 35+ years of experience, we deliver screened porch projects built for daily use and long-term durability.',
     benefits: [
       'Foundation design for Upstate SC clay soil and drainage patterns',
       'Strong framing system to support roof load and screen tensioning',
@@ -118,11 +118,11 @@ export const CORE_SERVICES = [
     process: [
       {
         title: 'Foundation & Framing Design',
-        description: 'We design a foundation system matched to your site's soil and drainage. Framing is engineered to support roof loads and allow for clean screen installation with proper tensioning.',
+        description: 'We design a foundation system matched to your site\'s soil and drainage. Framing is engineered to support roof loads and allow for clean screen installation with proper tensioning.',
       },
       {
         title: 'Structural Build & Roofing',
-        description: 'Foundation and framing are built to code with proper flashing and weather protection. Roofing integrates seamlessly with your home's existing system.',
+        description: 'Foundation and framing are built to code with proper flashing and weather protection. Roofing integrates seamlessly with your home\'s existing system.',
       },
       {
         title: 'Screening & Trim Installation',
@@ -142,7 +142,7 @@ export const CORE_SERVICES = [
     hero: 'Basement finishing built around comfort, code, and moisture management.',
     intro: 'Burch Contracting transforms unfinished basements across Upstate South Carolina into comfortable, dry, and code-compliant living spaces. Every basement finishing project includes moisture control systems designed for our humid climate, proper insulation and HVAC planning, and egress solutions that meet local building codes. With 35+ years of experience, we deliver basement spaces built for daily use and long-term performance.',
     benefits: [
-      'Moisture control systems for Upstate SC's humid climate and groundwater',
+      'Moisture control systems for Upstate SC\'s humid climate and groundwater',
       'Insulation and vapor barrier installation for energy efficiency',
       'HVAC planning to maintain comfort in conditioned basement space',
       'Egress windows and stairways designed to meet building codes',
@@ -174,7 +174,7 @@ export const CORE_SERVICES = [
     name: 'ADU',
     teaser: 'Accessory dwelling units for family flexibility, guests, or rental use.',
     hero: 'ADU projects designed for independent living and long-term property value.',
-    intro: 'Burch Contracting builds accessory dwelling units (ADUs) across Upstate South Carolina designed for independent living, family flexibility, and long-term property value. Whether you're creating guest quarters, rental income, or multi-generational housing, we handle foundation design for local clay soil, full systems integration, and permitting for Upstate SC building codes. With 35+ years of experience, we deliver ADU projects built to perform like standalone homes.',
+    intro: 'Burch Contracting builds accessory dwelling units (ADUs) across Upstate South Carolina designed for independent living, family flexibility, and long-term property value. Whether you\'re creating guest quarters, rental income, or multi-generational housing, we handle foundation design for local clay soil, full systems integration, and permitting for Upstate SC building codes. With 35+ years of experience, we deliver ADU projects built to perform like standalone homes.',
     benefits: [
       'Foundation design engineered for Upstate SC clay soil and site conditions',
       'Full systems integration: HVAC, electrical, plumbing, and septic planning',
@@ -218,23 +218,23 @@ export const KITCHEN_BATH_SUBSERVICES = [
     name: 'Kitchen Remodeling',
     teaser: 'Kitchen remodels that improve workflow, storage, and daily efficiency.',
     hero: 'Kitchen remodeling focused on layout performance, durability, and style.',
-    intro: 'Burch Contracting delivers kitchen remodeling projects across Upstate South Carolina focused on workflow, storage, and long-term durability. Whether you're updating cabinets and countertops or reconfiguring your entire layout, we handle structural modifications, electrical and plumbing upgrades, and moisture-resistant materials designed for our humid climate. With 35+ years of local experience, we deliver kitchens built for modern family life.',
+    intro: 'Burch Contracting delivers kitchen remodeling projects across Upstate South Carolina focused on workflow, storage, and long-term durability. Whether you\'re updating cabinets and countertops or reconfiguring your entire layout, we handle structural modifications, electrical and plumbing upgrades, and moisture-resistant materials designed for our humid climate. With 35+ years of local experience, we deliver kitchens built for modern family life.',
     benefits: [
       'Layout planning for efficient workflow and daily usability',
       'Cabinet and countertop selection for storage and durability',
       'Electrical upgrades for modern appliances and task lighting',
       'Plumbing modifications with proper venting and code compliance',
-      'Moisture-resistant materials for Upstate SC's humid climate',
+      'Moisture-resistant materials for Upstate SC\'s humid climate',
       'Coordinated finishes for flooring, backsplash, and trim details',
     ],
     process: [
       {
         title: 'Layout Design & Material Selection',
-        description: 'We evaluate your current kitchen's workflow and design improvements for storage, efficiency, and style. Material selections are matched to your budget and durability requirements.',
+        description: 'We evaluate your current kitchen\'s workflow and design improvements for storage, efficiency, and style. Material selections are matched to your budget and durability requirements.',
       },
       {
         title: 'Demolition & Structural Work',
-        description: 'Existing cabinets and finishes are removed with care. Any structural modifications—like removing walls or adding beams—are completed with proper engineering and permits.',
+        description: 'Existing cabinets and finishes are removed with care. Any structural modifications - like removing walls or adding beams - are completed with proper engineering and permits.',
       },
       {
         title: 'Systems Upgrade & Rough-In',
@@ -254,7 +254,7 @@ export const KITCHEN_BATH_SUBSERVICES = [
     hero: 'Bathroom remodeling with thoughtful layout, ventilation, and lasting finishes.',
     intro: 'Burch Contracting specializes in bathroom remodeling projects across Upstate South Carolina designed for moisture control, efficient layouts, and low-maintenance finishes. From simple updates to full gut renovations, we handle plumbing modifications, proper ventilation for our humid climate, and durable materials built to withstand daily use. With 35+ years of experience, we deliver bathrooms that look great and perform flawlessly.',
     benefits: [
-      'Moisture-resistant materials designed for Upstate SC's humid climate',
+      'Moisture-resistant materials designed for Upstate SC\'s humid climate',
       'Proper ventilation planning to prevent mold and moisture buildup',
       'Plumbing upgrades with modern fixtures and efficient water use',
       'Layout improvements for storage, accessibility, and daily comfort',
@@ -264,7 +264,7 @@ export const KITCHEN_BATH_SUBSERVICES = [
     process: [
       {
         title: 'Layout Planning & Design',
-        description: 'We evaluate your bathroom's current layout and design improvements for storage, accessibility, and moisture management. Fixture and finish selections are matched to your style and budget.',
+        description: 'We evaluate your bathroom\'s current layout and design improvements for storage, accessibility, and moisture management. Fixture and finish selections are matched to your style and budget.',
       },
       {
         title: 'Demolition & Plumbing Rough-In',
