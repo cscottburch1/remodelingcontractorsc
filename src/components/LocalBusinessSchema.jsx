@@ -1,5 +1,12 @@
 import { BUSINESS_PROFILE } from '@/data/businessProfile';
 
+/**
+ * CRITICAL: This is the ONLY source of AggregateRating schema on the entire site.
+ * DO NOT add review/rating schema anywhere else to avoid Google Search Console
+ * "Review has multiple aggregate ratings" errors.
+ * 
+ * All rating data comes from businessProfile.js
+ */
 export default function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
@@ -13,6 +20,7 @@ export default function LocalBusinessSchema() {
       ...BUSINESS_PROFILE.address,
     },
     areaServed: BUSINESS_PROFILE.serviceArea,
+    // ONLY AggregateRating on entire site
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5.0',

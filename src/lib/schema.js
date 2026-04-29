@@ -165,32 +165,6 @@ export function createWebSiteSchema() {
   };
 }
 
-export function createAggregateRatingSchema({
-  ratingValue = 5,
-  reviewCount = 1,
-  bestRating = 5,
-  worstRating = 1,
-} = {}) {
-  return {
-    '@type': 'AggregateRating',
-    ratingValue,
-    reviewCount,
-    bestRating,
-    worstRating,
-  };
-}
-
-export function createReviewSchema(items = []) {
-  return items.map((item) => ({
-    '@type': 'Review',
-    reviewBody: item.quote,
-    author: {
-      '@type': 'Person',
-      name: item.name,
-    },
-    itemReviewed: {
-      '@type': 'LocalBusiness',
-      name: BUSINESS_NAME,
-    },
-  }));
-}
+// REMOVED: createAggregateRatingSchema and createReviewSchema
+// Site uses ONLY ONE AggregateRating in LocalBusinessSchema component
+// via businessProfile.js to prevent Google Search Console "multiple aggregate ratings" errors
