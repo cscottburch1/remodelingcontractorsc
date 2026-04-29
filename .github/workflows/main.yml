@@ -1,28 +1,36 @@
-name: Deploy Next.js to Hostinger
+name: Auto Deploy to Production
 
 on:
   push:
-    branches:
-      - main  # Or whichever branch you want to trigger the deploy
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    concurrency:
+      group: production-deploy
+      cancel-in-progress: true
+
     steps:
-      - name: Checkout code
+      - name: Checkout latest code
         uses: actions/checkout@v4
 
-      - name: Deploy via SSH
-        uses: appleboy/ssh-action@master
+      - name: Deploy to Hostinger VPS via SSH
+        uses: appleboy/ssh-action@v1.2.2
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
+          host: remodelingcontractorsc.com
+          username: siteapp
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: 22
+          command_timeout: 15m
           script: |
-            export NVM_DIR="$HOME/.nvm"
-            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # Load nvm
-            cd /var/www/remodelingcontractorsc             # Path to your project
+            cd /var/www/remodelingcontractorsc
+            git fetch origin main
+            git checkout main
             git pull origin main
-            npm install
+            rm -rf .next .swc
+            npm ci --production
             npm run build
-            pm2 restart next-app                           # Replace with your PM2 process name
+            pm2 restart remodelingcontractorsc
+            echo "✅ Auto-deploy completed successfully at $(date)"
