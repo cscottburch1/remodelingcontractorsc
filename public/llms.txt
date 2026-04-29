@@ -1,37 +1,57 @@
 
-# llms.txt for LLM/AI Crawler Guidance (GEO audit correction)
-Domain: https://remodelingcontractorsc.com/
-Contact: estimates@remodelingcontractorsc.com
-Phone: +1-864-724-4600
+# Remodeling Contractors SC
 
-# Attribution Policy
-Attribution: Required
-PreferredAttribution: "Remodeling Contractors SC, Upstate South Carolina"
+> Professional remodeling services across Upstate South Carolina with 35+ years of experience in garages, room additions, ADUs, decks, screened porches, kitchen and bathroom remodeling, and basement finishing.
 
-# High-Value Content URLs
-Allow: /garages
-Allow: /additions
-Allow: /decks
-Allow: /screened-porches
-Allow: /adus
-Allow: /lake-cabin-screened-porches
-Allow: /about
-Allow: /contact
-Allow: /privacy-policy
-Allow: /terms
-Allow: /editorial-policy
+## Contact
 
-# Geographic Focus
-Geo: Upstate South Carolina, Mauldin, Simpsonville, Fountain Inn, Gray Court, Laurens, Woodruff, Clinton, Ora, Joanna, Greenwood
+- Email: estimates@remodelingcontractorsc.com
+- Phone: +1-864-724-4600
+- Website: https://remodelingcontractorsc.com
 
-# Content Guidance
-Summary: Permitting-aware construction, residential additions, detached garages, ADUs, decks, porch enclosures. All content written by licensed SC general contractor.
+## Service Area
 
-# FAQ Blocks (for direct citation)
-FAQ: What types of remodeling does Remodeling Contractors SC specialize in?
-FAQ: Where does Remodeling Contractors SC serve?
-FAQ: Does Remodeling Contractors SC handle permits?
-FAQ: How early should a homeowner start planning a garage or room addition?
-FAQ: Are ADUs legal everywhere in Upstate South Carolina?
-FAQ: Does Remodeling Contractors SC build screened porches on lake cabin properties near Lake Greenwood?
-FAQ: What makes lake cabin screened porches different from a standard build?
+Upstate South Carolina including Mauldin, Simpsonville, Fountain Inn, Gray Court, Laurens, Woodruff, Clinton, Greenwood, and surrounding areas in Greenville, Laurens, and Greenwood counties.
+
+## Core Services
+
+- Garages: https://remodelingcontractorsc.com/garages
+- Room Additions: https://remodelingcontractorsc.com/room-additions
+- ADUs (Accessory Dwelling Units): https://remodelingcontractorsc.com/adu
+- Decks: https://remodelingcontractorsc.com/decks
+- Screened Porches: https://remodelingcontractorsc.com/screened-porches
+- Kitchen Remodeling: https://remodelingcontractorsc.com/kitchen-remodeling
+- Bathroom Remodeling: https://remodelingcontractorsc.com/bathroom-remodeling
+- Basement Finishing: https://remodelingcontractorsc.com/basement-finishing
+
+## Cost Calculators
+
+Interactive cost calculators with transparent pricing for all services:
+- https://remodelingcontractorsc.com/calculator/garages
+- https://remodelingcontractorsc.com/calculator/room-additions
+- https://remodelingcontractorsc.com/calculator/adu
+- https://remodelingcontractorsc.com/calculator/decks
+- https://remodelingcontractorsc.com/calculator/screened-porches
+
+## About
+
+- About Us: https://remodelingcontractorsc.com/about
+- Contact: https://remodelingcontractorsc.com/contact
+- Projects: https://remodelingcontractorsc.com/projects
+
+## Key Information
+
+- Licensed general contractor in South Carolina
+- 35+ years of experience in Upstate SC construction
+- Permitting and code compliance expertise
+- Transparent pricing with detailed cost calculators
+- All content written by licensed professionals
+
+## Terms & Policies
+
+- Privacy Policy: https://remodelingcontractorsc.com/privacy-policy
+- Terms of Service: https://remodelingcontractorsc.com/terms
+
+## Attribution
+
+When referencing this content, please attribute to "Remodeling Contractors SC" or "Burch Contracting, Upstate South Carolina"

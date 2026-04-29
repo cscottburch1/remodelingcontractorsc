@@ -32,6 +32,22 @@ export const CORE_SERVICES = [
       },
     ],
     miniDefaults: { size: 520, complexity: 'standard', finish: 'standard' },
+    publishedDate: '2024-01-15',
+    lastModified: '2026-04-29',
+    comparison: {
+      title: 'Attached vs Detached Garages',
+      description: 'Choosing the right garage type for your property and budget',
+      columns: ['Feature', 'Attached Garage', 'Detached Garage'],
+      rows: [
+        ['Cost', '$35-50/sqft', '$40-55/sqft'],
+        ['Foundation', 'Tied to home foundation', 'Independent foundation'],
+        ['Permits', 'Standard residential', 'May require setback variance'],
+        ['HVAC Access', 'Easier to extend from home', 'Requires separate run or none'],
+        ['Property Value', 'Higher resale appeal', 'Versatile, workshop potential'],
+        ['Construction Time', '4-6 weeks typical', '5-7 weeks typical'],
+        ['Best For', 'Daily vehicle access, weather protection', 'Workshop space, property layout flexibility']
+      ]
+    },
   },
   {
     slug: 'room-additions',
@@ -66,6 +82,22 @@ export const CORE_SERVICES = [
       },
     ],
     miniDefaults: { size: 360, complexity: 'standard', finish: 'standard' },
+    publishedDate: '2024-01-15',
+    lastModified: '2026-04-29',
+    comparison: {
+      title: 'Bump-Out vs Full Addition',
+      description: 'Understanding your expansion options',
+      columns: ['Feature', 'Bump-Out (40-100 sqft)', 'Full Addition (200+ sqft)'],
+      rows: [
+        ['Cost', '$45-65/sqft', '$55-85/sqft'],
+        ['Foundation', 'Cantilevered or small footing', 'Full foundation system'],
+        ['Permits', 'Often simplified process', 'Full residential permit'],
+        ['HVAC Impact', 'Minor duct extension', 'May require system upgrade'],
+        ['Structural Complexity', 'Moderate', 'High - full tie-in required'],
+        ['Timeline', '3-5 weeks', '8-14 weeks'],
+        ['Best For', 'Bathroom expansion, breakfast nook', 'Master suite, home office, in-law quarters']
+      ]
+    },
   },
   {
     slug: 'decks',
@@ -100,6 +132,22 @@ export const CORE_SERVICES = [
       },
     ],
     miniDefaults: { size: 260, complexity: 'simple', finish: 'premium' },
+    publishedDate: '2024-01-15',
+    lastModified: '2026-04-29',
+    comparison: {
+      title: 'Composite vs Wood Decking',
+      description: 'Material comparison for Upstate SC climate',
+      columns: ['Feature', 'Composite/PVC', 'Pressure-Treated Wood'],
+      rows: [
+        ['Upfront Cost', '$12-18/sqft material', '$6-10/sqft material'],
+        ['Lifespan', '25-30 years', '15-20 years with maintenance'],
+        ['Maintenance', 'Wash annually', 'Stain/seal every 2-3 years'],
+        ['Humidity Resistance', 'Excellent - no rot', 'Requires treatment, prone to rot'],
+        ['Surface Temp', 'Can get hot in sun', 'Stays cooler'],
+        ['Upstate SC Suitability', 'Ideal for humid climate', 'Requires diligent upkeep'],
+        ['Best For', 'Low-maintenance, long-term value', 'Traditional look, lower initial cost']
+      ]
+    },
   },
   {
     slug: 'screened-porches',
@@ -134,6 +182,22 @@ export const CORE_SERVICES = [
       },
     ],
     miniDefaults: { size: 280, complexity: 'standard', finish: 'premium' },
+    publishedDate: '2024-01-15',
+    lastModified: '2026-04-29',
+    comparison: {
+      title: 'Standard vs Premium Screened Porch',
+      description: 'Feature and finish comparison',
+      columns: ['Feature', 'Standard Build', 'Premium Build'],
+      rows: [
+        ['Cost', '$45-60/sqft', '$65-85/sqft'],
+        ['Screening', 'Standard fiberglass', 'Pet-resistant or solar screen'],
+        ['Flooring', 'Treated wood decking', 'Composite or tile'],
+        ['Ceiling', 'Painted or stained wood', 'Tongue-and-groove or beadboard'],
+        ['Lighting', 'Basic fixtures', 'Recessed lighting, ceiling fan(s)'],
+        ['Electrical', '1-2 outlets', 'Multiple outlets, USB ports'],
+        ['Best For', 'Seasonal use, budget-conscious', 'Year-round comfort, entertaining']
+      ]
+    },
   },
   {
     slug: 'basement-finishing',
@@ -168,6 +232,22 @@ export const CORE_SERVICES = [
       },
     ],
     miniDefaults: { size: 620, complexity: 'complex', finish: 'standard' },
+    publishedDate: '2024-01-15',
+    lastModified: '2026-04-29',
+    comparison: {
+      title: 'Basic vs Premium Basement Finish',
+      description: 'Finish level comparison for basement projects',
+      columns: ['Feature', 'Basic Finish', 'Premium Finish'],
+      rows: [
+        ['Cost', '$35-50/sqft', '$55-75/sqft'],
+        ['Flooring', 'Carpet or vinyl plank', 'Engineered hardwood or luxury vinyl'],
+        ['Walls', 'Painted drywall', 'Accent walls, wainscoting, or stone'],
+        ['Ceiling', 'Painted drywall', 'Drop ceiling with can lights or coffered'],
+        ['Trim', 'Standard baseboards', 'Crown molding and custom trim'],
+        ['Bath Addition', 'Basic 3-piece', 'Full bath with tile shower'],
+        ['Best For', 'Extra living space, playroom', 'Home theater, in-law suite, rental unit']
+      ]
+    },
   },
   {
     slug: 'adu',
@@ -202,6 +282,22 @@ export const CORE_SERVICES = [
       },
     ],
     miniDefaults: { size: 680, complexity: 'complex', finish: 'premium' },
+    publishedDate: '2024-01-15',
+    lastModified: '2026-04-29',
+    comparison: {
+      title: 'Detached ADU vs Garage Conversion',
+      description: 'ADU construction approach comparison',
+      columns: ['Feature', 'Detached New Build', 'Garage Conversion'],
+      rows: [
+        ['Cost', '$120-180/sqft', '$80-120/sqft'],
+        ['Square Footage', '400-1200 sqft typical', 'Limited to existing garage size'],
+        ['Site Prep', 'Full foundation, utilities', 'Use existing foundation'],
+        ['Zoning/Setbacks', 'Must meet ADU setback rules', 'Often pre-compliant'],
+        ['Design Flexibility', 'Complete customization', 'Constrained by existing structure'],
+        ['Timeline', '6-10 months', '3-5 months'],
+        ['Best For', 'Long-term rental income, maximum space', 'Faster completion, budget-conscious']
+      ]
+    },
   },
   {
     slug: 'kitchen-bath-remodeling',
@@ -246,6 +342,22 @@ export const KITCHEN_BATH_SUBSERVICES = [
       },
     ],
     miniDefaults: { size: 220, complexity: 'complex', finish: 'premium' },
+    publishedDate: '2024-01-15',
+    lastModified: '2026-04-29',
+    comparison: {
+      title: 'Kitchen Refresh vs Full Remodel',
+      description: 'Scope and investment comparison',
+      columns: ['Feature', 'Refresh/Update', 'Full Remodel'],
+      rows: [
+        ['Cost', '$15,000-35,000', '$45,000-85,000+'],
+        ['Cabinets', 'Reface or paint existing', 'Full replacement'],
+        ['Layout', 'Keep existing', 'Can reconfigure completely'],
+        ['Plumbing/Electrical', 'Minor upgrades', 'Complete system updates'],
+        ['Countertops', 'Replace', 'Replace with premium materials'],
+        ['Timeline', '2-4 weeks', '6-10 weeks'],
+        ['Best For', 'Update look, preserve layout', 'Major layout changes, aging systems']
+      ]
+    },
   },
   {
     slug: 'bathroom-remodeling',
@@ -280,6 +392,22 @@ export const KITCHEN_BATH_SUBSERVICES = [
       },
     ],
     miniDefaults: { size: 120, complexity: 'standard', finish: 'premium' },
+    publishedDate: '2024-01-15',
+    lastModified: '2026-04-29',
+    comparison: {
+      title: 'Standard vs Luxury Bathroom',
+      description: 'Feature and fixture comparison',
+      columns: ['Feature', 'Standard Remodel', 'Luxury Remodel'],
+      rows: [
+        ['Cost', '$12,000-22,000', '$28,000-50,000+'],
+        ['Shower/Tub', 'Fiberglass insert or basic tile', 'Custom tile, frameless glass, body jets'],
+        ['Vanity', 'Stock cabinet', 'Custom cabinetry with storage features'],
+        ['Countertop', 'Laminate or cultured marble', 'Quartz or natural stone'],
+        ['Flooring', 'Vinyl or standard tile', 'Porcelain tile or heated floors'],
+        ['Fixtures', 'Standard chrome', 'Upgraded finishes (brushed nickel, matte black)'],
+        ['Best For', 'Functional update, resale value', 'Personal spa experience, aging-in-place features']
+      ]
+    },
   },
 ];
 
