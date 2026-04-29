@@ -1,3 +1,5 @@
+'use client';
+
 import AdvancedCalculator from '@/components/AdvancedCalculator';
 
 export default function ServicePageContent({ service }) {
