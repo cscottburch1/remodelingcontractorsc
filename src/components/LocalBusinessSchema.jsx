@@ -15,6 +15,8 @@ export default function LocalBusinessSchema() {
     url: BUSINESS_PROFILE.siteUrl,
     telephone: BUSINESS_PROFILE.phone,
     email: BUSINESS_PROFILE.email,
+    priceRange: '$$-$$$',
+    image: 'https://remodelingcontractorsc.com/burch-logo-320.webp',
     address: {
       '@type': 'PostalAddress',
       ...BUSINESS_PROFILE.address,
