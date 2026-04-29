@@ -33,4 +33,4 @@ jobs:
             npm ci --production
             npm run build
             pm2 restart remodelingcontractorsc
-            echo "✅ Auto-deploy completed successfully at $(date)"
+            echo "✅ Auto-deploy completed at $(date)"
