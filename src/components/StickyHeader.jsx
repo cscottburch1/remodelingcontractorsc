@@ -25,23 +25,38 @@ export default function StickyHeader() {
         <nav className="hidden items-center gap-7 lg:flex">
           <div className="group relative">
             <button className="font-semibold text-slate-800">Services</button>
-            <div className="invisible absolute left-0 top-full mt-2 w-72 rounded-xl border border-slate-200 bg-white p-3 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100">
-              {MAIN_NAV_SERVICES.map((slug) => (
-                slug === 'kitchen-bath-remodeling' ? (
-                  <div key={slug} className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-900">
-                    {kitchenBathParent?.name}
-                  </div>
-                ) : (
-                  <Link key={slug} href={`/${slug}`} className="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-100">
-                    {SERVICES_BY_SLUG[slug].name}
-                  </Link>
-                )
-              ))}
-              <div className="mt-2 border-t border-slate-200 pt-2">
-                <p className="px-3 pb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">Kitchen & Bath</p>
-                {KITCHEN_BATH_SUBSERVICES.map((service) => (
-                  <Link key={service.slug} href={`/${service.slug}`} className="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-100">
-                    {service.name}
+            <div className="invisible absolute left-0 top-full w-72 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100">
+              <div className="rounded-xl border border-slate-200 bg-white p-3 shadow-lg">
+                {MAIN_NAV_SERVICES.map((slug) => (
+                  slug === 'kitchen-bath-remodeling' ? (
+                    <div key={slug} className="rounded-lg px-3 py-2 text-sm font-semibold text-slate-900">
+                      {kitchenBathParent?.name}
+                    </div>
+                  ) : (
+                    <Link key={slug} href={`/${slug}`} className="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-100">
+                      {SERVICES_BY_SLUG[slug].name}
+                    </Link>
+                  )
+                ))}
+                <div className="mt-2 border-t border-slate-200 pt-2">
+                  <p className="px-3 pb-1 text-xs font-semibold uppercase tracking-wide text-slate-500">Kitchen & Bath</p>
+                  {KITCHEN_BATH_SUBSERVICES.map((service) => (
+                    <Link key={service.slug} href={`/${service.slug}`} className="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-100">
+                      {service.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="group relative">
+            <button className="font-semibold text-slate-800">Areas Served</button>
+            <div className="invisible absolute left-0 top-full w-64 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100">
+              <div className="rounded-xl border border-slate-200 bg-white p-3 shadow-lg">
+                {SERVICE_AREAS.map((area) => (
+                  <Link key={area.slug} href={`/locations/${area.slug}`} className="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-100">
+                    {area.city}
                   </Link>
                 ))}
               </div>
@@ -49,24 +64,15 @@ export default function StickyHeader() {
           </div>
 
           <div className="group relative">
-            <button className="font-semibold text-slate-800">Areas Served</button>
-            <div className="invisible absolute left-0 top-full mt-2 w-64 rounded-xl border border-slate-200 bg-white p-3 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100">
-              {SERVICE_AREAS.map((area) => (
-                <Link key={area.slug} href={`/locations/${area.slug}`} className="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-100">
-                  {area.city}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          <div className="group relative">
             <button className="font-semibold text-slate-800">Calculators</button>
-            <div className="invisible absolute left-0 top-full mt-2 w-72 rounded-xl border border-slate-200 bg-white p-3 opacity-0 shadow-lg transition group-hover:visible group-hover:opacity-100">
-              {ROUTABLE_SERVICES.map((service) => (
-                <Link key={service.slug} href={`/calculator/${service.slug}`} className="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-100">
-                  {service.name} Calculator
-                </Link>
-              ))}
+            <div className="invisible absolute left-0 top-full w-72 pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100">
+              <div className="rounded-xl border border-slate-200 bg-white p-3 shadow-lg">
+                {ROUTABLE_SERVICES.map((service) => (
+                  <Link key={service.slug} href={`/calculator/${service.slug}`} className="block rounded-lg px-3 py-2 text-sm text-slate-700 hover:bg-slate-100">
+                    {service.name} Calculator
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
 
