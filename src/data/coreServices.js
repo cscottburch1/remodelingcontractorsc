@@ -114,7 +114,7 @@ export const CORE_SERVICES = [
       },
       {
         question: 'What types of room additions are most popular in Upstate SC?',
-        answer: 'The most popular room additions in Upstate South Carolina are primary bedroom suites (adding a bedroom plus bathroom), home office additions (with dedicated HVAC zones), sunrooms and three-season rooms, in-law suites with a kitchenette, and expanded living room or family room spaces. Master suite additions are consistently the highest-demand project, driven by growing families and aging-in-place planning. We also build bump-out additions for expanded kitchens, breakfast nooks, and enlarged bathrooms. Every addition is designed to feel like original construction — matching your home's exterior finishes, roofline, and interior flow.',
+        answer: `The most popular room additions in Upstate South Carolina are primary bedroom suites (adding a bedroom plus bathroom), home office additions (with dedicated HVAC zones), sunrooms and three-season rooms, in-law suites with a kitchenette, and expanded living room or family room spaces. Master suite additions are consistently the highest-demand project, driven by growing families and aging-in-place planning. We also build bump-out additions for expanded kitchens, breakfast nooks, and enlarged bathrooms. Every addition is designed to feel like original construction — matching your home's exterior finishes, roofline, and interior flow.`,
       },
     ],
     miniDefaults: { size: 360, complexity: 'standard', finish: 'standard' },
@@ -174,7 +174,7 @@ export const CORE_SERVICES = [
       },
       {
         question: 'What deck material is best for Upstate SC climate?',
-        answer: 'Composite and PVC decking outperforms wood in Upstate South Carolina's humid, hot climate. Pressure-treated wood requires staining or sealing every 2–3 years to prevent rot, warping, and surface cracking in our 80%+ summer humidity. Composite decking (Trex, TimberTech, Fiberon) resists moisture, mold, and UV fading and carries 25–30 year warranties. Cedar is a middle option — more rot-resistant than pine but still requires maintenance. For lake cabin and poolside decks in Greenwood County and Lake Greenwood areas, composite is strongly preferred because of constant water exposure.',
+        answer: `Composite and PVC decking outperforms wood in Upstate South Carolina's humid, hot climate. Pressure-treated wood requires staining or sealing every 2–3 years to prevent rot, warping, and surface cracking in our 80%+ summer humidity. Composite decking (Trex, TimberTech, Fiberon) resists moisture, mold, and UV fading and carries 25–30 year warranties. Cedar is a middle option — more rot-resistant than pine but still requires maintenance. For lake cabin and poolside decks in Greenwood County and Lake Greenwood areas, composite is strongly preferred because of constant water exposure.`,
       },
       {
         question: 'Do I need a permit to build a deck in South Carolina?',
@@ -242,7 +242,7 @@ export const CORE_SERVICES = [
       },
       {
         question: 'What is the best screened porch material for South Carolina humidity?',
-        answer: 'Aluminum framing outperforms wood for screened porches in South Carolina's humid climate. Wood framing — even treated pine — is susceptible to moisture absorption, swelling, and rot in areas with high humidity, morning dew, and occasional rain exposure. Aluminum framing carries zero rot risk, requires no painting or staining, and is rated for decades of use in humid Southern climates. For lake properties near Lake Greenwood, we exclusively use aluminum framing with stainless steel fasteners to eliminate corrosion risk. Pet-resistant or solar screening provides additional durability over standard fiberglass screen material.',
+        answer: `Aluminum framing outperforms wood for screened porches in South Carolina's humid climate. Wood framing — even treated pine — is susceptible to moisture absorption, swelling, and rot in areas with high humidity, morning dew, and occasional rain exposure. Aluminum framing carries zero rot risk, requires no painting or staining, and is rated for decades of use in humid Southern climates. For lake properties near Lake Greenwood, we exclusively use aluminum framing with stainless steel fasteners to eliminate corrosion risk. Pet-resistant or solar screening provides additional durability over standard fiberglass screen material.`,
       },
       {
         question: 'Do screened porches require permits in South Carolina?',
@@ -250,7 +250,7 @@ export const CORE_SERVICES = [
       },
       {
         question: 'How long does screened porch construction take?',
-        answer: 'Screened porch construction in Upstate SC typically takes 3–5 weeks from permit approval to final walkthrough. Foundation or ledger work takes 2–3 days. Framing and roofing take 3–5 days depending on complexity. Screening, trim, and ceiling installation take 2–3 days. Electrical rough-in and final fixtures take 1–2 additional days. Weather and material lead times (especially for specialty screening products) are the primary variables. We schedule builds with buffer time during Upstate SC's wet season months of March through May.',
+        answer: `Screened porch construction in Upstate SC typically takes 3–5 weeks from permit approval to final walkthrough. Foundation or ledger work takes 2–3 days. Framing and roofing take 3–5 days depending on complexity. Screening, trim, and ceiling installation take 2–3 days. Electrical rough-in and final fixtures take 1–2 additional days. Weather and material lead times (especially for specialty screening products) are the primary variables. We schedule builds with buffer time during Upstate SC's wet season months of March through May.`,
       },
     ],
     miniDefaults: { size: 280, complexity: 'standard', finish: 'premium' },
@@ -310,7 +310,7 @@ export const CORE_SERVICES = [
       },
       {
         question: 'What moisture control steps are required for basement finishing in Upstate SC?',
-        answer: 'Upstate South Carolina's red clay soil retains water and creates hydrostatic pressure against basement walls. Before finishing any basement, we assess for active water infiltration, efflorescence on block walls, and floor moisture with a calcium chloride test. Vapor barriers (minimum 6-mil polyethylene) must be installed under all flooring. Rigid foam insulation on exterior walls performs better than fiberglass batts in humid climates. Moisture-resistant drywall (paperless or mold-resistant) is required throughout. We never frame directly against a concrete wall — a 1-inch air gap prevents moisture transfer into finished walls. These steps are non-negotiable for long-term performance in Upstate SC's climate.',
+        answer: `Upstate South Carolina's red clay soil retains water and creates hydrostatic pressure against basement walls. Before finishing any basement, we assess for active water infiltration, efflorescence on block walls, and floor moisture with a calcium chloride test. Vapor barriers (minimum 6-mil polyethylene) must be installed under all flooring. Rigid foam insulation on exterior walls performs better than fiberglass batts in humid climates. Moisture-resistant drywall (paperless or mold-resistant) is required throughout. We never frame directly against a concrete wall — a 1-inch air gap prevents moisture transfer into finished walls. These steps are non-negotiable for long-term performance in Upstate SC's climate.`,
       },
       {
         question: 'Do I need permits to finish a basement in South Carolina?',
@@ -520,7 +520,7 @@ export const KITCHEN_BATH_SUBSERVICES = [
     faqs: [
       {
         question: 'How much does a bathroom remodel cost in Upstate South Carolina?',
-        answer: 'Bathroom remodeling in Upstate SC costs $12,000–$22,000 for a standard full bathroom update (vanity, toilet, tile floor, new shower/tub surround) and $28,000–$50,000+ for a luxury primary bathroom remodel with custom tile shower, frameless glass, soaking tub, and heated floors. According to the 2024 Remodeling Cost vs. Value Report, a midrange bathroom remodel returns approximately 74% at resale in the South Atlantic region. A master bathroom addition (adding a bathroom where none existed) returns around 54% but dramatically increases home livability and marketability in Upstate SC's competitive real estate market.',
+        answer: `Bathroom remodeling in Upstate SC costs $12,000–$22,000 for a standard full bathroom update (vanity, toilet, tile floor, new shower/tub surround) and $28,000–$50,000+ for a luxury primary bathroom remodel with custom tile shower, frameless glass, soaking tub, and heated floors. According to the 2024 Remodeling Cost vs. Value Report, a midrange bathroom remodel returns approximately 74% at resale in the South Atlantic region. A master bathroom addition (adding a bathroom where none existed) returns around 54% but dramatically increases home livability and marketability in Upstate SC's competitive real estate market.`,
       },
       {
         question: 'How long does a bathroom remodel take?',
@@ -528,7 +528,7 @@ export const KITCHEN_BATH_SUBSERVICES = [
       },
       {
         question: 'What is most important for bathroom remodeling in SC humid climate?',
-        answer: 'Moisture management is the single most critical factor in South Carolina bathroom remodeling. Upstate SC's humidity (averaging 70–80% in summer) accelerates mold growth behind improperly waterproofed walls and under poorly installed tile. We use Schluter KERDI or RedGard waterproofing membranes on all shower and tub surrounds — never paper-faced drywall in wet zones. Exhaust fans must be ducted to exterior (not just into the attic). Grout sealing and caulk at all transitions complete the system. These are non-negotiable details for long-term performance — skipping them leads to expensive mold remediation within 3–5 years.',
+        answer: `Moisture management is the single most critical factor in South Carolina bathroom remodeling. Upstate SC's humidity (averaging 70–80% in summer) accelerates mold growth behind improperly waterproofed walls and under poorly installed tile. We use Schluter KERDI or RedGard waterproofing membranes on all shower and tub surrounds — never paper-faced drywall in wet zones. Exhaust fans must be ducted to exterior (not just into the attic). Grout sealing and caulk at all transitions complete the system. These are non-negotiable details for long-term performance — skipping them leads to expensive mold remediation within 3–5 years.`,
       },
       {
         question: 'Do bathroom remodels require permits in South Carolina?',
