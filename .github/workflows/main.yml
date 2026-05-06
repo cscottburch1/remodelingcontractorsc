@@ -8,6 +8,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     concurrency:
       group: production-deploy
       cancel-in-progress: true
@@ -21,10 +22,32 @@ jobs:
         with:
           host: 72.60.166.68
           username: root
+          key: ${{ secrets.SERVER_SSH_KEY }}
           password: ${{ secrets.SERVER_SSH_PASSWORD }}
           port: 22
           command_timeout: 15m
           script: |
+            set -e
+
+            APP_PATH="/var/www/remodelingcontractorsc"
+            PM2_PROCESS="remodelingcontractorsc"
+            DOMAIN="remodelingcontractorsc.com"
+
+            if [ "$APP_PATH" != "/var/www/remodelingcontractorsc" ]; then
+              echo "Refusing deploy: unexpected APP_PATH $APP_PATH"
+              exit 1
+            fi
+
+            if [ "$PM2_PROCESS" != "remodelingcontractorsc" ]; then
+              echo "Refusing deploy: unexpected PM2 process $PM2_PROCESS"
+              exit 1
+            fi
+
+            if [ "$DOMAIN" != "remodelingcontractorsc.com" ]; then
+              echo "Refusing deploy: unexpected domain $DOMAIN"
+              exit 1
+            fi
+
             cd /var/www/remodelingcontractorsc
             git fetch origin main
             git checkout main
@@ -32,5 +55,13 @@ jobs:
             rm -rf .next .swc
             npm ci --production=false
             npm run build
-            pm2 restart remodelingcontractorsc
+
+            if pm2 describe "$PM2_PROCESS" >/dev/null 2>&1; then
+              pm2 restart "$PM2_PROCESS"
+            else
+              pm2 start npm --name "$PM2_PROCESS" -- start
+            fi
+
+            pm2 save
+            curl -fsS -I http://127.0.0.1:3002 >/dev/null
             echo "✅ Auto-deploy completed at $(date)"
