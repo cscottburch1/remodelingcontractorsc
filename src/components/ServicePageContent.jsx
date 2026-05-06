@@ -1,8 +1,37 @@
 'use client';
 
 import AdvancedCalculator from '@/components/AdvancedCalculator';
+import { useEffect, useRef } from 'react';
 
 export default function ServicePageContent({ service }) {
+  const stepsForSchema = service.process && service.process.length > 0 ? service.process : null;
+
+  const howToSchema = stepsForSchema ? {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: `How to Plan Your ${service.name} Project in Upstate SC`,
+    description: service.intro || `Step-by-step process for ${service.name.toLowerCase()} projects in Upstate South Carolina.`,
+    step: stepsForSchema.map((step, index) => ({
+      '@type': 'HowToStep',
+      position: index + 1,
+      name: step.title,
+      text: step.description,
+    })),
+  } : null;
+
+  const faqSchema = service.faqs && service.faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: service.faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
+      },
+    })),
+  } : null;
+
   const formatDate = (dateString) => {
     if (!dateString) return '';
     const date = new Date(dateString);
@@ -11,7 +40,21 @@ export default function ServicePageContent({ service }) {
 
   return (
     <div className="max-w-5xl mx-auto px-6 py-12 space-y-16">
-      
+
+      {/* Structured Data: HowTo + FAQPage schemas */}
+      {howToSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        />
+      )}
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
       {/* Date Stamps */}
       {(service.publishedDate || service.lastModified) && (
         <div className="flex gap-4 text-sm text-slate-600 border-b border-slate-200 pb-4">
@@ -141,6 +184,28 @@ export default function ServicePageContent({ service }) {
           mini 
         />
       </div>
+
+      {/* FAQ Section */}
+      {service.faqs && service.faqs.length > 0 && (
+        <div className="space-y-6">
+          <h2 className="text-3xl font-bold text-slate-900">
+            Frequently Asked Questions: {service.name} in Upstate SC
+          </h2>
+          <div className="divide-y divide-slate-200">
+            {service.faqs.map((faq, index) => (
+              <details key={index} className="group py-5">
+                <summary className="flex cursor-pointer items-center justify-between gap-4 font-semibold text-slate-900 text-lg marker:content-none list-none">
+                  <span>{faq.question}</span>
+                  <span className="text-emerald-600 flex-shrink-0 transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+                </summary>
+                <p className="mt-4 text-slate-700 leading-relaxed">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }

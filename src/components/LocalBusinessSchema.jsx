@@ -10,18 +10,25 @@ import { BUSINESS_PROFILE } from '@/data/businessProfile';
 export default function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
+    '@type': ['LocalBusiness', 'GeneralContractor', 'HomeAndConstructionBusiness'],
     name: BUSINESS_PROFILE.businessName,
     url: BUSINESS_PROFILE.siteUrl,
     telephone: BUSINESS_PROFILE.phone,
     email: BUSINESS_PROFILE.email,
     priceRange: '$$-$$$',
     image: 'https://remodelingcontractorsc.com/burch-logo-320.webp',
+    foundingDate: '1989',
     address: {
       '@type': 'PostalAddress',
       ...BUSINESS_PROFILE.address,
     },
     areaServed: BUSINESS_PROFILE.serviceArea,
+    sameAs: [
+      'https://www.facebook.com/remodelingcontractorsc',
+      'https://www.instagram.com/remodelingcontractorsc',
+      'https://www.linkedin.com/company/remodelingcontractorsc',
+      'https://burchcontracting.com/',
+    ],
     // ONLY AggregateRating on entire site
     aggregateRating: {
       '@type': 'AggregateRating',
