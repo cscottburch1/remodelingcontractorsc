@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev -p 3002 -H 0.0.0.0",
-    "build": "next build",
+    "build": "node --import ./readlink-patch.mjs node_modules/next/dist/bin/next build",
     "start": "next start -p 3002",
     "lint": "next lint"
   },
