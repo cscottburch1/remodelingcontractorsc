@@ -13,6 +13,8 @@ import { SERVICE_AREAS } from '@/data/serviceAreas';
 
 export default function StickyHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [mobileAreasOpen, setMobileAreasOpen] = useState(false);
   const kitchenBathParent = CORE_SERVICES.find((service) => service.slug === 'kitchen-bath-remodeling');
 
   return (
@@ -89,11 +91,81 @@ export default function StickyHeader() {
 
       {mobileOpen && (
         <div className="border-t border-slate-200 bg-white px-4 py-4 lg:hidden">
-          <div className="grid gap-2">
-            <Link href="/projects" onClick={() => setMobileOpen(false)}>Projects</Link>
-            <Link href="/pricing-guide" onClick={() => setMobileOpen(false)}>Pricing Guide</Link>
-            <Link href="/about" onClick={() => setMobileOpen(false)}>About</Link>
-            <Link href="/contact" onClick={() => setMobileOpen(false)}>Contact</Link>
+          <div className="grid gap-3">
+            {/* Services Section */}
+            <button
+              onClick={() => setMobileServicesOpen((v) => !v)}
+              className="flex items-center justify-between text-left font-semibold text-slate-900 py-2"
+            >
+              Services
+              <span className="text-sm">{mobileServicesOpen ? '−' : '+'}</span>
+            </button>
+            {mobileServicesOpen && (
+              <div className="pl-4 grid gap-2 border-l border-slate-300">
+                {MAIN_NAV_SERVICES.map((slug) =>
+                  slug !== 'kitchen-bath-remodeling' ? (
+                    <Link
+                      key={slug}
+                      href={`/${slug}`}
+                      onClick={() => setMobileOpen(false)}
+                      className="text-slate-700 text-sm hover:text-slate-900"
+                    >
+                      {SERVICES_BY_SLUG[slug].name}
+                    </Link>
+                  ) : null
+                )}
+                <div className="mt-2 pt-2 border-t border-slate-300">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-500 mb-2">Kitchen & Bath</p>
+                  {KITCHEN_BATH_SUBSERVICES.map((service) => (
+                    <Link
+                      key={service.slug}
+                      href={`/${service.slug}`}
+                      onClick={() => setMobileOpen(false)}
+                      className="block text-slate-700 text-sm hover:text-slate-900 mb-1"
+                    >
+                      {service.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Areas Served Section */}
+            <button
+              onClick={() => setMobileAreasOpen((v) => !v)}
+              className="flex items-center justify-between text-left font-semibold text-slate-900 py-2"
+            >
+              Areas Served
+              <span className="text-sm">{mobileAreasOpen ? '−' : '+'}</span>
+            </button>
+            {mobileAreasOpen && (
+              <div className="pl-4 grid gap-2 border-l border-slate-300">
+                {SERVICE_AREAS.map((area) => (
+                  <Link
+                    key={area.slug}
+                    href={`/locations/${area.slug}`}
+                    onClick={() => setMobileOpen(false)}
+                    className="text-slate-700 text-sm hover:text-slate-900"
+                  >
+                    {area.city}
+                  </Link>
+                ))}
+              </div>
+            )}
+
+            {/* Main Links */}
+            <Link href="/projects" onClick={() => setMobileOpen(false)} className="font-semibold text-slate-900 py-2">
+              Projects
+            </Link>
+            <Link href="/pricing-guide" onClick={() => setMobileOpen(false)} className="font-semibold text-slate-900 py-2">
+              Pricing Guide
+            </Link>
+            <Link href="/about" onClick={() => setMobileOpen(false)} className="font-semibold text-slate-900 py-2">
+              About
+            </Link>
+            <Link href="/contact" onClick={() => setMobileOpen(false)} className="rounded-lg bg-amber-600 px-4 py-2 font-semibold text-white text-center">
+              Contact
+            </Link>
           </div>
         </div>
       )}

@@ -22,13 +22,13 @@ export const pricingConfig = {
   garages: {
     baseCostPerSqFt: {
       detached: {
-        min: 85,
-        max: 135,
+        min: 40,
+        max: 60,
         description: 'Detached garage base cost per sq ft including slab, framing, roof, siding, doors'
       },
       attached: {
-        min: 75,
-        max: 125,
+        min: 35,
+        max: 55,
         description: 'Attached garage base cost per sq ft (lower due to shared structure)'
       }
     },
@@ -105,18 +105,18 @@ export const pricingConfig = {
   screenedPorches: {
     baseCostPerSqFt: {
       basic: {
-        min: 65,
-        max: 95,
+        min: 45,
+        max: 65,
         description: 'Basic screened porch with aluminum frame system, concrete slab base'
       },
       premium: {
-        min: 95,
-        max: 145,
+        min: 65,
+        max: 90,
         description: 'Premium screened porch with upgraded ceiling, lighting, deck base'
       },
       covered: {
-        min: 85,
-        max: 125,
+        min: 55,
+        max: 80,
         description: 'Covered screened porch with roof structure'
       }
     },
@@ -143,18 +143,18 @@ export const pricingConfig = {
   decks: {
     baseCostPerSqFt: {
       pressureTreated: {
-        min: 35,
-        max: 55,
+        min: 18,
+        max: 32,
         description: 'Pressure treated deck with standard railing'
       },
       composite: {
-        min: 55,
-        max: 85,
+        min: 28,
+        max: 45,
         description: 'Composite decking with aluminum or composite railing'
       },
       covered: {
-        min: 65,
-        max: 105,
+        min: 40,
+        max: 65,
         description: 'Covered deck with roof structure and gutters'
       }
     },
@@ -183,23 +183,23 @@ export const pricingConfig = {
   adus: {
     baseCostPerSqFt: {
       detached: {
-        min: 185,
-        max: 275,
+        min: 120,
+        max: 180,
         description: 'Detached ADU including foundation, full utilities, finish package'
       },
       garageConversion: {
-        min: 120,
-        max: 180,
+        min: 80,
+        max: 120,
         description: 'Garage conversion to living space (some structure exists)'
       },
       garageApartment: {
-        min: 150,
-        max: 225,
+        min: 110,
+        max: 170,
         description: 'New garage with apartment above'
       },
       attached: {
-        min: 165,
-        max: 250,
+        min: 100,
+        max: 160,
         description: 'Attached ADU/in-law suite addition'
       }
     },
@@ -267,13 +267,31 @@ const UPSTATE_LOCATION_OPTIONS = {
 export const CALCULATOR_SERVICE_CONFIGS = {
   garages: {
     defaultSize: 520,
+    sizeRange: { min: 200, max: 1400, step: 20 },
+    defaultProjectType: 'detached',
     defaultComplexity: 'standard',
     defaultFinish: 'standard',
-    baseRate: {
-      min: 85,
-      expected: 110,
-      max: 135,
-      label: 'Garage addition base rate',
+    projectTypes: {
+      detached: {
+        label: 'Detached garage',
+        description: 'Independent structure with full foundation and enclosure.',
+        rate: {
+          min: pricingConfig.garages.baseCostPerSqFt.detached.min,
+          expected: 50,
+          max: pricingConfig.garages.baseCostPerSqFt.detached.max,
+          label: 'Detached garage base rate',
+        },
+      },
+      attached: {
+        label: 'Attached garage',
+        description: 'Connected to existing structure with shared tie-in points.',
+        rate: {
+          min: pricingConfig.garages.baseCostPerSqFt.attached.min,
+          expected: 45,
+          max: pricingConfig.garages.baseCostPerSqFt.attached.max,
+          label: 'Attached garage base rate',
+        },
+      },
     },
     complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
     finishOptions: DEFAULT_FINISH_OPTIONS,
@@ -283,6 +301,7 @@ export const CALCULATOR_SERVICE_CONFIGS = {
   },
   'room-additions': {
     defaultSize: 360,
+    sizeRange: { min: 100, max: 1800, step: 20 },
     defaultProjectType: 'standardLiving',
     defaultComplexity: 'standard',
     defaultFinish: 'standard',
@@ -321,13 +340,41 @@ export const CALCULATOR_SERVICE_CONFIGS = {
   },
   decks: {
     defaultSize: 260,
-    defaultComplexity: 'simple',
-    defaultFinish: 'premium',
-    baseRate: {
-      min: 35,
-      expected: 55,
-      max: 85,
-      label: 'Deck base rate',
+    sizeRange: { min: 100, max: 1200, step: 10 },
+    defaultProjectType: 'composite',
+    defaultComplexity: 'standard',
+    defaultFinish: 'standard',
+    projectTypes: {
+      pressureTreated: {
+        label: 'Pressure-treated deck',
+        description: 'Traditional wood deck with standard detailing.',
+        rate: {
+          min: pricingConfig.decks.baseCostPerSqFt.pressureTreated.min,
+          expected: 25,
+          max: pricingConfig.decks.baseCostPerSqFt.pressureTreated.max,
+          label: 'Pressure-treated deck rate',
+        },
+      },
+      composite: {
+        label: 'Composite deck',
+        description: 'Low-maintenance composite decking and railing package.',
+        rate: {
+          min: pricingConfig.decks.baseCostPerSqFt.composite.min,
+          expected: 36,
+          max: pricingConfig.decks.baseCostPerSqFt.composite.max,
+          label: 'Composite deck rate',
+        },
+      },
+      covered: {
+        label: 'Covered deck',
+        description: 'Deck with integrated roof structure and drainage.',
+        rate: {
+          min: pricingConfig.decks.baseCostPerSqFt.covered.min,
+          expected: 52,
+          max: pricingConfig.decks.baseCostPerSqFt.covered.max,
+          label: 'Covered deck rate',
+        },
+      },
     },
     complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
     finishOptions: DEFAULT_FINISH_OPTIONS,
@@ -337,13 +384,41 @@ export const CALCULATOR_SERVICE_CONFIGS = {
   },
   'screened-porches': {
     defaultSize: 280,
+    sizeRange: { min: 100, max: 900, step: 10 },
+    defaultProjectType: 'basic',
     defaultComplexity: 'standard',
-    defaultFinish: 'premium',
-    baseRate: {
-      min: 65,
-      expected: 95,
-      max: 145,
-      label: 'Screened porch base rate',
+    defaultFinish: 'standard',
+    projectTypes: {
+      basic: {
+        label: 'Basic screened porch',
+        description: 'Standard screened porch with durable base package.',
+        rate: {
+          min: pricingConfig.screenedPorches.baseCostPerSqFt.basic.min,
+          expected: 55,
+          max: pricingConfig.screenedPorches.baseCostPerSqFt.basic.max,
+          label: 'Basic screened porch rate',
+        },
+      },
+      covered: {
+        label: 'Covered screened porch',
+        description: 'Screened porch with full roof tie-in and weather detailing.',
+        rate: {
+          min: pricingConfig.screenedPorches.baseCostPerSqFt.covered.min,
+          expected: 67,
+          max: pricingConfig.screenedPorches.baseCostPerSqFt.covered.max,
+          label: 'Covered screened porch rate',
+        },
+      },
+      premium: {
+        label: 'Premium screened porch',
+        description: 'Upgraded screened porch with enhanced finish package.',
+        rate: {
+          min: pricingConfig.screenedPorches.baseCostPerSqFt.premium.min,
+          expected: 78,
+          max: pricingConfig.screenedPorches.baseCostPerSqFt.premium.max,
+          label: 'Premium screened porch rate',
+        },
+      },
     },
     complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
     finishOptions: DEFAULT_FINISH_OPTIONS,
@@ -353,13 +428,26 @@ export const CALCULATOR_SERVICE_CONFIGS = {
   },
   'basement-finishing': {
     defaultSize: 620,
-    defaultComplexity: 'complex',
+    sizeRange: { min: 250, max: 2400, step: 20 },
+    defaultProjectType: 'standard',
+    defaultComplexity: 'standard',
     defaultFinish: 'standard',
-    baseRate: {
-      min: 35,
-      expected: 50,
-      max: 75,
-      label: 'Basement finishing base rate',
+    projectTypes: {
+      basic: {
+        label: 'Basic basement finish',
+        description: 'Drywall, flooring, lighting, and standard trim package.',
+        rate: { min: 35, expected: 42, max: 50, label: 'Basic basement finish rate' },
+      },
+      standard: {
+        label: 'Standard basement finish',
+        description: 'Expanded living space with upgraded systems and finishes.',
+        rate: { min: 35, expected: 47, max: 55, label: 'Standard basement finish rate' },
+      },
+      premium: {
+        label: 'Premium basement suite',
+        description: 'High-end finished basement with premium detailing.',
+        rate: { min: 55, expected: 65, max: 75, label: 'Premium basement suite rate' },
+      },
     },
     complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
     finishOptions: DEFAULT_FINISH_OPTIONS,
@@ -369,13 +457,51 @@ export const CALCULATOR_SERVICE_CONFIGS = {
   },
   adu: {
     defaultSize: 680,
-    defaultComplexity: 'complex',
-    defaultFinish: 'premium',
-    baseRate: {
-      min: 185,
-      expected: 225,
-      max: 275,
-      label: 'ADU base rate',
+    sizeRange: { min: 300, max: 1400, step: 20 },
+    defaultProjectType: 'detached',
+    defaultComplexity: 'standard',
+    defaultFinish: 'standard',
+    projectTypes: {
+      detached: {
+        label: 'Detached ADU',
+        description: 'Standalone ADU with full utility infrastructure.',
+        rate: {
+          min: pricingConfig.adus.baseCostPerSqFt.detached.min,
+          expected: 150,
+          max: pricingConfig.adus.baseCostPerSqFt.detached.max,
+          label: 'Detached ADU rate',
+        },
+      },
+      attached: {
+        label: 'Attached in-law suite',
+        description: 'Attached ADU tied into the primary home structure.',
+        rate: {
+          min: pricingConfig.adus.baseCostPerSqFt.attached.min,
+          expected: 130,
+          max: pricingConfig.adus.baseCostPerSqFt.attached.max,
+          label: 'Attached ADU rate',
+        },
+      },
+      garageApartment: {
+        label: 'Garage apartment',
+        description: 'New garage with finished apartment space above.',
+        rate: {
+          min: pricingConfig.adus.baseCostPerSqFt.garageApartment.min,
+          expected: 140,
+          max: pricingConfig.adus.baseCostPerSqFt.garageApartment.max,
+          label: 'Garage apartment rate',
+        },
+      },
+      garageConversion: {
+        label: 'Garage conversion',
+        description: 'Converting existing garage structure to livable space.',
+        rate: {
+          min: pricingConfig.adus.baseCostPerSqFt.garageConversion.min,
+          expected: 100,
+          max: pricingConfig.adus.baseCostPerSqFt.garageConversion.max,
+          label: 'Garage conversion rate',
+        },
+      },
     },
     complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
     finishOptions: DEFAULT_FINISH_OPTIONS,
@@ -385,13 +511,26 @@ export const CALCULATOR_SERVICE_CONFIGS = {
   },
   'kitchen-remodeling': {
     defaultSize: 220,
-    defaultComplexity: 'complex',
-    defaultFinish: 'premium',
-    baseRate: {
-      min: 150,
-      expected: 185,
-      max: 260,
-      label: 'Kitchen remodel base rate',
+    sizeRange: { min: 80, max: 650, step: 10 },
+    defaultProjectType: 'refresh',
+    defaultComplexity: 'standard',
+    defaultFinish: 'standard',
+    projectTypes: {
+      refresh: {
+        label: 'Kitchen refresh',
+        description: 'Cabinet, countertop, and fixture update with existing layout.',
+        rate: { min: 70, expected: 115, max: 160, label: 'Kitchen refresh rate' },
+      },
+      standard: {
+        label: 'Standard kitchen remodel',
+        description: 'Full remodel with moderate layout and system changes.',
+        rate: { min: 200, expected: 260, max: 320, label: 'Standard kitchen remodel rate' },
+      },
+      premium: {
+        label: 'Premium kitchen remodel',
+        description: 'High-end remodel with custom cabinetry and premium finishes.',
+        rate: { min: 280, expected: 340, max: 420, label: 'Premium kitchen remodel rate' },
+      },
     },
     complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
     finishOptions: DEFAULT_FINISH_OPTIONS,
@@ -401,13 +540,26 @@ export const CALCULATOR_SERVICE_CONFIGS = {
   },
   'bathroom-remodeling': {
     defaultSize: 120,
-    defaultComplexity: 'complex',
-    defaultFinish: 'premium',
-    baseRate: {
-      min: 180,
-      expected: 240,
-      max: 375,
-      label: 'Bathroom remodel base rate',
+    sizeRange: { min: 40, max: 320, step: 5 },
+    defaultProjectType: 'standard',
+    defaultComplexity: 'standard',
+    defaultFinish: 'standard',
+    projectTypes: {
+      refresh: {
+        label: 'Bathroom refresh',
+        description: 'Fixture and finish updates within existing layout.',
+        rate: { min: 90, expected: 125, max: 175, label: 'Bathroom refresh rate' },
+      },
+      standard: {
+        label: 'Standard bathroom remodel',
+        description: 'Full bathroom remodel with plumbing and tile updates.',
+        rate: { min: 100, expected: 145, max: 185, label: 'Standard bathroom remodel rate' },
+      },
+      luxury: {
+        label: 'Luxury bathroom remodel',
+        description: 'Custom wet-area systems and high-end finish package.',
+        rate: { min: 230, expected: 320, max: 420, label: 'Luxury bathroom remodel rate' },
+      },
     },
     complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
     finishOptions: DEFAULT_FINISH_OPTIONS,
@@ -417,13 +569,26 @@ export const CALCULATOR_SERVICE_CONFIGS = {
   },
   'kitchen-bath-remodeling': {
     defaultSize: 220,
-    defaultComplexity: 'complex',
-    defaultFinish: 'premium',
-    baseRate: {
-      min: 170,
-      expected: 225,
-      max: 300,
-      label: 'Kitchen and bath remodel base rate',
+    sizeRange: { min: 100, max: 900, step: 10 },
+    defaultProjectType: 'refresh',
+    defaultComplexity: 'standard',
+    defaultFinish: 'standard',
+    projectTypes: {
+      refresh: {
+        label: 'Kitchen and bath refresh',
+        description: 'Cosmetic upgrades with limited layout changes.',
+        rate: { min: 90, expected: 145, max: 210, label: 'Kitchen and bath refresh rate' },
+      },
+      standard: {
+        label: 'Standard kitchen and bath remodel',
+        description: 'Comprehensive remodel with coordinated system updates.',
+        rate: { min: 165, expected: 220, max: 300, label: 'Standard kitchen and bath remodel rate' },
+      },
+      premium: {
+        label: 'Premium kitchen and bath remodel',
+        description: 'High-end integrated remodel across both spaces.',
+        rate: { min: 240, expected: 320, max: 430, label: 'Premium kitchen and bath remodel rate' },
+      },
     },
     complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
     finishOptions: DEFAULT_FINISH_OPTIONS,

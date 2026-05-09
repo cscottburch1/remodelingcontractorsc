@@ -1,5 +1,6 @@
 import './globals.css';
 import StickyHeader from '@/components/StickyHeader';
+import Breadcrumb from '@/components/Breadcrumb';
 import SiteFooter from '@/components/SiteFooter';
 import LocalBusinessSchema from '@/components/LocalBusinessSchema';
 
@@ -111,6 +112,7 @@ export default function RootLayout({ children }) {
         />
         <LocalBusinessSchema />
         <StickyHeader />
+        <Breadcrumb />
         <main>{children}</main>
         <SiteFooter />
       </body>

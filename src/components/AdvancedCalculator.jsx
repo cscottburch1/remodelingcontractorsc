@@ -51,6 +51,7 @@ export default function AdvancedCalculator({ service, serviceName, defaults = {}
   const calculatorConfig = CALCULATOR_SERVICE_CONFIGS[service?.slug] ?? GENERIC_FALLBACK_CONFIG;
   const projectTypeEntries = calculatorConfig.projectTypes ? Object.entries(calculatorConfig.projectTypes) : [];
   const locationEntries = Object.entries(calculatorConfig.locationOptions ?? GENERIC_LOCATION_OPTIONS);
+  const sliderRange = calculatorConfig.sizeRange ?? { min: 80, max: 2400, step: 20 };
 
   const [squareFeet, setSquareFeet] = useState(calculatorConfig.defaultSize ?? defaults.size ?? 360);
   const [projectType, setProjectType] = useState(
@@ -138,9 +139,9 @@ export default function AdvancedCalculator({ service, serviceName, defaults = {}
             <label className="mb-2 block text-sm font-semibold text-slate-700">Project Size: {squareFeet} sq ft</label>
             <input
               type="range"
-              min="80"
-              max="2400"
-              step="20"
+              min={sliderRange.min}
+              max={sliderRange.max}
+              step={sliderRange.step}
               value={squareFeet}
               onChange={(e) => setSquareFeet(Number(e.target.value))}
               className="w-full"
