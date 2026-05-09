@@ -56,23 +56,33 @@ export const pricingConfig = {
     baseCostPerSqFt: {
       bumpOut: {
         min: 175,
-        max: 275,
-        description: 'Small bump-out addition (higher per sq ft due to complexity)'
+        expected: 190,
+        max: 225,
+        description: 'Simple bump-out or dry living-space expansion'
       },
       standard: {
-        min: 150,
-        max: 225,
-        description: 'Standard room addition with foundation, framing, roof, finishes'
+        min: 205,
+        expected: 218,
+        max: 260,
+        description: 'Standard finished living-space addition'
+      },
+      premiumCustom: {
+        min: 260,
+        expected: 278,
+        max: 325,
+        description: 'Premium custom addition with upgraded finishes'
       },
       secondStory: {
-        min: 125,
-        max: 200,
-        description: 'Second story addition (no foundation, but structural reinforcement needed)'
+        min: 350,
+        expected: 385,
+        max: 425,
+        description: 'Second-story or major structural addition'
       },
       masterSuite: {
-        min: 175,
-        max: 275,
-        description: 'Primary suite addition with premium bath and closet finishes'
+        min: 300,
+        expected: 310,
+        max: 375,
+        description: 'Primary suite addition with bath and closet package'
       }
     },
     
@@ -235,6 +245,194 @@ export const pricingConfig = {
   }
 };
 
+const DEFAULT_COMPLEXITY_OPTIONS = {
+  simple: { label: 'Simple', multiplier: 0.97 },
+  standard: { label: 'Standard', multiplier: 1.0 },
+  complex: { label: 'Complex', multiplier: 1.12 },
+};
+
+const DEFAULT_FINISH_OPTIONS = {
+  standard: { label: 'Standard', multiplier: 1.0 },
+  premium: { label: 'Premium', multiplier: 1.18 },
+  luxury: { label: 'Luxury', multiplier: 1.35 },
+};
+
+const UPSTATE_LOCATION_OPTIONS = {
+  baseline: { label: 'General Upstate SC baseline', multiplier: 1.0 },
+  greenville: { label: 'Greenville / Simpsonville', multiplier: 1.04 },
+  spartanburg: { label: 'Spartanburg / Greer', multiplier: 1.03 },
+  anderson: { label: 'Anderson / Lake area', multiplier: 1.02 },
+};
+
+export const CALCULATOR_SERVICE_CONFIGS = {
+  garages: {
+    defaultSize: 520,
+    defaultComplexity: 'standard',
+    defaultFinish: 'standard',
+    baseRate: {
+      min: 85,
+      expected: 110,
+      max: 135,
+      label: 'Garage addition base rate',
+    },
+    complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
+    finishOptions: DEFAULT_FINISH_OPTIONS,
+    locationOptions: UPSTATE_LOCATION_OPTIONS,
+    includeOverheadProfit: true,
+    overheadProfitLabel: 'Typical contractor O&P included in base rates',
+  },
+  'room-additions': {
+    defaultSize: 360,
+    defaultProjectType: 'standardLiving',
+    defaultComplexity: 'standard',
+    defaultFinish: 'standard',
+    locationOptions: UPSTATE_LOCATION_OPTIONS,
+    complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
+    finishOptions: DEFAULT_FINISH_OPTIONS,
+    includeOverheadProfit: true,
+    overheadProfitLabel: 'Typical contractor O&P included in base rates',
+    projectTypes: {
+      bumpOut: {
+        label: 'Bump-out / small expansion',
+        description: 'Simple dry living space or compact expansion.',
+        rate: pricingConfig.additions.baseCostPerSqFt.bumpOut,
+      },
+      standardLiving: {
+        label: 'Standard living space',
+        description: 'Finished living area with standard structural complexity.',
+        rate: pricingConfig.additions.baseCostPerSqFt.standard,
+      },
+      premiumCustom: {
+        label: 'Premium custom addition',
+        description: 'Upgraded finishes, custom detailing, and higher-spec selections.',
+        rate: pricingConfig.additions.baseCostPerSqFt.premiumCustom,
+      },
+      primarySuite: {
+        label: 'Primary suite / bath included',
+        description: 'Primary suite with bath, closet, and plumbing scope.',
+        rate: pricingConfig.additions.baseCostPerSqFt.masterSuite,
+      },
+      secondStory: {
+        label: 'Second-story / complex structural addition',
+        description: 'Major structural addition or vertical expansion.',
+        rate: pricingConfig.additions.baseCostPerSqFt.secondStory,
+      },
+    },
+  },
+  decks: {
+    defaultSize: 260,
+    defaultComplexity: 'simple',
+    defaultFinish: 'premium',
+    baseRate: {
+      min: 35,
+      expected: 55,
+      max: 85,
+      label: 'Deck base rate',
+    },
+    complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
+    finishOptions: DEFAULT_FINISH_OPTIONS,
+    locationOptions: UPSTATE_LOCATION_OPTIONS,
+    includeOverheadProfit: true,
+    overheadProfitLabel: 'Typical contractor O&P included in base rates',
+  },
+  'screened-porches': {
+    defaultSize: 280,
+    defaultComplexity: 'standard',
+    defaultFinish: 'premium',
+    baseRate: {
+      min: 65,
+      expected: 95,
+      max: 145,
+      label: 'Screened porch base rate',
+    },
+    complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
+    finishOptions: DEFAULT_FINISH_OPTIONS,
+    locationOptions: UPSTATE_LOCATION_OPTIONS,
+    includeOverheadProfit: true,
+    overheadProfitLabel: 'Typical contractor O&P included in base rates',
+  },
+  'basement-finishing': {
+    defaultSize: 620,
+    defaultComplexity: 'complex',
+    defaultFinish: 'standard',
+    baseRate: {
+      min: 35,
+      expected: 50,
+      max: 75,
+      label: 'Basement finishing base rate',
+    },
+    complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
+    finishOptions: DEFAULT_FINISH_OPTIONS,
+    locationOptions: UPSTATE_LOCATION_OPTIONS,
+    includeOverheadProfit: true,
+    overheadProfitLabel: 'Typical contractor O&P included in base rates',
+  },
+  adu: {
+    defaultSize: 680,
+    defaultComplexity: 'complex',
+    defaultFinish: 'premium',
+    baseRate: {
+      min: 185,
+      expected: 225,
+      max: 275,
+      label: 'ADU base rate',
+    },
+    complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
+    finishOptions: DEFAULT_FINISH_OPTIONS,
+    locationOptions: UPSTATE_LOCATION_OPTIONS,
+    includeOverheadProfit: true,
+    overheadProfitLabel: 'Typical contractor O&P included in base rates',
+  },
+  'kitchen-remodeling': {
+    defaultSize: 220,
+    defaultComplexity: 'complex',
+    defaultFinish: 'premium',
+    baseRate: {
+      min: 150,
+      expected: 185,
+      max: 260,
+      label: 'Kitchen remodel base rate',
+    },
+    complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
+    finishOptions: DEFAULT_FINISH_OPTIONS,
+    locationOptions: UPSTATE_LOCATION_OPTIONS,
+    includeOverheadProfit: true,
+    overheadProfitLabel: 'Typical contractor O&P included in base rates',
+  },
+  'bathroom-remodeling': {
+    defaultSize: 120,
+    defaultComplexity: 'complex',
+    defaultFinish: 'premium',
+    baseRate: {
+      min: 180,
+      expected: 240,
+      max: 375,
+      label: 'Bathroom remodel base rate',
+    },
+    complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
+    finishOptions: DEFAULT_FINISH_OPTIONS,
+    locationOptions: UPSTATE_LOCATION_OPTIONS,
+    includeOverheadProfit: true,
+    overheadProfitLabel: 'Typical contractor O&P included in base rates',
+  },
+  'kitchen-bath-remodeling': {
+    defaultSize: 220,
+    defaultComplexity: 'complex',
+    defaultFinish: 'premium',
+    baseRate: {
+      min: 170,
+      expected: 225,
+      max: 300,
+      label: 'Kitchen and bath remodel base rate',
+    },
+    complexityOptions: DEFAULT_COMPLEXITY_OPTIONS,
+    finishOptions: DEFAULT_FINISH_OPTIONS,
+    locationOptions: UPSTATE_LOCATION_OPTIONS,
+    includeOverheadProfit: true,
+    overheadProfitLabel: 'Typical contractor O&P included in base rates',
+  },
+};
+
 /**
  * Helper function to format price ranges
  */
@@ -257,4 +455,4 @@ export function calculateBaseEstimate(sqft, rateMin, rateMax) {
  * Disclaimer text for all calculators
  */
 export const CALCULATOR_DISCLAIMER = 
-  "Estimated pricing is for planning purposes only. Actual costs vary based on design, site conditions, permitting, materials, structural needs, and existing conditions. Request an estimate for an accurate project-specific quote.";
+  "Estimated pricing is for planning purposes only, not a final bid. Actual costs vary based on design, site conditions, permitting, materials, structural needs, and existing conditions. Request an estimate for an accurate project-specific quote.";

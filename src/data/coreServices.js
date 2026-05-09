@@ -72,7 +72,8 @@ export const CORE_SERVICES = [
     name: 'Room Additions',
     teaser: 'Seamless square footage expansions with proper structural tie-in.',
     hero: 'Room additions planned for comfort, flow, and long-term home value.',
-    intro: 'Burch Contracting delivers room additions that feel like original construction - never an afterthought. Whether you need a primary suite, home office, or expanded living space, we handle foundation design for Upstate SC clay soil, structural tie-in to your existing home, and moisture control for our humid climate. Every addition is permitted, inspected, and built with 35+ years of local remodeling experience.',
+    intro: 'Burch Contracting delivers room additions that feel like original construction - never an afterthought. Whether you need a primary suite, home office, or expanded living space, we handle foundation design for Upstate SC clay soil, structural tie-in to your existing home, and moisture control for our humid climate. 2026 planning ranges typically start around $175-$225 per square foot for simple bump-outs and can reach $350-$425+ per square foot for second-story or major structural additions. These are planning ranges with typical contractor overhead and profit already reflected in the base pricing, plus only a modest local adjustment. Every addition is permitted, inspected, and built with 35+ years of local remodeling experience.',
+    disclaimer: 'Each project may vary due to existing conditions, site access, foundation requirements, structural tie-ins, utilities, selections, permits, and inspection requirements.',
     benefits: [
       'Foundation systems engineered for Upstate SC clay soil and drainage',
       'Seamless structural tie-in with zero settling or separation over time',
@@ -102,7 +103,7 @@ export const CORE_SERVICES = [
     faqs: [
       {
         question: 'How much does a room addition cost in Upstate South Carolina?',
-        answer: 'Room addition costs in Upstate SC range from $55–85 per square foot for standard additions and $75–120 per square foot for premium finishes with plumbing. A 400 sqft master suite addition typically runs $25,000–$40,000. Smaller bump-outs (40–100 sqft) cost $45–65 per square foot. The 2024 Remodeling Cost vs. Value Report shows primary suite additions return approximately 53% at resale in the South Atlantic region — and the livability benefit typically outweighs short-term ROI for families who plan to stay 5+ years. Foundation design for Upstate SC clay soil and structural tie-in to your existing home are included in our pricing.',
+        answer: 'Room additions in Upstate SC typically start around $175–$225 per square foot for simple bump-outs and dry living-space expansions, $200–$260 per square foot for standard finished living additions, $260–$325 per square foot for premium custom additions, and $300–$375+ per square foot for primary suites with bathroom and closet scope. Second-story or major structural additions commonly run $350–$425+ per square foot because of the engineering, tie-in, and reinforcement required. These planning ranges already assume normal contractor overhead and profit and a modest Upstate SC location adjustment, so we do not stack both blindly on top of each other. A 360 sqft standard living addition should usually land around $78,000–$95,000 before premium complexity, while a 400 sqft primary suite often lands around $125,000–$150,000+ depending on finish level and site conditions. These are planning ranges only, not final bids.',
       },
       {
         question: 'How long does a room addition take to complete?',
@@ -125,13 +126,13 @@ export const CORE_SERVICES = [
       description: 'Understanding your expansion options',
       columns: ['Feature', 'Bump-Out (40-100 sqft)', 'Full Addition (200+ sqft)'],
       rows: [
-        ['Cost', '$45-65/sqft', '$55-85/sqft'],
-        ['Foundation', 'Cantilevered or small footing', 'Full foundation system'],
-        ['Permits', 'Often simplified process', 'Full residential permit'],
-        ['HVAC Impact', 'Minor duct extension', 'May require system upgrade'],
-        ['Structural Complexity', 'Moderate', 'High - full tie-in required'],
-        ['Timeline', '3-5 weeks', '8-14 weeks'],
-        ['Best For', 'Bathroom expansion, breakfast nook', 'Master suite, home office, in-law quarters']
+        ['Cost', '$175-$225/sqft', '$200-$425+/sqft'],
+        ['Foundation', 'Small footing or cantilever where appropriate', 'Full foundation or structural reinforcement'],
+        ['Permits', 'Often simpler, still requires review', 'Full residential permit and inspections'],
+        ['HVAC Impact', 'Minor extension or new zone', 'Often requires new load calculations or duct work'],
+        ['Structural Complexity', 'Moderate', 'High to very high'],
+        ['Timeline', '3-6 weeks', '8-14+ weeks'],
+        ['Best For', 'Bathroom expansion, breakfast nook, small office', 'Primary suite, family room, second-story addition']
       ]
     },
   },

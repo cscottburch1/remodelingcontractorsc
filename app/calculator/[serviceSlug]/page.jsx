@@ -15,7 +15,7 @@ export function generateMetadata({ params }) {
 
   return {
     title: `${service.name} Calculator`,
-    description: `Advanced ${service.name.toLowerCase()} calculator with transparent math and local multipliers.`,
+    description: `Advanced ${service.name.toLowerCase()} calculator with service-specific planning ranges and transparent math.`,
   };
 }
 
@@ -34,7 +34,7 @@ export default function CalculatorPage({ params }) {
   return (
     <UniversalPageTemplate
       title={`${service.name} Cost Calculator`}
-      subtitle="Use transparent math to plan budget, compare finish levels, and save your estimate."
+      subtitle="Use transparent math to compare project types, finish levels, and local planning ranges."
     >
       {/* Date Stamps */}
       {(service.publishedDate || service.lastModified) && (
@@ -50,7 +50,7 @@ export default function CalculatorPage({ params }) {
         </div>
       )}
 
-      <AdvancedCalculator serviceName={service.name} defaults={service.miniDefaults} />
+      <AdvancedCalculator service={service} serviceName={service.name} defaults={service.miniDefaults} />
     </UniversalPageTemplate>
   );
 }

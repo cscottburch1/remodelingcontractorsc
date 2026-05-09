@@ -25,7 +25,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <AdvancedCalculator serviceName={garage.name} defaults={garage.miniDefaults} mini />
+        <AdvancedCalculator service={garage} serviceName={garage.name} defaults={garage.miniDefaults} mini />
       </div>
 
       <section className="mt-10">

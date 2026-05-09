@@ -77,6 +77,12 @@ export default function ServicePageContent({ service }) {
         </p>
       </div>
 
+      {service.disclaimer && (
+        <div className="rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm leading-relaxed text-amber-900">
+          {service.disclaimer}
+        </div>
+      )}
+
       {/* Comparison Table */}
       {service.comparison && (
         <div className="bg-white border border-slate-200 rounded-2xl p-8">
@@ -179,7 +185,8 @@ export default function ServicePageContent({ service }) {
       <div className="bg-white border border-slate-200 rounded-3xl p-8">
         <h3 className="text-xl font-semibold mb-6 text-center">Get Your Instant {service.name} Estimate</h3>
         <AdvancedCalculator 
-          serviceName={service.name} 
+          service={service}
+          serviceName={service.name}
           defaults={service.miniDefaults} 
           mini 
         />

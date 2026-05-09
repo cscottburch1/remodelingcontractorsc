@@ -13,7 +13,7 @@ export default function PricingGuidePage() {
         </div>
         <div className="rounded-xl border border-slate-200 bg-white p-4">
           <p className="font-semibold">Room Additions</p>
-          <p className="text-slate-700">$160-$320 / sq ft</p>
+          <p className="text-slate-700">$175-$425+ / sq ft</p>
         </div>
         <div className="rounded-xl border border-slate-200 bg-white p-4">
           <p className="font-semibold">Decks</p>
