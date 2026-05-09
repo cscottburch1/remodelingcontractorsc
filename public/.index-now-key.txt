@@ -1,0 +1,4 @@
+// This file will be generated at build time with your actual INDEX_NOW_KEY
+// The key is served as a static file at https://remodelingcontractorsc.com/.index-now-key.txt
+// Index Now requires this file to verify site ownership
+// DO NOT COMMIT the actual key - it should only exist in production via environment variables
