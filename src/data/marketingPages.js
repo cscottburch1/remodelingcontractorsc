@@ -1,6 +1,5 @@
 import garageImage from '../assets/images/services/garage-service.svg';
 import roomAdditionImage from '../assets/images/services/room-addition-service.svg';
-import enclosureImage from '../assets/images/services/screen-enclosure-service.svg';
 import grannyPodImage from '../assets/images/services/granny-pod-service.svg';
 
 const sharedActions = [

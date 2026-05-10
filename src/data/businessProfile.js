@@ -3,7 +3,7 @@
  * Used by LocalBusinessSchema.jsx - the ONLY place where AggregateRating schema is emitted
  */
 export const BUSINESS_PROFILE = {
-  businessName: 'Remodeling Contractors SC',
+  businessName: 'Remodeling Contractors SC | Burch Contracting',
   siteUrl: 'https://remodelingcontractorsc.com',
   phone: '+1-864-724-4600',
   email: 'estimates@remodelingcontractorsc.com',
@@ -14,10 +14,10 @@ export const BUSINESS_PROFILE = {
     licenseLabel: 'SC Licensed',
   },
   address: {
-    streetAddress: '30 Patewood Drive',
-    addressLocality: 'Greenville',
+    streetAddress: '1095 Water Tank Rd',
+    addressLocality: 'Gray Court',
     addressRegion: 'SC',
-    postalCode: '29615',
+    postalCode: '29645',
     addressCountry: 'US',
   },
   // ONLY AggregateRating data for entire site - used in LocalBusinessSchema.jsx
